@@ -9,9 +9,16 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 
+def _env(name):
+    """Secrets pasted from the terminal sometimes carry the label ("YT_CLIENT_ID = ...") or spaces: clean them."""
+    v = os.environ.get(name, "").strip()
+    if "=" in v and v.split("=", 1)[0].strip().upper() == name: v = v.split("=", 1)[1].strip()
+    return v.strip().strip('"').strip("'").strip()
+
+
 def _client():
-    creds = Credentials(None, refresh_token=os.environ["YT_REFRESH_TOKEN"],
-                        client_id=os.environ["YT_CLIENT_ID"], client_secret=os.environ["YT_CLIENT_SECRET"],
+    creds = Credentials(None, refresh_token=_env("YT_REFRESH_TOKEN"),
+                        client_id=_env("YT_CLIENT_ID"), client_secret=_env("YT_CLIENT_SECRET"),
                         token_uri="https://oauth2.googleapis.com/token",
                         scopes=["https://www.googleapis.com/auth/youtube.upload"])
     return build("youtube", "v3", credentials=creds, cache_discovery=False)

@@ -26,13 +26,25 @@ else:
     if r.ok:
         r = requests.get(f"{base}/{uid}/content_publishing_limit", params={"fields": "quota_usage,config", "access_token": tok}, timeout=30)
         print("Instagram publishing quota:", r.json() if r.ok else f"could not read ({r.status_code})")
+def shape(name, raw):
+    """Describe a secret's shape without revealing it."""
+    v = raw or ""
+    notes = []
+    if v != v.strip(): notes.append("has spaces or a line break at the start/end")
+    if "=" in v[:20]: notes.append("looks like the label was pasted too (starts with 'NAME =')")
+    if name == "YT_CLIENT_ID" and not v.strip().endswith(".apps.googleusercontent.com"): notes.append("should end with .apps.googleusercontent.com")
+    if name == "YT_CLIENT_SECRET" and not v.strip().startswith("GOCSPX-"): notes.append("usually starts with GOCSPX-")
+    if name == "YT_REFRESH_TOKEN" and not v.strip().startswith("1//"): notes.append("usually starts with 1//")
+    print(f"  {name}: {len(v)} characters" + (" -> " + "; ".join(notes) if notes else " -> looks right"))
 if os.environ.get("YT_REFRESH_TOKEN"):
+    print("YouTube secrets (shape only, never the value):")
+    for n in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"): shape(n, os.environ.get(n))
     try:
         import youtube
         from googleapiclient.errors import HttpError
         yt = youtube._client()
-        print("YouTube: OK, token accepted (upload scope only, so channel name isn't readable)")
         yt._http.credentials.refresh(__import__("google.auth.transport.requests", fromlist=["Request"]).Request())
+        print("YouTube: OK, token accepted (upload scope only, so channel name isn't readable)")
     except Exception as e:
         print("YouTube: FAILED", e); ok = False
 else:
