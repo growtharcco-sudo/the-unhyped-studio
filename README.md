@@ -4,10 +4,10 @@ Fully automatic, free pipeline for The Unhyped (Instagram @theunhyped.ai, YouTub
 
 | Time (IST) | What happens | Where |
 |---|---|---|
-| ~3:40 PM | Research, write, fact-check, voice (Kokoro "Liam") and build the evening (22:00) and next morning (08:00) Reels, queue them, send them to James | Claude scheduled task (cloud), `ROUTINE.md` section A |
+| ~3:40 PM | Research, write, fact-check, voice (Kokoro "Liam") and build the evening (22:00) and next morning (08:00) Reels, queue them, send them to the owner | Claude scheduled task (cloud), `ROUTINE.md` section A |
 | ~4:40 PM | Same for the news Reel (18:30) | Claude scheduled task, section B |
 | every 3 h | Breaking watcher: posts within minutes if something huge happens (max 2 a day, replaces the news Reel) | Claude scheduled task, section C |
-| until post time | James can reply "skip" or ask for changes | Claude |
+| until post time | The owner can reply "skip" or ask for changes | Claude |
 | 08:00 / 18:30 / 22:00 | Post to Instagram Reels (official API, AI label on) and YouTube Shorts (official API, synthetic-content disclosure on) | GitHub Actions `post.yml` (waits for the exact minute itself) and `post-now.yml` (breaking) |
 
 Nothing needs a laptop. Setup: see `SETUP.md`.

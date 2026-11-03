@@ -111,7 +111,7 @@ python poster/media_branch.py check <id>        # must print "on media branch"
 git add specs queue IDEAS.md NEWS_LOG.md && git commit -m "queue <id>" && git pull --rebase && git push
 ```
 
-## 7. Tell James
+## 7. Tell the owner
 Send the video and cover with SendUserFile (status proactive), and one SendUserMessage: the topic, the key
 fact and its source, the slot and post time, and: "Reply skip to cancel, or tell me what to change."
 - "skip": create `queue/<id>/SKIP`, commit and push. Nothing gets posted.
@@ -152,7 +152,7 @@ Goal: be first on a huge story. Most runs find nothing and stop within a few min
 5. If it qualifies and is not already in `NEWS_LOG.md`: make the Reel (series What It Means, `slot` breaking,
    `"breaking": true`, post_at = now in IST, cover `footer` "Breaking · What's real"). It posts within minutes
    of the push through the instant workflow, and replaces today's news Reel.
-6. Add a line to `NEWS_LOG.md`, commit and push, and send James the video with one line on what posted.
+6. Add a line to `NEWS_LOG.md`, commit and push, and send the owner the video with one line on what posted.
 
 ## NEWS_LOG.md
 Every news or breaking Reel adds: `YYYY-MM-DD HH:MM IST | breaking/news | <id> | <story in 8 words>`.
