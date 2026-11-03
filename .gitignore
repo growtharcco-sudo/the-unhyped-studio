@@ -1,0 +1,9 @@
+# videos and covers live only on the `media` branch, never in main's history
+queue/*/video.mp4
+queue/*/cover.png
+queue/*/*.wav
+queue/*/check*
+pipeline/models/
+.changed
+__pycache__/
+work/

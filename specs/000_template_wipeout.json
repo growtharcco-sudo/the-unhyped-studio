@@ -1,0 +1,84 @@
+{
+  "id": "000_template_wipeout",
+  "series": "What It Means",
+  "dwg": "000",
+  "voice": "am_liam",
+  "speed": 1.05,
+  "phrases": [
+    {"say": "About two trillion dollars just vanished from tech stocks.", "cap": "About $2 trillion just vanished from tech stocks."},
+    {"say": "And A I is at the center of it.", "cap": "And AI is at the center of it.", "pause": 0.45},
+    {"say": "According to Reuters, the Nasdaq one hundred lost about two trillion dollars in value in October.", "cap": "According to Reuters, the Nasdaq 100 lost about $2 trillion in value in October.", "pause": 0.55},
+    {"say": "Most of it came in one week, as Big Tech reported results.", "pause": 0.45},
+    {"say": "Intel had its worst day since nineteen seventy four.", "cap": "Intel had its worst day since 1974.", "pause": 0.55},
+    {"say": "Alphabet and Amazon fell after raising their spending plans.", "pause": 0.4},
+    {"say": "Here's the real issue.", "pause": 0.6},
+    {"say": "Tech giants are spending around seven hundred and fifty billion dollars on A I this year.", "cap": "Tech giants are spending around $750 billion on AI this year.", "pause": 0.45},
+    {"say": "Investors now want proof it pays off.", "pause": 0.4},
+    {"say": "But this isn't a crash.", "pause": 0.6},
+    {"say": "Microsoft showed A I starting to make money, and the index is about ten percent off its peak.", "cap": "Microsoft showed AI starting to make money, and the index is about 10% off its peak.", "pause": 0.45},
+    {"say": "My take: the A I boom isn't over.", "cap": "My take: the AI boom isn't over.", "pause": 0.6},
+    {"say": "It just moved from hype, to show me the money.", "cap": "It just moved from hype to show me the money.", "pause": 0.35},
+    {"say": "Follow for more. Sources are in the description.", "pause": 0.6}
+  ],
+  "scenes": [
+    {"until": 2, "sub": "News · Oct 30, 2026", "els": [
+      {"type": "kicker", "text": "Tech stocks · October", "y": 500, "at": -1},
+      {"type": "number", "prefix": "$", "value": 2, "suffix": " trillion", "size": 150, "y": 680, "at": -1},
+      {"type": "head", "text": "gone from tech stocks.", "size": 76, "y": 800, "at": -1},
+      {"type": "head", "text": "AI is at the center.", "hl": "AI", "underline": true, "size": 64, "y": 920, "at": 1}
+    ]},
+    {"until": 4, "sub": "The amount", "els": [
+      {"type": "kicker", "text": "Per Reuters", "y": 480, "at": 2},
+      {"type": "head", "text": "The Nasdaq 100", "size": 70, "y": 570, "at": 2, "delay": 0.4},
+      {"type": "number", "prefix": "−$", "value": 2, "suffix": "T", "size": 180, "y": 790, "at": [2, 0.6]},
+      {"type": "kicker", "text": "Market value lost in October", "color": "muted", "y": 860, "at": [2, 0.8]},
+      {"type": "bar", "label": "Nasdaq 100 · Oct 2026", "value": "−$2T", "y": 940, "at": 3}
+    ]},
+    {"until": 6, "sub": "Who fell", "els": [
+      {"type": "card", "title": "Biggest fall · Fri 30 Oct", "y": 490, "at": 4, "big": ["Intel", "−29%"], "note": "Worst day since 1974", "rows": []},
+      {"type": "card", "title": "Also fell", "y": 790, "at": 5, "rows": [["Alphabet", "Down ↓", "hl"], ["Amazon", "Down ↓", "hl"], ["Why", "Raised AI spending plans"]], "row_at": [5, [5, 0.25], [5, 0.6]]}
+    ]},
+    {"until": 9, "sub": "The real issue", "els": [
+      {"type": "kicker", "text": "The real issue", "y": 480, "at": 6},
+      {"type": "number", "prefix": "$", "value": 750, "suffix": "B", "size": 180, "y": 680, "at": 7, "delay": 0.8},
+      {"type": "kicker", "text": "Big Tech's AI spending · 2026", "color": "muted", "y": 740, "at": 7, "delay": 1.0},
+      {"type": "bar", "label": "Spending", "value": "$750B", "y": 820, "at": 7, "delay": 1.4},
+      {"type": "bar", "label": "Proof it pays off", "value": "Pending", "y": 930, "fill": 0, "dashed": true, "color": "blue", "at": 8},
+      {"type": "badge", "text": "INVESTORS: SHOW ME", "x": 130, "y": 1030, "at": 8, "delay": 0.5}
+    ]},
+    {"until": 11, "sub": "Reality check", "els": [
+      {"type": "kicker", "text": "Is this a crash?", "y": 480, "at": 9},
+      {"type": "head", "text": "Not a crash.", "size": 92, "y": 600, "at": 9, "delay": 0.5},
+      {"type": "card", "y": 690, "at": 10, "rows": [["Microsoft", "AI starting to pay off"], ["Nasdaq 100", "About 10% off its peak"], ["Status", "Near a “correction”"]], "row_at": [10, [10, 0.55], [10, 0.85]]}
+    ]},
+    {"until": 13, "sub": "My take", "els": [
+      {"type": "badge", "text": "MY TAKE", "color": "orange", "y": 450, "at": 11},
+      {"type": "strike", "text": "The AI boom is over.", "y": 590, "at": 11, "delay": 0.3, "strike_at": [11, 0.75]},
+      {"type": "head", "text": "From hype to", "size": 80, "y": 740, "at": 12},
+      {"type": "head", "text": "show me the money.", "hl": "show me the money.", "underline": true, "size": 80, "y": 840, "at": [12, 0.5]}
+    ]},
+    {"until": "end", "sub": "References", "els": [
+      {"type": "ref", "y": 440, "at": 13, "headline": "Nasdaq faces $2 trillion wipeout in October", "site": "reuters.com", "line": "Oct 30, 2026 · plus Bloomberg and TheStreet"},
+      {"type": "follow", "y": 960, "at": 13, "delay": 0.2}
+    ]}
+  ],
+  "cover": {"lines": ["$2 trillion", "gone from tech."], "box": "AI bubble?", "stamp": "−$2T", "footer": "News · What's real"},
+  "math": [
+    {"expr": "2", "expect": "2", "note": "Reuters: about $2T wiped from the Nasdaq 100 in October (reported figure, not derived)"},
+    {"expr": "round((1 - 7578.97 / 7578.97) * 100)", "expect": "0", "note": "placeholder showing the format: derived numbers are computed here"}
+  ],
+  "sources": [
+    {"claim": "Nasdaq 100 set to lose more than $2 trillion in October; AI spending fears", "url": "https://www.investing.com/news/stock-market-news/nasdaq-faces-2-trillion-wipeout-in-october-as-ai-spending-fears-deepen-4988211", "fetched": "2026-10-31"},
+    {"claim": "Intel about -29%, worst day since 1974; Nasdaq -2.84% on Oct 30", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026", "fetched": "2026-10-31"},
+    {"claim": "Nasdaq 100 about 10% from peak; tech giants spending about $750B on AI this year", "url": "https://www.swissinfo.ch/eng/nasdaq-100-slumps-10%25-from-peak-on-ai-wake-up-call%3a-markets-wrap/92299351", "fetched": "2026-10-31"}
+  ],
+  "post": {
+    "slot": "evening",
+    "breaking": false,
+    "post_at": "2026-10-31T22:00:00+05:30",
+    "instagram_caption": "About $2 trillion wiped off tech stocks in October.\n\nAccording to Reuters, the Nasdaq 100 lost about $2 trillion in value this month as Big Tech reported results. Intel had its worst day since 1974. Alphabet and Amazon fell after raising their spending plans.\n\nThe real issue: tech giants are spending around $750 billion on AI this year, and investors now want proof it pays off. But it isn't a crash: the index is about 10% off its peak.\n\nSource: Reuters, Oct 30, 2026.\n\nIs AI spending a bubble, or just early?\n\n#theunhyped #AI #TechStocks #Nasdaq #TechNews",
+    "youtube_title": "$2 Trillion Wiped Off Tech Stocks. Is the AI Bubble Popping?",
+    "youtube_description": "About $2 trillion in market value was wiped off the Nasdaq 100 in October, as Big Tech's results made investors question whether huge AI spending will pay off. Intel had its worst day since 1974, and Alphabet and Amazon fell after raising their spending plans. But the index is about 10% off its peak, closer to a correction than a crash. Here's what it means.\n\nSources:\n• Reuters, \"Nasdaq faces $2 trillion wipeout in October as AI spending fears deepen\" (Oct 30, 2026)\n• Bloomberg, \"Nasdaq 100 Slumps 10% From Peak on AI Wake-Up Call: Markets Wrap\" (Oct 30, 2026)\n• TheStreet, \"Stock Market Today (Oct. 30, 2026)\" (Oct 30, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #TechStocks #Shorts",
+    "youtube_tags": ["AI", "tech stocks", "nasdaq", "the unhyped"]
+  }
+}

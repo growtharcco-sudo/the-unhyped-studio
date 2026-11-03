@@ -1,0 +1,11 @@
+# reel building (daily Claude task)
+kokoro-onnx
+soundfile
+numpy
+Pillow
+skia-python
+pocketsphinx
+# posting (GitHub Actions)
+requests
+google-api-python-client
+google-auth

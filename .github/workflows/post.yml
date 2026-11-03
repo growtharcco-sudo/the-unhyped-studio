@@ -1,0 +1,67 @@
+name: Post due Reels
+
+# GitHub's schedule can run hours late, so this job does not rely on it for timing.
+# Each run sleeps until the next queued post is due (up to ~5h45m), posts it, then starts itself
+# again if more posts are waiting. The hourly schedule is only a backup.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["queue/**"]
+
+concurrency: { group: post, cancel-in-progress: false }
+permissions: { contents: write, actions: write }
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests google-api-python-client google-auth
+      - name: Wait until the next post is due
+        id: wait
+        run: |
+          # Check every 2 minutes, so Reels queued while waiting (news, edits, skips) are picked up.
+          END=$(( $(date +%s) + 20700 ))
+          while true; do
+            git pull -q --ff-only origin main || true
+            S=$(python poster/next_due.py); echo "$(date -u +%H:%M) next post in ${S}s"
+            if [ "$S" -lt 0 ]; then echo "nothing queued"; echo "none=1" >> $GITHUB_OUTPUT; exit 0; fi
+            [ "$S" -eq 0 ] && break
+            NOW=$(date +%s); [ "$NOW" -ge "$END" ] && break
+            W=$S; [ "$W" -gt 120 ] && W=120; sleep "$W"
+          done
+      - name: Post
+        id: post
+        if: steps.wait.outputs.none != '1'
+        continue-on-error: true
+        env:
+          PAGES_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
+        run: python poster/publish_due.py
+      - name: Save results
+        if: steps.wait.outputs.none != '1'
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          git config user.name unhyped-bot && git config user.email unhyped-bot@users.noreply.github.com
+          git add -A queue posted && git commit -q -m "posting results" && git pull -q --rebase origin main && git push -q || echo "nothing to save"
+          if [ "$(cat .changed 2>/dev/null)" = "1" ]; then python poster/media_branch.py prune; fi
+      - name: Start again for the next queued post
+        if: steps.wait.outputs.none != '1'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          [ "$(python poster/next_due.py)" -ge 0 ] && gh workflow run post.yml --repo "${{ github.repository }}" --ref main || echo "queue empty"
+      - name: Fail loudly so GitHub emails you
+        if: steps.post.outcome == 'failure'
+        run: exit 1
