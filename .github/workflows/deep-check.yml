@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       skip_youtube: { description: "Skip the YouTube test upload", default: "0" }
+      yt_privacy: { description: "Privacy of the YouTube test upload (private or unlisted, never public)", default: "private" }
 jobs:
   deep:
     runs-on: ubuntu-latest
@@ -19,4 +20,5 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           SKIP_YT: ${{ inputs.skip_youtube }}
+          TEST_PRIVACY: ${{ inputs.yt_privacy }}
         run: python tools/deep_check.py

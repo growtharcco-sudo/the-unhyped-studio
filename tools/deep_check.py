@@ -23,8 +23,19 @@ if os.environ.get("SKIP_YT") == "1":
     print("YouTube: skipped this run"); print("ALL OK" if ok else "SOMETHING FAILED"); sys.exit(0 if ok else 1)
 local = "/tmp/t.mp4"; open(local, "wb").write(requests.get(url, timeout=120).content)
 try:
-    res = youtube.upload_short(local, "Pipeline test (safe to delete)", "Automated test upload. Private.", privacy="private")
-    print("YouTube: upload OK ->", res["yt_url"], "privacy:", res["yt_privacy"])
+    pv = os.environ.get("TEST_PRIVACY", "private"); pv = pv if pv in ("private", "unlisted") else "private"
+    res = youtube.upload_short(local, "Pipeline test (safe to delete)", f"Automated test upload. {pv.title()}.", privacy=pv)
+    print("YouTube: upload OK ->", res["yt_url"], "requested:", pv, "API says:", res["yt_privacy"])
+    if pv == "unlisted":
+        # YouTube locks uploads from unaudited projects to private a little after upload; an unlisted video
+        # answers oEmbed, a private one doesn't. Check for ~5 minutes.
+        vid = res["yt_video_id"]; verdict = None
+        for _ in range(10):
+            time.sleep(30)
+            r = requests.get("https://www.youtube.com/oembed", params={"url": f"https://www.youtube.com/watch?v={vid}", "format": "json"}, timeout=30)
+            verdict = r.status_code
+            if r.status_code in (401, 403): break
+        print("YouTube visibility check:", "STAYED UNLISTED -> public uploads will work" if verdict == 200 else f"LOCKED TO PRIVATE (oEmbed {verdict}) -> needs the API audit")
 except Exception as e:
     print("YouTube: FAILED", e); ok = False
 print("ALL OK" if ok else "SOMETHING FAILED"); sys.exit(0 if ok else 1)
