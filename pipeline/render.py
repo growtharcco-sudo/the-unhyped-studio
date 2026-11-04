@@ -404,7 +404,7 @@ def caption_chunks(spec, times, words=None):
     f = font("sans", CAP_SIZE); chunks = []
     for pi, (ph, (s, e)) in enumerate(zip(spec["phrases"], times)):
         cw = ph.get("cap", ph["say"]).split()
-        if words and pi < len(words) and len(words[pi]) == len(cw):
+        if words and pi < len(words) and words[pi] and len(words[pi]) == len(cw):
             timed = [(w, a, b) for w, (_, a, b) in zip(cw, words[pi])]
         else:
             wts = [len(re.sub(r"[^\w]", "", w)) + 1.6 + (2 if re.search(r"\d", w) else 0) for w in cw]

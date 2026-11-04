@@ -1,0 +1,74 @@
+{
+  "id": "001_canva_cuts",
+  "series": "What It Means",
+  "dwg": "001",
+  "voice": "am_liam",
+  "speed": 1.05,
+  "phrases": [
+    {"say": "Canva is cutting or moving more than one in five of its jobs.", "cap": "Canva is cutting or moving more than 1 in 5 of its jobs."},
+    {"say": "One thousand, two hundred and seventy one roles. About twenty two percent of its staff.", "cap": "1,271 roles. About 22% of its staff.", "pause": 0.55},
+    {"say": "C E O Melanie Perkins called it the hardest moment in Canva's thirteen year history.", "cap": "CEO Melanie Perkins called it the hardest moment in Canva's 13-year history.", "pause": 0.5},
+    {"say": "The reason: growth slowed, for the first time in a decade.", "pause": 0.55},
+    {"say": "Its growth forecast for this year was reportedly cut from thirty percent, to twenty.", "cap": "Its growth forecast for this year was reportedly cut from 30% to 20%.", "pause": 0.45},
+    {"say": "Teams are being merged, with fewer layers of managers.", "pause": 0.4},
+    {"say": "People leaving get at least six months of salary.", "cap": "People leaving get at least 6 months of salary.", "pause": 0.4},
+    {"say": "So, is A I taking design jobs?", "cap": "So, is AI taking design jobs?", "pause": 0.6},
+    {"say": "Canva didn't say that. It pointed to slower growth, and technology changing fast.", "pause": 0.5},
+    {"say": "My take: this is what the end of easy growth looks like, even for a winner.", "pause": 0.6},
+    {"say": "Follow for more. Sources are in the description.", "pause": 0.6}
+  ],
+  "scenes": [
+    {"until": 1, "sub": "News · Nov 4, 2026", "els": [
+      {"type": "kicker", "text": "Canva · design platform", "y": 500, "at": -1},
+      {"type": "number", "value": 22, "suffix": "%", "size": 220, "y": 740, "at": -1},
+      {"type": "head", "text": "of jobs cut or moved.", "size": 76, "y": 860, "at": -1}
+    ]},
+    {"until": 3, "sub": "The amount", "els": [
+      {"type": "card", "title": "Restructuring · Nov 3", "y": 490, "at": 1, "big": ["Canva", "1,271 roles"], "note": "Cut or moved · about 22% of staff", "rows": []},
+      {"type": "kicker", "text": "CEO Melanie Perkins", "y": 790, "at": 2},
+      {"type": "head", "text": "“The hardest moment in our 13-year history.”", "size": 54, "maxw": 900, "y": 880, "at": 2, "delay": 0.3}
+    ]},
+    {"until": 7, "sub": "Why", "els": [
+      {"type": "card", "title": "What Canva says", "y": 490, "at": 3, "rows": [["Growth", "Slowed for the first time in a decade", "hl"], ["2026 forecast", "30% → 20% (reported)"], ["Teams", "Merged, fewer manager layers"], ["Leaving staff", "At least 6 months' salary"]], "row_at": [3, 4, 5, 6]},
+      {"type": "bar", "label": "Growth forecast, before", "value": "30%", "y": 850, "at": 4},
+      {"type": "bar", "label": "Now (reported)", "value": "20%", "fill": 0.667, "color": "blue", "y": 950, "at": [4, 0.6]}
+    ]},
+    {"until": 9, "sub": "Is it AI?", "els": [
+      {"type": "kicker", "text": "Is AI taking design jobs?", "y": 480, "at": 7},
+      {"type": "card", "y": 540, "at": 8, "rows": [["AI named?", "Not as the reason", "hl"], ["Canva said", "Slower growth"], ["And", "Technology changing fast"]], "row_at": [8, [8, 0.45], [8, 0.75]]},
+      {"type": "kicker", "text": "Per DPA and People Matters", "color": "muted", "size": 24, "y": 820, "at": [8, 0.8]}
+    ]},
+    {"until": 10, "sub": "My take", "els": [
+      {"type": "badge", "text": "MY TAKE", "color": "orange", "y": 450, "at": 9},
+      {"type": "head", "text": "The end of easy growth,", "size": 76, "y": 640, "at": 9, "delay": 0.4},
+      {"type": "head", "text": "even for a winner.", "hl": "winner.", "underline": true, "size": 76, "y": 740, "at": [9, 0.6]}
+    ]},
+    {"until": "end", "sub": "References", "els": [
+      {"type": "ref", "y": 440, "at": 10, "headline": "Design giant Canva to cut or restructure 1,271 jobs in major overhaul", "site": "finance.yahoo.com (DPA)", "line": "Nov 3, 2026 · plus People Matters and Bloomberg"},
+      {"type": "follow", "y": 990, "at": 10, "delay": 0.2}
+    ]}
+  ],
+  "cover": {"lines": ["1,271 jobs.", "Canva cuts 22%."], "box": "Why now?", "stamp": "−22%", "footer": "News · What's real"},
+  "math": [
+    {"expr": "1271", "expect": "1271", "note": "DPA via Yahoo Finance and People Matters: 1,271 roles"},
+    {"expr": "22", "expect": "22", "note": "22% of the workforce (DPA, People Matters, Bloomberg headline)"},
+    {"expr": "int(0.22 > 1/5)", "expect": "1", "note": "22% is more than 1 in 5"},
+    {"expr": "2026 - 2013", "expect": "13", "note": "founded in Sydney in 2013 (DPA); quote says thirteen-year history"},
+    {"expr": "round(1271 / 0.22)", "expect": "5777", "note": "implied staff, consistent with People Matters 'more than 5,700'"},
+    {"expr": "20 / 30", "expect": "0.667", "tol": 0.001, "note": "bar fill for the 30% to 20% forecast cut (People Matters, reported)"}
+  ],
+  "sources": [
+    {"claim": "1,271 jobs cut or relocated, 22%, growth slowed for the first time in a decade, 'hardest moment in our thirteen-year history', at least six months' salary, teams in 37 countries", "url": "https://finance.yahoo.com/technology/articles/design-giant-canva-cut-restructure-013320030.html", "fetched": "2026-11-04"},
+    {"claim": "22% of workforce, more than 5,700 staff, 2026 growth forecast cut from 30% to 20%, Perkins did not explicitly identify AI as a reason", "url": "https://www.peoplematters.in/news/strategic-hr/canva-layoffs-22percent-employees-to-exit-company-offers-six-months-salary-to-affected-staff-53173", "fetched": "2026-11-04"},
+    {"claim": "Bloomberg: Canva cuts jobs, restructures about 22% of workforce as growth slows for first time (headline)", "url": "https://www.bloomberg.com/news/articles/2026-11-03/canva-announces-layoffs-job-changes-for-about-22-of-workforce", "fetched": "2026-11-04"}
+  ],
+  "post": {
+    "slot": "news",
+    "breaking": false,
+    "post_at": "2026-11-04T18:30:00+05:30",
+    "instagram_caption": "Canva is cutting or moving 1,271 jobs, about 22% of its staff.\n\nCEO Melanie Perkins called it \"the hardest moment in our thirteen-year history.\" The company says growth slowed for the first time in a decade, and its 2026 growth forecast was reportedly cut from 30% to 20%. Teams are being merged, with fewer layers of managers.\n\nDeparting staff get at least six months' salary, and 12 months of healthcare where Canva provides it.\n\nWhy it matters: Canva did not name AI as the reason. It pointed to slower growth and fast-changing technology.\n\nSource: DPA via Yahoo Finance, Nov 3, 2026.\n\nDo you think AI design tools will change who does design work?\n\n#theunhyped #Canva #TechNews #Layoffs #AI",
+    "youtube_title": "Canva Cuts 1,271 Jobs, 22% of Staff: What's Really Going On",
+    "youtube_description": "Canva is cutting or relocating 1,271 jobs, about 22% of its workforce. CEO Melanie Perkins called it the hardest moment in the company's thirteen-year history, after growth slowed for the first time in a decade; its 2026 growth forecast was reportedly cut from 30% to 20%. Canva did not name AI as the reason. Here's what's known so far.\n\nSources:\n• DPA via Yahoo Finance, \"Design giant Canva to cut or restructure 1,271 jobs in major overhaul\" (Nov 3, 2026)\n• People Matters, \"Canva layoffs: 22% employees to exit, company offers six months' salary to affected staff\" (Nov 4, 2026)\n• Bloomberg, \"Canva Cuts Jobs, Restructures Workforce as Growth Slows for First Time\" (Nov 3, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Canva #TechNews #Shorts",
+    "youtube_tags": ["Canva", "layoffs", "tech news", "AI", "the unhyped"]
+  }
+}

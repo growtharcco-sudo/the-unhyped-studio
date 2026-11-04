@@ -54,7 +54,7 @@ def check_spec(spec, allow_old_sources=False):
         if not allow_old_sources and s.get("fetched") != today: errs.append(f"sources[{i}] must be fetched today ({today}), has {s.get('fetched')}")
     for i, m in enumerate(spec.get("math", [])):
         try:
-            v = eval(m["expr"], {"__builtins__": {}}, {"round": round, "abs": abs, "min": min, "max": max, "math": math})
+            v = eval(m["expr"], {"__builtins__": {}}, {"round": round, "abs": abs, "min": min, "max": max, "int": int, "float": float, "sum": sum, "math": math})
             if abs(v - float(m["expect"])) > float(m.get("tol", 0.005)) * max(1, abs(float(m["expect"]))):
                 errs.append(f"math[{i}] {m['expr']} = {v}, but the script says {m['expect']}")
         except Exception as e:
