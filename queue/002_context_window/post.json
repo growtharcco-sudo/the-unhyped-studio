@@ -1,0 +1,15 @@
+{
+ "slot": "evening",
+ "breaking": false,
+ "post_at": "2026-11-04T23:30:00+05:30",
+ "instagram_caption": "Why does a chatbot \"forget\" what you told it an hour ago?\n\nIt isn't memory loss. Every model can only read a fixed amount of text at once, measured in tokens: its context window. Your whole chat, plus its replies, has to fit. When a conversation runs long, the oldest parts fall out or get squeezed into a summary.\n\nEven inside the window, position matters. A 2023 study, \"Lost in the Middle\", found models use information best at the start and the end of the input, and much worse in the middle.\n\nThe lesson: if something matters, put it at the start, or remind it near the end.\n\nSource: Liu et al., \"Lost in the Middle\", arXiv, 2023.\n\nHas a chatbot ever forgotten something important you told it?\n\n#theunhyped #AI #ChatGPT #HowItWorks #TechExplained",
+ "youtube_title": "Why Chatbots Forget Long Chats: The Context Window, Explained",
+ "youtube_description": "Chatbots don't forget like people do. Every model reads a fixed amount of text at once, its context window, and long chats push the oldest parts out or into a summary. A 2023 study also found models use information best at the start and end of their input, and much worse in the middle. Here's how it works and what to do about it.\n\nSources:\n• Liu et al., \"Lost in the Middle: How Language Models Use Long Contexts\" (arXiv, 2023)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #ChatGPT #Shorts",
+ "youtube_tags": [
+  "context window",
+  "AI",
+  "ChatGPT",
+  "how AI works",
+  "the unhyped"
+ ]
+}

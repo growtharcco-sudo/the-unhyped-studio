@@ -1,0 +1,51 @@
+{
+  "id": "003_incognito_myth",
+  "series": "Myth vs Reality",
+  "dwg": "003",
+  "voice": "am_liam",
+  "speed": 1.05,
+  "phrases": [
+    {"say": "Incognito mode makes you anonymous online. Myth."},
+    {"say": "It only stops your own browser from keeping your history and cookies.", "pause": 0.55},
+    {"say": "Google's own help page says the websites you visit can still see your activity.", "pause": 0.45},
+    {"say": "And so can your school, your employer, or your internet provider.", "pause": 0.4},
+    {"say": "Files you download and bookmarks you save, stay.", "pause": 0.45},
+    {"say": "My take: Incognito is for your device, not for the internet.", "pause": 0.6},
+    {"say": "Follow for more. Sources are in the description.", "pause": 0.55}
+  ],
+  "scenes": [
+    {"until": 1, "sub": "Myth vs reality", "els": [
+      {"type": "kicker", "text": "Myth vs reality", "y": 500, "at": -1},
+      {"type": "strike", "text": "“Incognito makes you anonymous.”", "size": 62, "y": 680, "at": -1, "strike_at": [0, 0.75]},
+      {"type": "badge", "text": "MYTH", "color": "orange", "y": 760, "at": [0, 0.8]}
+    ]},
+    {"until": 5, "sub": "What Google says", "els": [
+      {"type": "card", "title": "Incognito does", "y": 480, "at": 1, "rows": [["History", "Not kept on your device"], ["Cookies", "Deleted when you close it"]], "row_at": [1, [1, 0.6]]},
+      {"type": "card", "title": "Still sees you", "y": 730, "at": 2, "rows": [["Websites", "Yes", "hl"], ["School or work", "Yes", "hl"], ["Your ISP", "Yes", "hl"]], "row_at": [2, 3, [3, 0.6]]},
+      {"type": "kicker", "text": "Downloads and bookmarks: kept", "color": "muted", "size": 24, "y": 1020, "at": 4}
+    ]},
+    {"until": 6, "sub": "My take", "els": [
+      {"type": "badge", "text": "MY TAKE", "color": "orange", "y": 450, "at": 5},
+      {"type": "head", "text": "For your device,", "size": 80, "y": 650, "at": 5, "delay": 0.3},
+      {"type": "head", "text": "not for the internet.", "hl": "not for the internet.", "underline": true, "size": 80, "y": 750, "at": [5, 0.5]}
+    ]},
+    {"until": "end", "sub": "References", "els": [
+      {"type": "ref", "y": 440, "at": 6, "headline": "How Chrome Incognito keeps your browsing private", "site": "support.google.com", "line": "Google Chrome Help, checked Nov 4, 2026"},
+      {"type": "follow", "y": 900, "at": 6, "delay": 0.2}
+    ]}
+  ],
+  "cover": {"lines": ["Incognito", "≠ anonymous."], "box": "Myth.", "stamp": "MYTH", "footer": "Myth vs reality"},
+  "math": [],
+  "sources": [
+    {"claim": "Incognito doesn't retain site data or a record of visited sites; websites, and organizations that manage your network like your school, employer or internet service provider, can still see activity; downloads and bookmarks are kept", "url": "https://support.google.com/chrome/answer/9845881?hl=en", "fetched": "2026-11-04"}
+  ],
+  "post": {
+    "slot": "morning",
+    "breaking": false,
+    "post_at": "2026-11-05T08:00:00+05:30",
+    "instagram_caption": "Incognito mode makes you anonymous online. Myth.\n\nIt only stops your own browser from keeping your history and cookies once you close the window. Google's own Chrome help page says the websites you visit can still see your activity, and so can whoever runs your network: your school, your employer or your internet provider.\n\nFiles you download and bookmarks you save are kept too.\n\nThe lesson: Incognito protects your device, not your identity online.\n\nSource: Google Chrome Help, checked Nov 4, 2026.\n\nDid you think Incognito hid you from your internet provider?\n\n#theunhyped #Privacy #Incognito #TechMyths #CyberSecurity",
+    "youtube_title": "Incognito Mode Doesn't Make You Anonymous: Myth vs Reality",
+    "youtube_description": "Incognito mode only stops your browser from keeping your history and cookies after you close it. Google's own help page says websites, and whoever manages your network (school, employer, internet provider), can still see your activity. Downloads and bookmarks are kept too.\n\nSources:\n• Google Chrome Help, \"How Chrome Incognito keeps your browsing private\" (checked Nov 4, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Privacy #TechMyths #Shorts",
+    "youtube_tags": ["incognito mode", "privacy", "tech myths", "chrome", "the unhyped"]
+  }
+}

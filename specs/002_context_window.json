@@ -1,0 +1,70 @@
+{
+  "id": "002_context_window",
+  "series": "How It Actually Works",
+  "dwg": "002",
+  "voice": "am_liam",
+  "speed": 1.05,
+  "phrases": [
+    {"say": "Why does a chatbot forget what you told it an hour ago?"},
+    {"say": "It's not memory loss. It's a window.", "pause": 0.6},
+    {"say": "Every model can only read a fixed amount of text at once, counted in tokens. That's its context window.", "pause": 0.5},
+    {"say": "Your whole chat, plus its own replies, has to fit inside.", "pause": 0.4},
+    {"say": "When a conversation gets too long, the oldest parts fall out of the window, or get squeezed into a short summary.", "pause": 0.5},
+    {"say": "And even inside the window, position matters.", "pause": 0.6},
+    {"say": "In twenty twenty three, researchers found models use information best at the start and the end.", "cap": "In 2023, researchers found models use information best at the start and the end.", "pause": 0.45},
+    {"say": "Details buried in the middle were used far worse.", "pause": 0.4},
+    {"say": "They called it: lost in the middle.", "pause": 0.5},
+    {"say": "So if something matters, put it at the start, or remind it near the end.", "pause": 0.55},
+    {"say": "My take: a chatbot doesn't forget like a person. It just can't see the whole page.", "pause": 0.6},
+    {"say": "Follow for more. Sources are in the description.", "pause": 0.6}
+  ],
+  "scenes": [
+    {"until": 2, "sub": "Explained · How it works", "els": [
+      {"type": "kicker", "text": "Long chats", "y": 500, "at": -1},
+      {"type": "head", "text": "Why does AI “forget”?", "hl": "“forget”?", "size": 100, "y": 680, "at": -1},
+      {"type": "head", "text": "Not memory loss. A window.", "size": 60, "y": 930, "at": 1}
+    ]},
+    {"until": 5, "sub": "The context window", "els": [
+      {"type": "kicker", "text": "Fixed size · counted in tokens", "y": 470, "at": 2},
+      {"type": "steps", "title": "What has to fit inside", "x": 230, "w": 620, "y": 560, "steps": [["Your messages", "inside the window"], ["Its replies", "inside the window"], ["Oldest messages", "fall out or get summarized"]], "step_at": [3, [3, 0.5], 4], "hl": [2], "at": 3}
+    ]},
+    {"until": 9, "sub": "Lost in the middle", "els": [
+      {"type": "kicker", "text": "Where it reads best", "y": 480, "at": 5},
+      {"type": "bar", "label": "Start of the context", "value": "best", "fill": 0.9, "y": 570, "at": 6},
+      {"type": "bar", "label": "Middle", "value": "worst", "fill": 0.45, "color": "blue", "y": 680, "at": 7},
+      {"type": "bar", "label": "End of the context", "value": "best", "fill": 0.9, "y": 790, "at": [6, 0.7]},
+      {"type": "kicker", "text": "Illustrative · Liu et al., 2023", "color": "muted", "size": 22, "y": 900, "at": 7},
+      {"type": "badge", "text": "LOST IN THE MIDDLE", "y": 960, "at": 8}
+    ]},
+    {"until": 10, "sub": "What to do", "els": [
+      {"type": "kicker", "text": "Use it better", "y": 480, "at": 9},
+      {"type": "card", "y": 540, "at": 9, "rows": [["Important?", "Put it at the start", "hl"], ["Long chat?", "Remind it near the end"]], "row_at": [9, [9, 0.55]]}
+    ]},
+    {"until": 11, "sub": "My take", "els": [
+      {"type": "badge", "text": "MY TAKE", "color": "orange", "y": 450, "at": 10},
+      {"type": "strike", "text": "It forgets like a person.", "y": 590, "at": 10, "delay": 0.3, "strike_at": [10, 0.45]},
+      {"type": "head", "text": "It just can't see", "size": 78, "y": 740, "at": [10, 0.55]},
+      {"type": "head", "text": "the whole page.", "hl": "the whole page.", "underline": true, "size": 78, "y": 840, "at": [10, 0.7]}
+    ]},
+    {"until": "end", "sub": "References", "els": [
+      {"type": "ref", "y": 440, "at": 11, "headline": "Lost in the Middle: How Language Models Use Long Contexts", "site": "arxiv.org/abs/2307.03172", "line": "Liu et al., 2023"},
+      {"type": "follow", "y": 960, "at": 11, "delay": 0.2}
+    ]}
+  ],
+  "cover": {"lines": ["Why AI", "“forgets”"], "box": "Long chats?", "stamp": "TOKENS", "footer": "Explained · How it works"},
+  "math": [
+    {"expr": "2023", "expect": "2023", "note": "Lost in the Middle, arXiv 2307.03172, July 2023"}
+  ],
+  "sources": [
+    {"claim": "Performance is often highest when relevant information is at the beginning or end of the input context, and significantly degrades in the middle of long contexts", "url": "https://arxiv.org/abs/2307.03172v3", "fetched": "2026-11-04"}
+  ],
+  "post": {
+    "slot": "evening",
+    "breaking": false,
+    "post_at": "2026-11-04T23:30:00+05:30",
+    "instagram_caption": "Why does a chatbot \"forget\" what you told it an hour ago?\n\nIt isn't memory loss. Every model can only read a fixed amount of text at once, measured in tokens: its context window. Your whole chat, plus its replies, has to fit. When a conversation runs long, the oldest parts fall out or get squeezed into a summary.\n\nEven inside the window, position matters. A 2023 study, \"Lost in the Middle\", found models use information best at the start and the end of the input, and much worse in the middle.\n\nThe lesson: if something matters, put it at the start, or remind it near the end.\n\nSource: Liu et al., \"Lost in the Middle\", arXiv, 2023.\n\nHas a chatbot ever forgotten something important you told it?\n\n#theunhyped #AI #ChatGPT #HowItWorks #TechExplained",
+    "youtube_title": "Why Chatbots Forget Long Chats: The Context Window, Explained",
+    "youtube_description": "Chatbots don't forget like people do. Every model reads a fixed amount of text at once, its context window, and long chats push the oldest parts out or into a summary. A 2023 study also found models use information best at the start and end of their input, and much worse in the middle. Here's how it works and what to do about it.\n\nSources:\n• Liu et al., \"Lost in the Middle: How Language Models Use Long Contexts\" (arXiv, 2023)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #ChatGPT #Shorts",
+    "youtube_tags": ["context window", "AI", "ChatGPT", "how AI works", "the unhyped"]
+  }
+}
