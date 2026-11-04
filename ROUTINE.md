@@ -10,7 +10,7 @@ Three Reels a day (all times IST):
 |---|---|---|---|
 | `morning` | 08:00 | 20 to 35 s | Light and quick: Myth vs Reality, one striking fact, a term in one picture |
 | `news` | 18:30 | 35 to 55 s | The day's biggest tech story (series What It Means) |
-| `evening` | 22:00 | 40 to 60 s | A deeper explainer or story |
+| `evening` | 23:30 | 40 to 60 s | A deeper explainer or story |
 | `breaking` | now | 35 to 55 s | Only from the breaking watcher (section C). Replaces that day's news Reel |
 
 Series (header label = `series`): **What It Means** (news), **How It Actually Works** (explainers),
@@ -122,7 +122,7 @@ fact and its source, the slot and post time, and: "Reply skip to cancel, or tell
 
 ## A. Daily run (about 3:40 PM IST): evening + morning
 Make TWO Reels, one at a time (steps 1 to 7 for each):
-- **Evening** (`slot` evening, post_at today 22:00 IST): How It Actually Works, Road to Superintelligence,
+- **Evening** (`slot` evening, post_at today 23:30 IST, 1 PM New York, 6 PM London): How It Actually Works, Road to Superintelligence,
   Huge Claim, Checked, or a deeper story. 40 to 60 s.
 - **Morning** (`slot` morning, post_at TOMORROW 08:00 IST): Myth vs Reality or Quick Fact. 20 to 35 s.
   A different topic and series from the evening Reel.
