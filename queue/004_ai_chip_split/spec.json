@@ -1,0 +1,450 @@
+{
+  "id": "004_ai_chip_split",
+  "series": "What It Means",
+  "dwg": "004",
+  "voice": "am_liam",
+  "speed": 1.05,
+  "phrases": [
+    {
+      "say": "South Korea's main stock index just fell more than five percent in a single day.",
+      "cap": "South Korea's main stock index just fell more than 5% in a single day."
+    },
+    {
+      "say": "And the trigger was A I data centers, in America.",
+      "cap": "And the trigger was AI data centers, in America.",
+      "pause": 0.5
+    },
+    {
+      "say": "S K Hi nix fell about nine and a half percent. Samsung, about seven point six.",
+      "cap": "SK Hynix fell about 9.5%. Samsung, about 7.6%.",
+      "pause": 0.5
+    },
+    {
+      "say": "Both make the memory chips that A I data centers run on.",
+      "cap": "Both make the memory chips that AI data centers run on.",
+      "pause": 0.45
+    },
+    {
+      "say": "Here's what changed.",
+      "pause": 0.6
+    },
+    {
+      "say": "Democrats won control of Congress in this week's midterm elections.",
+      "pause": 0.4
+    },
+    {
+      "say": "Investors now expect more limits on building new data centers.",
+      "pause": 0.4
+    },
+    {
+      "say": "Goldman Sachs estimates about forty five percent of planned new U S capacity could face pauses.",
+      "cap": "Goldman Sachs estimates about 45% of planned new US capacity could face pauses.",
+      "pause": 0.5
+    },
+    {
+      "say": "But the A I trade didn't crash. It split.",
+      "cap": "But the AI trade didn't crash. It split.",
+      "pause": 0.6
+    },
+    {
+      "say": "Chip stocks fell, while Microsoft hit a record high, and Amazon and Alphabet rose.",
+      "pause": 0.45
+    },
+    {
+      "say": "Slower building can mean smaller bills, for the companies paying for it.",
+      "pause": 0.5
+    },
+    {
+      "say": "My take: A I's newest risk isn't technology. It's permission to build.",
+      "cap": "My take: AI's newest risk isn't technology. It's permission to build.",
+      "pause": 0.6
+    },
+    {
+      "say": "Follow for more. Sources are in the description.",
+      "pause": 0.6
+    }
+  ],
+  "scenes": [
+    {
+      "until": 2,
+      "sub": "News · Nov 5, 2026",
+      "els": [
+        {
+          "type": "kicker",
+          "text": "South Korea · Kospi index",
+          "y": 500,
+          "at": -1
+        },
+        {
+          "type": "number",
+          "prefix": "−",
+          "value": 5.3,
+          "decimals": 1,
+          "suffix": "%",
+          "size": 220,
+          "y": 740,
+          "at": -1
+        },
+        {
+          "type": "head",
+          "text": "in one day.",
+          "size": 76,
+          "y": 860,
+          "at": -1
+        },
+        {
+          "type": "head",
+          "text": "Trigger: US data centers.",
+          "hl": "data centers.",
+          "underline": true,
+          "size": 60,
+          "y": 980,
+          "at": 1
+        }
+      ]
+    },
+    {
+      "until": 4,
+      "sub": "Who fell",
+      "els": [
+        {
+          "type": "card",
+          "title": "Thu Nov 5 · Seoul close",
+          "y": 480,
+          "at": 2,
+          "rows": [
+            [
+              "SK Hynix",
+              "−9.5%",
+              "hl"
+            ],
+            [
+              "Samsung",
+              "−7.6%",
+              "hl"
+            ],
+            [
+              "Kospi",
+              "−5.3%"
+            ]
+          ],
+          "row_at": [
+            2,
+            [
+              2,
+              0.6
+            ],
+            [
+              2,
+              0.85
+            ]
+          ]
+        },
+        {
+          "type": "kicker",
+          "text": "Both make memory chips for AI data centers",
+          "color": "muted",
+          "size": 26,
+          "y": 860,
+          "at": 3
+        }
+      ]
+    },
+    {
+      "until": 7,
+      "sub": "What changed",
+      "els": [
+        {
+          "type": "kicker",
+          "text": "Here's what changed",
+          "y": 480,
+          "at": 4
+        },
+        {
+          "type": "steps",
+          "title": "Tue to Thu, this week",
+          "x": 180,
+          "w": 720,
+          "y": 580,
+          "at": 5,
+          "steps": [
+            [
+              "Democrats win Congress",
+              "US midterm elections"
+            ],
+            [
+              "Investors expect limits",
+              "on new data centers"
+            ],
+            [
+              "Memory chip stocks sell off",
+              "Seoul, Thursday"
+            ]
+          ],
+          "step_at": [
+            5,
+            6,
+            [
+              6,
+              0.6
+            ]
+          ],
+          "hl": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "until": 8,
+      "sub": "The estimate",
+      "els": [
+        {
+          "type": "kicker",
+          "text": "Goldman Sachs estimate",
+          "y": 500,
+          "at": 7
+        },
+        {
+          "type": "number",
+          "value": 45,
+          "suffix": "%",
+          "size": 220,
+          "y": 740,
+          "at": 7,
+          "delay": 0.2
+        },
+        {
+          "type": "head",
+          "text": "of planned new US capacity",
+          "size": 56,
+          "y": 840,
+          "at": [
+            7,
+            0.3
+          ]
+        },
+        {
+          "type": "head",
+          "text": "could face pauses.",
+          "hl": "pauses.",
+          "underline": true,
+          "size": 56,
+          "y": 920,
+          "at": [
+            7,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "until": 11,
+      "sub": "The split",
+      "els": [
+        {
+          "type": "head",
+          "text": "Not a crash. A split.",
+          "hl": "split.",
+          "size": 80,
+          "y": 520,
+          "at": 8
+        },
+        {
+          "type": "card",
+          "title": "Wed Nov 4 · US market",
+          "y": 640,
+          "at": 9,
+          "rows": [
+            [
+              "Chipmakers",
+              "Down ↓",
+              "hl"
+            ],
+            [
+              "Microsoft",
+              "Record high ↑"
+            ],
+            [
+              "Amazon",
+              "Up ↑"
+            ],
+            [
+              "Alphabet",
+              "Up ↑"
+            ]
+          ],
+          "row_at": [
+            9,
+            [
+              9,
+              0.35
+            ],
+            [
+              9,
+              0.65
+            ],
+            [
+              9,
+              0.8
+            ]
+          ]
+        },
+        {
+          "type": "kicker",
+          "text": "Slower building · smaller bills",
+          "color": "muted",
+          "size": 24,
+          "y": 1040,
+          "at": 10
+        }
+      ]
+    },
+    {
+      "until": 12,
+      "sub": "My take",
+      "els": [
+        {
+          "type": "badge",
+          "text": "MY TAKE",
+          "color": "orange",
+          "y": 450,
+          "at": 11
+        },
+        {
+          "type": "strike",
+          "text": "The risk is technology.",
+          "y": 590,
+          "at": 11,
+          "delay": 0.2,
+          "strike_at": [
+            11,
+            0.55
+          ]
+        },
+        {
+          "type": "head",
+          "text": "It's permission",
+          "size": 80,
+          "y": 740,
+          "at": [
+            11,
+            0.6
+          ]
+        },
+        {
+          "type": "head",
+          "text": "to build.",
+          "hl": "to build.",
+          "underline": true,
+          "size": 80,
+          "y": 840,
+          "at": [
+            11,
+            0.75
+          ]
+        }
+      ]
+    },
+    {
+      "until": "end",
+      "sub": "References",
+      "els": [
+        {
+          "type": "ref",
+          "y": 440,
+          "at": 12,
+          "headline": "Kospi plunges 5% as semiconductor stocks slide after U.S. midterm sweep",
+          "site": "koreajoongangdaily.com",
+          "line": "Nov 5, 2026 · plus Korea Economic Daily and Yahoo Finance"
+        },
+        {
+          "type": "follow",
+          "y": 990,
+          "at": 12,
+          "delay": 0.2
+        }
+      ]
+    }
+  ],
+  "cover": {
+    "lines": [
+      "Kospi −5.3%.",
+      "AI chips sink."
+    ],
+    "box": "Why?",
+    "stamp": "−5.3%",
+    "footer": "News · What's real"
+  },
+  "math": [
+    {
+      "expr": "5.28",
+      "expect": "5.28",
+      "note": "Korea JoongAng Daily and Korea Economic Daily: Kospi closed down 5.28% at 5,383.80 on Nov 5"
+    },
+    {
+      "expr": "round(5.28, 1)",
+      "expect": "5.3",
+      "note": "on-screen rounding of the Kospi fall"
+    },
+    {
+      "expr": "int(5.28 > 5)",
+      "expect": "1",
+      "note": "'more than 5%' in the hook"
+    },
+    {
+      "expr": "round(9.46, 1)",
+      "expect": "9.5",
+      "note": "SK Hynix fell 9.46% (JoongAng Daily, Korea Economic Daily)"
+    },
+    {
+      "expr": "round(7.57, 1)",
+      "expect": "7.6",
+      "note": "Samsung Electronics fell 7.57% (JoongAng Daily); spoken as about seven point six"
+    },
+    {
+      "expr": "45",
+      "expect": "45",
+      "note": "Goldman Sachs estimate, as reported by JoongAng Daily and XTB: about 45% of planned new US data center capacity"
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Kospi -5.28% to 5,383.80; Samsung -7.57%, SK hynix -9.46%; Democrats won control of Congress and investors expect curbs on data center construction; Goldman Sachs: about 45% of planned new US capacity could face temporary suspensions",
+      "url": "https://www.koreajoongangdaily.com/business/kospi-sinks-below-the-waves-as-us-blue-tsunami-soaks-korean-tech-shares/12958434",
+      "fetched": "2026-11-05"
+    },
+    {
+      "claim": "Kospi -5.28%, Samsung -7.57%, SK Hynix -9.46%; US chip stocks fell on Nov 4 while Microsoft, Amazon and Alphabet rose (Korea Economic Daily)",
+      "url": "https://en.bloomingbit.io/feed/news/123728",
+      "fetched": "2026-11-05"
+    },
+    {
+      "claim": "Nov 4: Microsoft to a record high, Amazon and Alphabet up, Nvidia and Micron down; markets repriced risk of data center construction limits; slowdown could ease memory chip costs",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-rallies-1500-points-sp-500-nasdaq-midterm-elections-democrats-sweep-201207340.html",
+      "fetched": "2026-11-05"
+    },
+    {
+      "claim": "Goldman Sachs: about 45% of planned US data center capacity in states that could tighten regulation",
+      "url": "https://www.xtb.com/int/market-analysis/news-and-research/what-drives-the-market-top-morning-news-november-5-2026",
+      "fetched": "2026-11-05"
+    }
+  ],
+  "post": {
+    "slot": "news",
+    "breaking": false,
+    "post_at": "2026-11-05T18:30:00+05:30",
+    "instagram_caption": "South Korea's Kospi fell 5.28% in one day, and the trigger was AI data centers in America.\n\nSK Hynix fell about 9.5% and Samsung about 7.6%, according to Korea JoongAng Daily. Both make the memory chips AI data centers run on. After Democrats won control of Congress in the US midterms, investors expect more limits on building new data centers. Goldman Sachs estimates about 45% of planned new US capacity could face pauses.\n\nBut the AI trade split rather than crashed: on Wednesday chip stocks fell while Microsoft hit a record high and Amazon and Alphabet rose. Slower building can mean smaller bills for the companies paying for it.\n\nWhy it matters: the biggest new risk to the AI build-out is permission to build, not the technology.\n\nSource: Korea JoongAng Daily, Nov 5, 2026.\n\nShould local communities get a say on new AI data centers?\n\n#theunhyped #AI #DataCenters #Semiconductors #TechNews",
+    "youtube_title": "Kospi Drops 5% as AI Chip Stocks Sink: What It Means",
+    "youtube_description": "South Korea's Kospi fell 5.28% on November 5, led by SK Hynix (down about 9.5%) and Samsung (down about 7.6%), the memory chipmakers behind AI data centers. Investors expect more limits on building US data centers after Democrats won control of Congress, and Goldman Sachs estimates about 45% of planned new US capacity could face pauses. In the US, chip stocks fell while Microsoft hit a record high. Here's what's known so far.\n\nSources:\n• Korea JoongAng Daily, \"Kospi plunges 5% as semiconductor stocks slide after U.S. midterm sweep\" (Nov 5, 2026)\n• Korea Economic Daily via Bloomingbit, \"Korea's Kospi Swept Lower by US 'Blue Tsunami' as Chip Stocks Plunge\" (Nov 5, 2026)\n• Yahoo Finance, \"Stock market today: Dow surges 1,500 points in best day of 2026, S&P 500 and Nasdaq rally after historic midterm election\" (Nov 4, 2026)\n• XTB, \"What Drives the Market: Top Morning News\" (Nov 5, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #Semiconductors #Shorts",
+    "youtube_tags": [
+      "AI",
+      "Kospi",
+      "SK Hynix",
+      "Samsung",
+      "data centers",
+      "chip stocks",
+      "the unhyped"
+    ]
+  }
+}
