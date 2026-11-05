@@ -6,6 +6,8 @@ media branch <id>/video.mp4, <id>/cover.png, served at $PAGES_BASE/<id>/...
 
 Safe to re-run: what was already posted is recorded in queue/<id>/result.json and never posted twice.
 """
+import urllib.request
+import tempfile
 import datetime as dt, json, os, shutil, sys, time, urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -87,6 +89,13 @@ def main():
                 urllib.request.urlretrieve(video_url, local)
                 res.update(youtube.upload_short(local, post["youtube_title"], post["youtube_description"],
                                                 post.get("youtube_tags")))
+                try:   # thumbnail = the cover; never blocks the post
+                    cov = os.path.join(tempfile.gettempdir(), f"{vid}_cover.png")
+                    urllib.request.urlretrieve(cover_url, cov)
+                    res["yt_thumbnail"] = youtube.set_thumbnail(res["yt_video_id"], cov)
+                except Exception as e:
+                    res["yt_thumbnail"] = f"failed ({type(e).__name__})"
+                print(vid, "YouTube thumbnail:", res.get("yt_thumbnail"))
                 os.remove(local)
                 json.dump(res, open(rp, "w"), indent=1); print("  YouTube:", res["yt_url"], res.get("yt_privacy"))
             if "ig_media_id" not in res:

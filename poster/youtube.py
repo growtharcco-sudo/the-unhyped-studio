@@ -7,6 +7,8 @@ import os
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+from googleapiclient.errors import HttpError
+import time
 
 
 def _env(name):
@@ -38,3 +40,23 @@ def upload_short(path, title, description, tags=None, privacy=None):
         _, resp = req.next_chunk()
     return {"yt_video_id": resp["id"], "yt_url": f"https://youtube.com/shorts/{resp['id']}",
             "yt_privacy": resp.get("status", {}).get("privacyStatus")}
+
+
+def set_thumbnail(video_id, image_path, tries=8, wait=45):
+    """Use the cover as the Short's thumbnail. YouTube only applies it once the video has processed, so retry.
+    Custom Shorts thumbnails roll out to Partner Program channels first; a refusal never blocks the post."""
+    yt = _client()
+    for i in range(tries):
+        try:
+            yt.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(image_path, mimetype="image/png")).execute()
+            return "set"
+        except HttpError as e:
+            code = e.resp.status
+            if code == 403:
+                return "not allowed yet (custom Shorts thumbnails not enabled for this channel)"
+            if code in (400, 404, 409) and i < tries - 1:
+                time.sleep(wait); continue          # still processing
+            return f"failed ({code})"
+        except Exception as e:
+            return f"failed ({type(e).__name__})"
+    return "failed (video still processing)"

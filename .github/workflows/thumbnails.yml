@@ -1,0 +1,20 @@
+name: Backfill YouTube thumbnails
+on: workflow_dispatch
+permissions: { contents: write }
+jobs:
+  thumbs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q skia-python numpy Pillow requests google-api-python-client google-auth
+      - run: python tools/backfill_thumbnails.py
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - run: |
+          git config user.name unhyped-bot; git config user.email unhyped-bot@users.noreply.github.com
+          git add posted && git commit -m "record YouTube thumbnail status" || true
+          git pull --rebase && git push
