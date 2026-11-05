@@ -10,14 +10,12 @@ the October 2026 $2 trillion Nasdaq wipeout.
 ## Open ideas: evening (40 to 60 s)
 | Series | Hook | Check against |
 |---|---|---|
-| How It Actually Works | Why chatbots "forget" long chats: the context window | model docs (OpenAI, Anthropic, Google) |
 | Huge Claim, Checked | "A bigger model is always smarter" | scaling papers, recent small-model results |
 | How It Actually Works | What an AI agent actually is (and isn't) | vendor docs, a real agent product |
 | Road to Superintelligence | When AI improves itself: what's real today | lab publications, Flint follow-ups |
 | How It Actually Works | Why almost every advanced chip comes from one company in Taiwan | TSMC annual report, market share data |
 | How It Actually Works | How Face ID knows it's you | Apple Platform Security guide |
 | How It Actually Works | How end-to-end encryption works, in one picture | Signal protocol docs, WhatsApp white paper |
-| Huge Claim, Checked | "One AI query uses a bottle of water" | IEA, peer-reviewed estimates, company reports |
 | How It Actually Works | What a "parameter" is in a 1-trillion-parameter model | model cards, papers |
 | Road to Superintelligence | What the big AI labs say their goal is, in their own words | OpenAI Charter, DeepMind, Anthropic sites |
 | How It Actually Works | How Starlink gets internet from space | SpaceX / FCC filings |
@@ -30,7 +28,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 ## Open ideas: morning (20 to 35 s)
 | Series | Hook | Check against |
 |---|---|---|
-| Myth vs Reality | "Incognito mode makes you anonymous" | Google Chrome help page |
 | Myth vs Reality | "Closing apps saves battery" | Apple / Google support docs |
 | Myth vs Reality | "Charging overnight ruins your battery" | Apple battery page, Battery University |
 | Myth vs Reality | "More megapixels means better photos" | camera sensor explainers |
@@ -42,3 +39,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 | Quick Fact | Why it's called a "bug" | Smithsonian / Navy archive |
 
 ## Used
+- 2026-11-04 002_context_window: Why chatbots "forget" long chats (How It Actually Works)
+- 2026-11-04 003_incognito_myth: "Incognito mode makes you anonymous" (Myth vs Reality)
+- 2026-11-05 005_ai_water_claim: "One AI query uses a bottle of water" (Huge Claim, Checked)

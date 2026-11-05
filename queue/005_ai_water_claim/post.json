@@ -1,0 +1,16 @@
+{
+ "slot": "evening",
+ "breaking": false,
+ "post_at": "2026-11-05T23:30:00+05:30",
+ "instagram_caption": "Does one AI prompt really use a whole bottle of water? Not by today's best numbers.\n\nThe viral claim came from a UC Riverside study shared by The Washington Post in 2024: generating 100 words with GPT-4 was estimated at 235 ml of water in Texas and over 1,400 ml in Washington. In 2025 Google published its own measurement: a median Gemini text prompt uses about 0.26 ml, roughly five drops. OpenAI's Sam Altman says an average ChatGPT query uses about one fifteenth of a teaspoon.\n\nThe catch: these are the companies' own numbers. Google's figure counts only data center cooling water, covers text prompts only, and long reasoning tasks likely use more.\n\nThe lesson: one prompt is tiny, but at global scale small numbers add up.\n\nSource: MIT Technology Review, Aug 21, 2025, and Google's paper.\n\nDid you believe the bottle of water claim?\n\n#theunhyped #AI #ChatGPT #Sustainability #TechMyths",
+ "youtube_title": "Does One AI Prompt Really Use a Bottle of Water? Checked",
+ "youtube_description": "A viral 2024 estimate from UC Riverside, shared by The Washington Post, said generating 100 words with GPT-4 could use 235 ml to over 1,400 ml of water, depending on the data center. In 2025 Google measured a median Gemini text prompt at about 0.26 ml, roughly five drops, and OpenAI's Sam Altman claims about one fifteenth of a teaspoon per ChatGPT query. These are company figures: Google's counts only data center cooling water and text prompts.\n\nSources:\n• MIT Technology Review, \"In a first, Google has released data on how much energy an AI prompt uses\" (Aug 21, 2025)\n• Google, \"Measuring the environmental impact of delivering AI at Google Scale\" (arXiv, Aug 2025)\n• Tom's Hardware, \"Using GPT-4 to generate 100 words consumes up to 3 bottles of water\" (Sep 19, 2024)\n• TechRadar, \"Sam Altman thinks ChatGPT's energy usage is nothing to worry about\" (Jun 2025)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #ChatGPT #Shorts",
+ "youtube_tags": [
+  "AI water use",
+  "ChatGPT",
+  "Gemini",
+  "AI environment",
+  "fact check",
+  "the unhyped"
+ ]
+}
