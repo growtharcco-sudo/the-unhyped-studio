@@ -36,9 +36,9 @@ the October 2026 $2 trillion Nasdaq wipeout.
 | Quick Fact | The first 1 GB hard drive weighed about 250 kg (1980) | IBM archives |
 | Quick Fact | Your phone has more computing power than the Apollo guidance computer | NASA, chip specs (compute in Python) |
 | Quick Fact | What "GPT" stands for | OpenAI paper |
-| Quick Fact | Why it's called a "bug" | Smithsonian / Navy archive |
 
 ## Used
 - 2026-11-04 002_context_window: Why chatbots "forget" long chats (How It Actually Works)
 - 2026-11-04 003_incognito_myth: "Incognito mode makes you anonymous" (Myth vs Reality)
 - 2026-11-05 005_ai_water_claim: "One AI query uses a bottle of water" (Huge Claim, Checked)
+- 2026-11-05 006_computer_bug: Why it's called a "bug" (Quick Fact)

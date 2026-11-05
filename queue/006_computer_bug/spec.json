@@ -1,0 +1,299 @@
+{
+  "id": "006_computer_bug",
+  "series": "Quick Fact",
+  "dwg": "006",
+  "voice": "am_liam",
+  "speed": 1.05,
+  "phrases": [
+    {
+      "say": "In nineteen forty seven, engineers found a real moth stuck inside a computer.",
+      "cap": "In 1947, engineers found a real moth stuck inside a computer."
+    },
+    {
+      "say": "It was jammed in a relay of Harvard's Mark Two.",
+      "cap": "It was jammed in a relay of Harvard's Mark II.",
+      "pause": 0.4
+    },
+    {
+      "say": "They taped it into the logbook: first actual case of bug being found.",
+      "cap": "They taped it into the logbook: “First actual case of bug being found.”",
+      "pause": 0.55
+    },
+    {
+      "say": "But they didn't invent the word.",
+      "pause": 0.6
+    },
+    {
+      "say": "Thomas Edison was already calling machine faults bugs, in eighteen seventy eight.",
+      "cap": "Thomas Edison was already calling machine faults “bugs” in 1878.",
+      "pause": 0.5
+    },
+    {
+      "say": "My take: the moth didn't name the bug. It just made it famous.",
+      "pause": 0.6
+    },
+    {
+      "say": "Follow for more. Sources are in the description.",
+      "pause": 0.55
+    }
+  ],
+  "scenes": [
+    {
+      "until": 2,
+      "sub": "Quick fact",
+      "els": [
+        {
+          "type": "kicker",
+          "text": "Quick fact · Harvard, 1947",
+          "y": 500,
+          "at": -1
+        },
+        {
+          "type": "head",
+          "text": "The first",
+          "size": 92,
+          "y": 650,
+          "at": -1
+        },
+        {
+          "type": "head",
+          "text": "actual computer bug.",
+          "hl": "bug.",
+          "underline": true,
+          "size": 84,
+          "y": 760,
+          "at": -1
+        },
+        {
+          "type": "card",
+          "y": 840,
+          "at": 1,
+          "rows": [
+            [
+              "Machine",
+              "Harvard Mark II"
+            ],
+            [
+              "Found in",
+              "A relay",
+              "hl"
+            ]
+          ],
+          "row_at": [
+            1,
+            [
+              1,
+              0.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "until": 3,
+      "sub": "The logbook",
+      "els": [
+        {
+          "type": "kicker",
+          "text": "Logbook · Sep 9, 1947",
+          "y": 500,
+          "at": 2
+        },
+        {
+          "type": "head",
+          "text": "“First actual case",
+          "size": 76,
+          "y": 660,
+          "at": 2,
+          "delay": 0.2
+        },
+        {
+          "type": "head",
+          "text": "of bug being found.”",
+          "hl": "bug",
+          "underline": true,
+          "size": 76,
+          "y": 760,
+          "at": [
+            2,
+            0.4
+          ]
+        },
+        {
+          "type": "badge",
+          "text": "MOTH TAPED IN",
+          "color": "blue",
+          "y": 860,
+          "at": [
+            2,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "until": 5,
+      "sub": "The twist",
+      "els": [
+        {
+          "type": "strike",
+          "text": "The moth invented “bug”.",
+          "y": 560,
+          "at": 3,
+          "strike_at": [
+            3,
+            0.7
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Already in use",
+          "y": 640,
+          "at": 4,
+          "big": [
+            "Thomas Edison",
+            "1878"
+          ],
+          "note": "Called machine faults “bugs”",
+          "rows": []
+        }
+      ]
+    },
+    {
+      "until": 6,
+      "sub": "My take",
+      "els": [
+        {
+          "type": "badge",
+          "text": "MY TAKE",
+          "color": "orange",
+          "y": 450,
+          "at": 5
+        },
+        {
+          "type": "head",
+          "text": "It didn't name the bug.",
+          "size": 72,
+          "y": 640,
+          "at": 5,
+          "delay": 0.3
+        },
+        {
+          "type": "head",
+          "text": "It made it famous.",
+          "hl": "famous.",
+          "underline": true,
+          "size": 80,
+          "y": 750,
+          "at": [
+            5,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "until": "end",
+      "sub": "References",
+      "els": [
+        {
+          "type": "ref",
+          "y": 440,
+          "at": 6,
+          "headline": "Log Book With Computer Bug",
+          "site": "si.edu (Smithsonian)",
+          "line": "National Museum of American History · plus JSTOR Daily"
+        },
+        {
+          "type": "follow",
+          "y": 900,
+          "at": 6,
+          "delay": 0.2
+        }
+      ]
+    }
+  ],
+  "cover": {
+    "lines": [
+      "1947.",
+      "A real bug."
+    ],
+    "box": "Why “bug”?",
+    "stamp": "MOTH",
+    "footer": "Quick fact",
+    "blocks": [
+      {
+        "x": 330,
+        "y": 1010,
+        "a": 250,
+        "h": 36,
+        "theme": "orange"
+      },
+      {
+        "x": 640,
+        "y": 1090,
+        "a": 150,
+        "h": 150,
+        "theme": "blue",
+        "label": "01"
+      },
+      {
+        "x": 810,
+        "y": 900,
+        "a": 110,
+        "h": 110,
+        "theme": "blue",
+        "label": "10"
+      }
+    ]
+  },
+  "math": [
+    {
+      "expr": "1947",
+      "expect": "1947",
+      "note": "Smithsonian NMAH: moth found in the Harvard Mark II in 1947; JSTOR Daily: September 9, 1947, Relay #70, Panel F"
+    },
+    {
+      "expr": "2",
+      "expect": "2",
+      "note": "Mark II (Smithsonian)"
+    },
+    {
+      "expr": "1878",
+      "expect": "1878",
+      "note": "JSTOR Daily: 1878 Edison letter calls little faults 'bugs'; Smithsonian: Edison mentioned bugs in the 1870s"
+    },
+    {
+      "expr": "int(1878 < 1947)",
+      "expect": "1",
+      "note": "the word predates the moth"
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Moth found stuck in a component of the Harvard Mark II in 1947; note 'first actual case of bug being found'; logbook probably not Hopper's; engineers called flaws bugs for over a century, Edison in the 1870s; held by the National Museum of American History",
+      "url": "https://www.si.edu/object/log-book-computer-bug:nmah_334663",
+      "fetched": "2026-11-05"
+    },
+    {
+      "claim": "September 9, 1947, Relay #70 Panel F, Mark II Aiken Relay Calculator; 1878 Edison letter on 'bugs'",
+      "url": "https://daily.jstor.org/the-bug-in-the-computer-bug-story/",
+      "fetched": "2026-11-05"
+    }
+  ],
+  "post": {
+    "slot": "morning",
+    "breaking": false,
+    "post_at": "2026-11-06T08:00:00+05:30",
+    "instagram_caption": "In 1947, engineers found a real moth stuck inside a computer.\n\nIt was jammed in a relay of Harvard's Mark II. The team taped it into the logbook with the note \"First actual case of bug being found.\" The page now sits in the Smithsonian's National Museum of American History.\n\nThe twist: they didn't invent the word. Thomas Edison was already calling machine faults \"bugs\" in 1878, which is why the note is a joke.\n\nThe lesson: the moth didn't name the bug, it just made it famous.\n\nSource: Smithsonian National Museum of American History, checked Nov 5, 2026.\n\nDid you think the moth was where the word came from?\n\n#theunhyped #TechHistory #Programming #ComputerScience #QuickFact",
+    "youtube_title": "Why a Software Error Is Called a Bug: The 1947 Moth",
+    "youtube_description": "In 1947, engineers found a moth stuck in a relay of Harvard's Mark II computer and taped it into the logbook: \"First actual case of bug being found.\" The page is in the Smithsonian's National Museum of American History. But the word was older: Thomas Edison called machine faults \"bugs\" in 1878.\n\nSources:\n• Smithsonian National Museum of American History, \"Log Book With Computer Bug\" (checked Nov 5, 2026)\n• JSTOR Daily, \"The Bug in the Computer Bug Story\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#TechHistory #Programming #Shorts",
+    "youtube_tags": [
+      "computer bug",
+      "tech history",
+      "Grace Hopper",
+      "Harvard Mark II",
+      "the unhyped"
+    ]
+  }
+}
