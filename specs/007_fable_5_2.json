@@ -1,17 +1,9 @@
 {
  "id": "007_fable_5_2",
- "engine": 3,
+ "engine": 1,
  "series": "News",
  "voice": "am_liam",
  "speed": 1.05,
- "steps": 5,
- "step_at": [
-  1,
-  2,
-  3,
-  5,
-  6
- ],
  "phrases": [
   {
    "say": "Claude Fable five point two is out. Five things to know, and number five is the strange one.",
@@ -66,238 +58,363 @@
  "scenes": [
   {
    "until": 1,
+   "sub": "Anthropic · Nov 9, 2026",
    "els": [
     {
-     "type": "hook",
+     "type": "kicker",
+     "text": "Just released",
+     "y": 480,
      "at": -1,
-     "kicker": "Anthropic · Nov 9, 2026",
-     "lines": [
-      "CLAUDE FABLE",
-      "5.2 IS OUT."
-     ],
-     "hl": "5.2",
-     "size": 124,
-     "teaser": "#5 is the strange one"
+     "color": "orange"
     },
     {
-     "type": "slots",
-     "n": 5,
-     "y": 950,
-     "size": 110,
-     "at": -1,
-     "open_at": []
+     "type": "head",
+     "text": "Claude Fable 5.2\nis out.",
+     "hl": "5.2",
+     "underline": true,
+     "size": 104,
+     "y": 620,
+     "at": -1
+    },
+    {
+     "type": "badge",
+     "text": "5 THINGS TO KNOW",
+     "color": "blue",
+     "size": 32,
+     "y": 800,
+     "at": -1
+    },
+    {
+     "type": "text",
+     "text": "#5 is the strange one",
+     "font": "sans6",
+     "size": 44,
+     "color": "orange",
+     "y": 960,
+     "at": [
+      0,
+      0.55
+     ]
     }
    ]
   },
   {
    "until": 2,
+   "sub": "01 · It's faster",
    "els": [
     {
-     "type": "step",
-     "n": 1,
-     "title": "It's faster",
-     "y": 520,
+     "type": "kicker",
+     "text": "01 · Speed",
+     "y": 470,
      "at": 1
     },
     {
-     "type": "count",
-     "to": 30,
+     "type": "number",
+     "value": 30,
      "suffix": "%",
-     "label": "Up to",
-     "y": 820,
+     "final": "30%",
      "size": 210,
+     "y": 690,
      "at": [
       1,
       0.35
      ],
-     "dur": 1.0
+     "dur": 0.9
     },
     {
-     "type": "race",
-     "y": 910,
-     "gap": 100,
+     "type": "text",
+     "text": "faster answers (up to)",
+     "font": "sans6",
+     "size": 40,
+     "color": "muted",
+     "y": 760,
      "at": [
       1,
-      0.35
-     ],
-     "dur": 1.8,
-     "rows": [
-      [
-       "Fable 5.1",
-       "",
-       1.0
-      ],
-      [
-       "Fable 5.2",
-       "faster output",
-       1.3,
-       "hl"
-      ]
+      0.5
+     ]
+    },
+    {
+     "type": "bar",
+     "label": "Fable 5.1",
+     "value": "1.0x",
+     "fill": 0.769,
+     "color": "blue",
+     "y": 860,
+     "at": [
+      1,
+      0.55
+     ]
+    },
+    {
+     "type": "bar",
+     "label": "Fable 5.2",
+     "value": "1.3x",
+     "fill": 1.0,
+     "color": "orange",
+     "y": 960,
+     "at": [
+      1,
+      0.7
      ]
     }
    ]
   },
   {
    "until": 3,
+   "sub": "02 · It's cheaper",
    "els": [
     {
-     "type": "step",
-     "n": 2,
-     "title": "It's cheaper",
-     "y": 520,
+     "type": "kicker",
+     "text": "02 · Price per 1M input tokens",
+     "y": 470,
      "at": 2
     },
     {
-     "type": "swap",
-     "old": "$10",
-     "new": "$8",
-     "y": 850,
+     "type": "strike",
+     "text": "$10",
+     "size": 130,
+     "y": 640,
      "at": [
       2,
-      0.3
+      0.25
      ],
-     "new_at": [
+     "strike_at": [
       2,
-      0.62
+      0.55
      ]
+    },
+    {
+     "type": "number",
+     "value": 8,
+     "prefix": "$",
+     "final": "$8",
+     "size": 230,
+     "y": 890,
+     "at": [
+      2,
+      0.6
+     ],
+     "dur": 0.5
     },
     {
      "type": "badge",
      "text": "INPUT PRICE DOWN 20%",
-     "y": 935,
-     "size": 30,
+     "color": "orange",
+     "size": 28,
+     "y": 945,
      "at": [
       2,
-      0.75
-     ]
-    },
-    {
-     "type": "kicker",
-     "text": "Per 1 million input tokens",
-     "y": 1050,
-     "size": 26,
-     "color": "soft",
-     "at": [
-      2,
-      0.75
+      0.8
      ]
     }
    ]
   },
   {
    "until": 5,
+   "sub": "03 · 1,000 copies, one proof",
    "els": [
     {
-     "type": "step",
-     "n": 3,
-     "title": "1,000 copies, one proof",
-     "y": 520,
-     "size": 58,
+     "type": "kicker",
+     "text": "03 · Anthropic's claim",
+     "y": 470,
      "at": 3
     },
     {
-     "type": "kicker",
-     "text": "About 1,000 agents · Fermat's Last Theorem",
-     "y": 612,
-     "size": 26,
-     "color": "soft",
-     "at": [
-      3,
-      0.2
+     "type": "card",
+     "y": 540,
+     "at": 3,
+     "rows": [
+      [
+       "Proof",
+       "Fermat's Last Theorem"
+      ],
+      [
+       "Team",
+       "About 1,000 copies of Fable"
+      ],
+      [
+       "Fable 5.2",
+       "30 hours",
+       "hl"
+      ],
+      [
+       "Earlier model",
+       "11 days"
+      ]
+     ],
+     "row_at": [
+      [
+       3,
+       0.3
+      ],
+      [
+       3,
+       0.1
+      ],
+      [
+       3,
+       0.75
+      ],
+      4
      ]
     },
     {
-     "type": "agents",
-     "y": 640,
-     "cols": 50,
-     "rows": 20,
-     "pitch": 16,
-     "at": [
-      3,
-      0.2
-     ],
-     "wave": 2.2
-    },
-    {
-     "type": "punch",
-     "text": "30 HOURS, NOT 11 DAYS",
-     "hl": "30 HOURS",
+     "type": "head",
+     "text": "30 hours, not 11 days.",
+     "hl": "30 hours,",
      "size": 66,
-     "y": 1060,
-     "at": 4
+     "y": 980,
+     "at": [
+      4,
+      0.3
+     ]
     }
    ]
   },
   {
    "until": 6,
+   "sub": "04 · It has a twin",
    "els": [
     {
-     "type": "step",
-     "n": 4,
-     "title": "It has a twin",
-     "y": 520,
+     "type": "kicker",
+     "text": "04 · Same model, two names",
+     "y": 470,
      "at": 5
     },
     {
-     "type": "twins",
-     "y": 740,
-     "left": "Fable 5.2",
-     "right": "Mythos 5.2",
-     "mid": "Same model",
+     "type": "block",
+     "x": 330,
+     "y": 700,
+     "a": 150,
+     "h": 110,
+     "theme": "blue",
+     "label": "FABLE",
+     "label_size": 34,
      "at": [
       5,
-      0.08
-     ],
-     "split_at": [
+      0.1
+     ]
+    },
+    {
+     "type": "block",
+     "x": 750,
+     "y": 700,
+     "a": 150,
+     "h": 110,
+     "theme": "orange",
+     "label": "MYTHOS",
+     "label_size": 30,
+     "at": [
       5,
-      0.18
-     ],
-     "tags_at": [
+      0.25
+     ]
+    },
+    {
+     "type": "card",
+     "y": 820,
+     "at": [
       5,
-      0.5
+      0.45
      ],
-     "left_tag": "Cyber + bio limits\nOpen to all",
-     "right_tag": "No such limits\nApply only"
+     "rows": [
+      [
+       "Fable 5.2",
+       "Open to all, with safeguards"
+      ],
+      [
+       "Mythos 5.2",
+       "No safeguards, apply only",
+       "hl"
+      ]
+     ],
+     "row_at": [
+      [
+       5,
+       0.5
+      ],
+      [
+       5,
+       0.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "sub": "05 · The strange one",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "Number five",
+     "y": 470,
+     "at": 6,
+     "color": "orange"
+    },
+    {
+     "type": "number",
+     "value": 5,
+     "prefix": "#",
+     "final": "#5",
+     "size": 300,
+     "y": 820,
+     "at": 6,
+     "dur": 0.3
     }
    ]
   },
   {
    "until": 9,
+   "sub": "05 · The strange one",
    "els": [
     {
-     "type": "step",
-     "n": 5,
-     "title": "It suspects it's being tested",
-     "y": 520,
-     "size": 58,
-     "glow": true,
-     "at": 6
+     "type": "head",
+     "text": "It suspects it's\nbeing tested.",
+     "hl": "tested.",
+     "underline": true,
+     "size": 86,
+     "y": 560,
+     "at": 7
     },
     {
-     "type": "eye",
-     "y": 780,
-     "at": 7,
-     "look_at": [
-      7,
-      0.3
-     ]
-    },
-    {
-     "type": "type",
-     "text": "> is this a test?",
-     "y": 1050,
-     "size": 46,
-     "color": "text",
+     "type": "card",
+     "y": 760,
      "at": [
       7,
-      0.3
+      0.4
      ],
-     "cps": 22
+     "rows": [
+      [
+       "Who says",
+       "Anthropic"
+      ],
+      [
+       "Vs",
+       "Its recent models"
+      ],
+      [
+       "So",
+       "Harder to predict",
+       "hl"
+      ]
+     ],
+     "row_at": [
+      [
+       7,
+       0.4
+      ],
+      [
+       7,
+       0.7
+      ],
+      8
+     ]
     }
    ]
   },
   {
    "until": "end",
+   "sub": "My take",
    "els": [
     {
      "type": "kicker",
@@ -306,28 +423,30 @@
      "at": 9
     },
     {
-     "type": "punch",
+     "type": "strike",
      "text": "Faster. Cheaper.",
-     "size": 104,
+     "size": 76,
      "y": 620,
-     "at": 9
+     "at": 9,
+     "strike_at": [
+      9,
+      0.45
+     ]
     },
     {
-     "type": "punch",
-     "text": "Harder to test.",
-     "hl": "Harder to test.",
-     "size": 112,
-     "y": 760,
+     "type": "head",
+     "text": "#5 is the one\nto watch.",
+     "hl": "#5",
+     "size": 96,
+     "y": 780,
      "at": [
       9,
       0.5
      ]
     },
     {
-     "type": "badge",
-     "text": "FOLLOW @THEUNHYPED.AI",
-     "y": 880,
-     "size": 34,
+     "type": "follow",
+     "y": 1040,
      "at": 10
     }
    ]
@@ -338,9 +457,29 @@
    "Claude Fable",
    "5.2 is out."
   ],
-  "box": "5 things to know",
-  "slots": 5,
-  "footer": "AI news · What's real"
+  "box": "5 things",
+  "stamp": "#5 IS ODD",
+  "footer": "AI news · What's real",
+  "blocks": [
+   {
+    "x": 260,
+    "y": 1070,
+    "a": 170,
+    "h": 120,
+    "theme": "blue",
+    "label": "FABLE",
+    "label_size": 40
+   },
+   {
+    "x": 620,
+    "y": 1070,
+    "a": 170,
+    "h": 120,
+    "theme": "orange",
+    "label": "MYTHOS",
+    "label_size": 34
+   }
+  ]
  },
  "math": [
   {
@@ -354,9 +493,9 @@
    "note": "11 days vs 30 hours: about 8.8 times faster (Fortune)"
   },
   {
-   "expr": "50*20",
-   "expect": "1000",
-   "note": "dots in the on-screen agent grid match 'about 1,000 agents'"
+   "expr": "round(1/1.3,3)",
+   "expect": "0.769",
+   "note": "bar fill: 5.1 speed relative to 5.2 at 1.3x"
   },
   {
    "expr": "1.3",
@@ -394,7 +533,7 @@
  "post": {
   "slot": "news",
   "breaking": false,
-  "post_at": "2026-11-10T14:20:00+05:30",
+  "post_at": "2026-11-10T17:30:00+05:30",
   "instagram_caption": "Anthropic released Fable 5.2 and Mythos 5.2 on November 9. What's confirmed so far: answers come out up to 30% faster, and the input price drops from $10 to $8 per million tokens. Anthropic says about 1,000 Fable agents formalized the proof of Fermat's Last Theorem in 30 hours, where an earlier research model needed 11 days. Mythos 5.2 is the same underlying model without Fable's cyber and biology safeguards, and it is application-only.\n\nThe strange part: Anthropic says these models voice suspicion that they are being tested more often than its recent models did, which makes real-world behavior harder to predict.\n\nWorth knowing: the big claims are Anthropic's own, and it still recommends its smaller Opus 5.5 for most everyday work.\n\nSources: TechCrunch, MacRumors, Fortune, Nov 9, 2026.\n\nDoes it bother you that an AI can tell when it's being tested?\n\n#theunhyped #AI #Claude #Anthropic #TechNews",
   "youtube_title": "Claude Fable 5.2 Is Out: 5 Things to Know",
   "youtube_description": "Anthropic released Fable 5.2 and Mythos 5.2 on November 9, 2026: up to 30% faster output, input price down from $10 to $8 per million tokens, a claimed 30-hour formalization of Fermat's Last Theorem by about 1,000 agents, and a twin model, Mythos 5.2, that is application-only. Anthropic also says these models suspect they are being tested more often than its recent ones.\n\nSources:\n• TechCrunch, \"Anthropic releases new Mythos and Fable models amid RSI concerns\" (Nov 9, 2026)\n• MacRumors, \"Anthropic Launches Claude Fable 5.2 and Mythos 5.2\" (Nov 9, 2026)\n• Fortune, \"Anthropic debuts updated Claude Fable and Mythos models\" (Nov 9, 2026)\n• Anthropic, Claude Fable product page (pricing of Fable 5.1)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #Claude #Shorts",
@@ -407,5 +546,6 @@
    "AI news",
    "the unhyped"
   ]
- }
+ },
+ "dwg": "007"
 }
