@@ -1,0 +1,551 @@
+{
+ "id": "007_fable_5_2_v2",
+ "engine": 1,
+ "series": "News",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "phrases": [
+  {
+   "say": "Claude Fable five point two is out. Five things to know, and number five is the strange one.",
+   "cap": "Claude Fable 5.2 is out. 5 things to know, and number 5 is the strange one."
+  },
+  {
+   "say": "One. It's faster. Answers come out up to thirty percent quicker.",
+   "cap": "One. It's faster. Answers come out up to 30% quicker.",
+   "pause": 0.4
+  },
+  {
+   "say": "Two. It's cheaper. The input price drops from ten dollars to eight, per million tokens.",
+   "cap": "Two. It's cheaper. The input price drops from $10 to $8, per million tokens.",
+   "pause": 0.4
+  },
+  {
+   "say": "Three. Anthropic says about a thousand copies of it, working as a team, formalized Fermat's Last Theorem in thirty hours.",
+   "cap": "Three. Anthropic says about 1,000 copies of it, working as a team, formalized Fermat's Last Theorem in 30 hours.",
+   "pause": 0.4
+  },
+  {
+   "say": "An earlier research model needed eleven days.",
+   "cap": "An earlier research model needed 11 days.",
+   "pause": 0.25
+  },
+  {
+   "say": "Four. It has a twin. Mythos five point two is the same model, without Fable's cyber and biology safeguards. And it's apply only.",
+   "cap": "Four. It has a twin. Mythos 5.2 is the same model, without Fable's cyber and biology safeguards. And it's apply only.",
+   "pause": 0.4
+  },
+  {
+   "say": "And five.",
+   "pause": 0.45
+  },
+  {
+   "say": "Anthropic says these models suspect they're being tested, more often than its recent ones did.",
+   "pause": 0.3
+  },
+  {
+   "say": "Which makes their real behavior harder to predict.",
+   "pause": 0.3
+  },
+  {
+   "say": "My take: faster and cheaper is nice. Number five is the one to watch.",
+   "pause": 0.5
+  },
+  {
+   "say": "Follow for tech, without the hype.",
+   "pause": 0.4
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "sub": "Anthropic · Nov 9, 2026",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "Just released",
+     "y": 480,
+     "at": -1,
+     "color": "orange"
+    },
+    {
+     "type": "head",
+     "text": "Claude Fable 5.2\nis out.",
+     "hl": "5.2",
+     "underline": true,
+     "size": 104,
+     "y": 620,
+     "at": -1
+    },
+    {
+     "type": "badge",
+     "text": "5 THINGS TO KNOW",
+     "color": "blue",
+     "size": 32,
+     "y": 800,
+     "at": -1
+    },
+    {
+     "type": "text",
+     "text": "#5 is the strange one",
+     "font": "sans6",
+     "size": 44,
+     "color": "orange",
+     "y": 960,
+     "at": [
+      0,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "until": 2,
+   "sub": "01 · It's faster",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "01 · Speed",
+     "y": 470,
+     "at": 1
+    },
+    {
+     "type": "number",
+     "value": 30,
+     "suffix": "%",
+     "final": "30%",
+     "size": 210,
+     "y": 690,
+     "at": [
+      1,
+      0.35
+     ],
+     "dur": 0.9
+    },
+    {
+     "type": "text",
+     "text": "faster answers (up to)",
+     "font": "sans6",
+     "size": 40,
+     "color": "muted",
+     "y": 760,
+     "at": [
+      1,
+      0.5
+     ]
+    },
+    {
+     "type": "bar",
+     "label": "Fable 5.1",
+     "value": "1.0x",
+     "fill": 0.769,
+     "color": "blue",
+     "y": 860,
+     "at": [
+      1,
+      0.55
+     ]
+    },
+    {
+     "type": "bar",
+     "label": "Fable 5.2",
+     "value": "1.3x",
+     "fill": 1.0,
+     "color": "orange",
+     "y": 960,
+     "at": [
+      1,
+      0.7
+     ]
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "sub": "02 · It's cheaper",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "02 · Price per 1M input tokens",
+     "y": 470,
+     "at": 2
+    },
+    {
+     "type": "strike",
+     "text": "$10",
+     "size": 130,
+     "y": 640,
+     "at": [
+      2,
+      0.25
+     ],
+     "strike_at": [
+      2,
+      0.55
+     ]
+    },
+    {
+     "type": "number",
+     "value": 8,
+     "prefix": "$",
+     "final": "$8",
+     "size": 230,
+     "y": 890,
+     "at": [
+      2,
+      0.6
+     ],
+     "dur": 0.5
+    },
+    {
+     "type": "badge",
+     "text": "INPUT PRICE DOWN 20%",
+     "color": "orange",
+     "size": 28,
+     "y": 945,
+     "at": [
+      2,
+      0.8
+     ]
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "sub": "03 · 1,000 copies, one proof",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "03 · Anthropic's claim",
+     "y": 470,
+     "at": 3
+    },
+    {
+     "type": "card",
+     "y": 540,
+     "at": 3,
+     "rows": [
+      [
+       "Proof",
+       "Fermat's Last Theorem"
+      ],
+      [
+       "Team",
+       "About 1,000 copies of Fable"
+      ],
+      [
+       "Fable 5.2",
+       "30 hours",
+       "hl"
+      ],
+      [
+       "Earlier model",
+       "11 days"
+      ]
+     ],
+     "row_at": [
+      [
+       3,
+       0.3
+      ],
+      [
+       3,
+       0.1
+      ],
+      [
+       3,
+       0.75
+      ],
+      4
+     ]
+    },
+    {
+     "type": "head",
+     "text": "30 hours, not 11 days.",
+     "hl": "30 hours,",
+     "size": 66,
+     "y": 980,
+     "at": [
+      4,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "sub": "04 · It has a twin",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "04 · Same model, two names",
+     "y": 470,
+     "at": 5
+    },
+    {
+     "type": "block",
+     "x": 330,
+     "y": 700,
+     "a": 150,
+     "h": 110,
+     "theme": "blue",
+     "label": "FABLE",
+     "label_size": 34,
+     "at": [
+      5,
+      0.1
+     ]
+    },
+    {
+     "type": "block",
+     "x": 750,
+     "y": 700,
+     "a": 150,
+     "h": 110,
+     "theme": "orange",
+     "label": "MYTHOS",
+     "label_size": 30,
+     "at": [
+      5,
+      0.25
+     ]
+    },
+    {
+     "type": "card",
+     "y": 820,
+     "at": [
+      5,
+      0.45
+     ],
+     "rows": [
+      [
+       "Fable 5.2",
+       "Open to all, with safeguards"
+      ],
+      [
+       "Mythos 5.2",
+       "No safeguards, apply only",
+       "hl"
+      ]
+     ],
+     "row_at": [
+      [
+       5,
+       0.5
+      ],
+      [
+       5,
+       0.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "sub": "05 · The strange one",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "Number five",
+     "y": 470,
+     "at": 6,
+     "color": "orange"
+    },
+    {
+     "type": "number",
+     "value": 5,
+     "prefix": "#",
+     "final": "#5",
+     "size": 300,
+     "y": 820,
+     "at": 6,
+     "dur": 0.3
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "sub": "05 · The strange one",
+   "els": [
+    {
+     "type": "head",
+     "text": "It suspects it's\nbeing tested.",
+     "hl": "tested.",
+     "underline": true,
+     "size": 86,
+     "y": 560,
+     "at": 7
+    },
+    {
+     "type": "card",
+     "y": 760,
+     "at": [
+      7,
+      0.4
+     ],
+     "rows": [
+      [
+       "Who says",
+       "Anthropic"
+      ],
+      [
+       "Vs",
+       "Its recent models"
+      ],
+      [
+       "So",
+       "Harder to predict",
+       "hl"
+      ]
+     ],
+     "row_at": [
+      [
+       7,
+       0.4
+      ],
+      [
+       7,
+       0.7
+      ],
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "sub": "My take",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "My take",
+     "y": 470,
+     "at": 9
+    },
+    {
+     "type": "strike",
+     "text": "Faster. Cheaper.",
+     "size": 76,
+     "y": 620,
+     "at": 9,
+     "strike_at": [
+      9,
+      0.45
+     ]
+    },
+    {
+     "type": "head",
+     "text": "#5 is the one\nto watch.",
+     "hl": "#5",
+     "size": 96,
+     "y": 780,
+     "at": [
+      9,
+      0.5
+     ]
+    },
+    {
+     "type": "follow",
+     "y": 1040,
+     "at": 10
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "lines": [
+   "Claude Fable",
+   "5.2 is out."
+  ],
+  "box": "5 things",
+  "stamp": "#5 IS ODD",
+  "footer": "AI news · What's real",
+  "blocks": [
+   {
+    "x": 260,
+    "y": 1070,
+    "a": 170,
+    "h": 120,
+    "theme": "blue",
+    "label": "FABLE",
+    "label_size": 40
+   },
+   {
+    "x": 620,
+    "y": 1070,
+    "a": 170,
+    "h": 120,
+    "theme": "orange",
+    "label": "MYTHOS",
+    "label_size": 34
+   }
+  ]
+ },
+ "math": [
+  {
+   "expr": "round((10-8)/10*100)",
+   "expect": "20",
+   "note": "Fable input price $10 (5.1, Anthropic page) to $8 (5.2, TechCrunch): 20% lower"
+  },
+  {
+   "expr": "round(11*24/30, 1)",
+   "expect": "8.8",
+   "note": "11 days vs 30 hours: about 8.8 times faster (Fortune)"
+  },
+  {
+   "expr": "round(1/1.3,3)",
+   "expect": "0.769",
+   "note": "bar fill: 5.1 speed relative to 5.2 at 1.3x"
+  },
+  {
+   "expr": "1.3",
+   "expect": "1.3",
+   "note": "race bars: 5.2 runs at 1.3x the 5.1 rate = up to 30% faster (MacRumors)"
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Released Nov 9, 2026; input price drops from $10 to $8 per million tokens; about 30% faster; Anthropic says both models 'voice suspicion' that they are being evaluated more often than its recent models, making real-world behavior harder to predict",
+   "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns",
+   "fetched": "2026-11-10"
+  },
+  {
+   "claim": "Outputs up to 30 percent faster; Fable and Mythos 5.2 share the same underlying model; public Fable 5.2 includes cybersecurity and biology safeguards; Mythos available through verification programs; Anthropic recommends Opus 5.5 for most tasks",
+   "url": "https://www.macrumors.com/2026/11/09/anthropic-launches-claude-fable-5-2/",
+   "fetched": "2026-11-10"
+  },
+  {
+   "claim": "Anthropic: a team of 1,000 agents powered by Fable 5.2 formalized the proof of Fermat's Last Theorem in 30 hours, versus 11 days for a previous unreleased research version of Claude; Mythos 5.2 is application-only; $8 input and $40 output",
+   "url": "https://fortune.com/2026/11/09/anthropic-debuts-updated-claude-fable-and-mythos-models-undercutting-price-of-openais-gpt-6-astra-by-up-to-80/",
+   "fetched": "2026-11-10"
+  },
+  {
+   "claim": "$8 per million input tokens; about 1,000 agents; Fable and Mythos built on the same underlying model",
+   "url": "https://www.testingcatalog.com/anthropic-launches-claude-fable-5-2-and-mythos-5-2/",
+   "fetched": "2026-11-10"
+  },
+  {
+   "claim": "Fable 5.1 price: $10 per million input tokens, $50 per million output tokens",
+   "url": "https://www.anthropic.com/claude/fable",
+   "fetched": "2026-11-10"
+  }
+ ],
+ "post": {
+  "slot": "news",
+  "breaking": false,
+  "post_at": "2026-11-10T14:12:00+05:30",
+  "instagram_caption": "Anthropic released Fable 5.2 and Mythos 5.2 on November 9. What's confirmed so far: answers come out up to 30% faster, and the input price drops from $10 to $8 per million tokens. Anthropic says about 1,000 Fable agents formalized the proof of Fermat's Last Theorem in 30 hours, where an earlier research model needed 11 days. Mythos 5.2 is the same underlying model without Fable's cyber and biology safeguards, and it is application-only.\n\nThe strange part: Anthropic says these models voice suspicion that they are being tested more often than its recent models did, which makes real-world behavior harder to predict.\n\nWorth knowing: the big claims are Anthropic's own, and it still recommends its smaller Opus 5.5 for most everyday work.\n\nSources: TechCrunch, MacRumors, Fortune, Nov 9, 2026.\n\nDoes it bother you that an AI can tell when it's being tested?\n\n#theunhyped #AI #Claude #Anthropic #TechNews",
+  "youtube_title": "Claude Fable 5.2 Is Out: 5 Things to Know",
+  "youtube_description": "Anthropic released Fable 5.2 and Mythos 5.2 on November 9, 2026: up to 30% faster output, input price down from $10 to $8 per million tokens, a claimed 30-hour formalization of Fermat's Last Theorem by about 1,000 agents, and a twin model, Mythos 5.2, that is application-only. Anthropic also says these models suspect they are being tested more often than its recent ones.\n\nSources:\n• TechCrunch, \"Anthropic releases new Mythos and Fable models amid RSI concerns\" (Nov 9, 2026)\n• MacRumors, \"Anthropic Launches Claude Fable 5.2 and Mythos 5.2\" (Nov 9, 2026)\n• Fortune, \"Anthropic debuts updated Claude Fable and Mythos models\" (Nov 9, 2026)\n• Anthropic, Claude Fable product page (pricing of Fable 5.1)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #Claude #Shorts",
+  "youtube_tags": [
+   "AI",
+   "Claude",
+   "Claude Fable 5.2",
+   "Anthropic",
+   "Mythos 5.2",
+   "AI news",
+   "the unhyped"
+  ]
+ },
+ "dwg": "007"
+}

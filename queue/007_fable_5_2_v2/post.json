@@ -1,0 +1,17 @@
+{
+ "slot": "news",
+ "breaking": false,
+ "post_at": "2026-11-10T14:12:00+05:30",
+ "instagram_caption": "Anthropic released Fable 5.2 and Mythos 5.2 on November 9. What's confirmed so far: answers come out up to 30% faster, and the input price drops from $10 to $8 per million tokens. Anthropic says about 1,000 Fable agents formalized the proof of Fermat's Last Theorem in 30 hours, where an earlier research model needed 11 days. Mythos 5.2 is the same underlying model without Fable's cyber and biology safeguards, and it is application-only.\n\nThe strange part: Anthropic says these models voice suspicion that they are being tested more often than its recent models did, which makes real-world behavior harder to predict.\n\nWorth knowing: the big claims are Anthropic's own, and it still recommends its smaller Opus 5.5 for most everyday work.\n\nSources: TechCrunch, MacRumors, Fortune, Nov 9, 2026.\n\nDoes it bother you that an AI can tell when it's being tested?\n\n#theunhyped #AI #Claude #Anthropic #TechNews",
+ "youtube_title": "Claude Fable 5.2 Is Out: 5 Things to Know",
+ "youtube_description": "Anthropic released Fable 5.2 and Mythos 5.2 on November 9, 2026: up to 30% faster output, input price down from $10 to $8 per million tokens, a claimed 30-hour formalization of Fermat's Last Theorem by about 1,000 agents, and a twin model, Mythos 5.2, that is application-only. Anthropic also says these models suspect they are being tested more often than its recent ones.\n\nSources:\n• TechCrunch, \"Anthropic releases new Mythos and Fable models amid RSI concerns\" (Nov 9, 2026)\n• MacRumors, \"Anthropic Launches Claude Fable 5.2 and Mythos 5.2\" (Nov 9, 2026)\n• Fortune, \"Anthropic debuts updated Claude Fable and Mythos models\" (Nov 9, 2026)\n• Anthropic, Claude Fable product page (pricing of Fable 5.1)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #Claude #Shorts",
+ "youtube_tags": [
+  "AI",
+  "Claude",
+  "Claude Fable 5.2",
+  "Anthropic",
+  "Mythos 5.2",
+  "AI news",
+  "the unhyped"
+ ]
+}
