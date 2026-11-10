@@ -78,7 +78,8 @@ def main():
     spec = json.load(open(path))
     check_spec(spec, allow_old_sources="--allow-old-sources" in sys.argv)
     if "--check" in sys.argv: print("spec OK"); return
-    import voice, render
+    import voice, importlib
+    render = importlib.import_module({1: "render", 2: "render2", 3: "render3"}[spec.get("engine", 1)])
     out = os.path.join(ROOT, "queue", spec["id"])
     os.makedirs(out, exist_ok=True)
     wav = os.path.join(out, "voice.wav")
