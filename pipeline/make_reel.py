@@ -62,8 +62,11 @@ def check_spec(spec, allow_old_sources=False):
     nums = re.findall(r"\d", " ".join(p.get("cap", p.get("say", "")) for p in spec.get("phrases", [])))
     if nums and not spec.get("math"): errs.append("the script has numbers but spec.math is empty: compute every derived number in Python")
     # hook on the very first frame
-    first = spec.get("scenes", [{}])[0].get("els", [])
-    if not any(e.get("at") == -1 for e in first): errs.append("scene 1 needs at least one element with \"at\": -1 (the hook on frame 1)")
+    if spec.get("engine") == 4:
+        if not spec.get("beats") or spec["beats"][0].get("at") != -1: errs.append("beats[0] needs \"at\": -1 (the hook on frame 1)")
+    else:
+        first = spec.get("scenes", [{}])[0].get("els", [])
+        if not any(e.get("at") == -1 for e in first): errs.append("scene 1 needs at least one element with \"at\": -1 (the hook on frame 1)")
     for e in (x for sc in spec.get("scenes", []) for x in sc.get("els", [])):
         y = e.get("y", 600)
         if e.get("type") != "block" and not (400 <= y <= 1080): errs.append(f"{e.get('type')} at y {y}: keep visuals between y 400 and 1080")
@@ -79,7 +82,7 @@ def main():
     check_spec(spec, allow_old_sources="--allow-old-sources" in sys.argv)
     if "--check" in sys.argv: print("spec OK"); return
     import voice, importlib
-    render = importlib.import_module({1: "render", 2: "render2", 3: "render3"}[spec.get("engine", 1)])
+    render = importlib.import_module({1: "render", 2: "render2", 3: "render3", 4: "render4"}[spec.get("engine", 1)])
     out = os.path.join(ROOT, "queue", spec["id"])
     os.makedirs(out, exist_ok=True)
     wav = os.path.join(out, "voice.wav")
