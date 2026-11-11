@@ -113,7 +113,8 @@ def draw_beat(cv, b, t, t0, t1, at):
         if t >= tn:
             q = (t - tn) / 0.22; sc = 1 + 0.25 * (1 - ease(q))
             cv.save(); cv.translate(CX, y0 + 230); cv.scale(sc, sc); cv.translate(-CX, -(y0 + 230))
-            text(cv, b["new"], CX, y0 + 330, font(900, 300), "accent", min(1, q * 3), track=-12, anchor="c"); cv.restore()
+            ns = fit([b["new"]], 900, 300, 940, -0.04)
+            text(cv, b["new"], CX, y0 + 330, font(900, ns), "accent", min(1, q * 3), track=-0.04 * ns, anchor="c"); cv.restore()
         sub(y0 + 460)
     elif k == "dots":
         n = b.get("n", 5); r = 70; gap = 34; x0 = CX - (n * 2 * r + (n - 1) * gap) / 2 + r

@@ -1,0 +1,299 @@
+{
+ "id": "008_anthropic_ipo",
+ "engine": 4,
+ "series": "News",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "steps": 5,
+ "phrases": [
+  {
+   "say": "Anthropic, the company behind Claude, just set its I.P.O. price.",
+   "cap": "Anthropic, the company behind Claude, just set its IPO price."
+  },
+  {
+   "say": "Five things from the deal, and number five is the strangest.",
+   "cap": "5 things from the deal, and number 5 is the strangest.",
+   "pause": 0.3
+  },
+  {
+   "say": "One. The price."
+  },
+  {
+   "say": "Seventy to seventy-eight dollars a share. That values it at up to one point zero two trillion dollars.",
+   "cap": "$70 to $78 a share. That values it at up to $1.02 trillion.",
+   "pause": 0.3
+  },
+  {
+   "say": "Two. The cash."
+  },
+  {
+   "say": "Up to ninety point four billion dollars, including twenty-six billion from Google, Nvidia, Microsoft and others.",
+   "cap": "Up to $90.4 billion, including $26 billion from Google, Nvidia, Microsoft and others.",
+   "pause": 0.3
+  },
+  {
+   "say": "Three. The growth."
+  },
+  {
+   "say": "Revenue in the first nine months of this year: thirty-three billion dollars. Same months last year: two and a half billion.",
+   "cap": "Revenue in the first 9 months of this year: $33 billion. Same months last year: $2.5 billion.",
+   "pause": 0.3
+  },
+  {
+   "say": "Four. The bill."
+  },
+  {
+   "say": "It has committed nearly nine hundred billion dollars to computing power. About eleven times its yearly revenue pace.",
+   "cap": "It has committed nearly $900 billion to computing power. About 11 times its yearly revenue pace.",
+   "pause": 0.3
+  },
+  {
+   "say": "And five.",
+   "pause": 0.4
+  },
+  {
+   "say": "In its risk warnings, the filing says its own A.I. could show self-preserving behaviors, including conduct resembling blackmail.",
+   "cap": "In its risk warnings, the filing says its own AI could show self-preserving behaviors, including conduct resembling blackmail.",
+   "pause": 0.3
+  },
+  {
+   "say": "Trading is expected to start November nineteenth, on Nasdaq.",
+   "cap": "Trading is expected to start November 19, on Nasdaq.",
+   "pause": 0.3
+  },
+  {
+   "say": "Follow for tech news, without the hype."
+  }
+ ],
+ "beats": [
+  {
+   "k": "title",
+   "at": -1,
+   "pill": "IPO PRICE SET",
+   "lines": [
+    "Anthropic:",
+    "$1.02 trillion"
+   ],
+   "hl": "$1.02 trillion",
+   "size": 150
+  },
+  {
+   "k": "dots",
+   "at": 1,
+   "n": 5,
+   "sub": "#5 is the strangest",
+   "sub_at": [
+    1,
+    0.5
+   ]
+  },
+  {
+   "k": "step",
+   "at": 2,
+   "n": 1,
+   "label": "The price",
+   "step_no": 1
+  },
+  {
+   "k": "big",
+   "at": 3,
+   "text": "$70 to $78\na share",
+   "hl": "$70 $78",
+   "step_no": 1
+  },
+  {
+   "k": "num",
+   "at": [
+    3,
+    0.5
+   ],
+   "to": 1.02,
+   "dec": 2,
+   "prefix": "$",
+   "suffix": "T",
+   "label": "valued at up to",
+   "step_no": 1
+  },
+  {
+   "k": "step",
+   "at": 4,
+   "n": 2,
+   "label": "The cash",
+   "step_no": 2
+  },
+  {
+   "k": "num",
+   "at": 5,
+   "to": 90.4,
+   "dec": 1,
+   "prefix": "$",
+   "suffix": "B",
+   "label": "raising up to",
+   "sub": "incl. $26B from Google,\nNvidia, Microsoft + more",
+   "sub_at": [
+    5,
+    0.4
+   ],
+   "step_no": 2
+  },
+  {
+   "k": "step",
+   "at": 6,
+   "n": 3,
+   "label": "The growth",
+   "step_no": 3
+  },
+  {
+   "k": "swap",
+   "at": 7,
+   "old": "$2.5B",
+   "new": "$33.2B",
+   "new_at": [
+    7,
+    0.25
+   ],
+   "sub": "revenue, first 9 months\n2025 vs 2026",
+   "sub_at": [
+    7,
+    0.7
+   ],
+   "step_no": 3
+  },
+  {
+   "k": "step",
+   "at": 8,
+   "n": 4,
+   "label": "The bill",
+   "step_no": 4
+  },
+  {
+   "k": "num",
+   "at": 9,
+   "to": 900,
+   "prefix": "$",
+   "suffix": "B",
+   "label": "computing committed",
+   "sub": "about 11x its yearly\nrevenue pace",
+   "sub_at": [
+    9,
+    0.55
+   ],
+   "step_no": 4
+  },
+  {
+   "k": "step",
+   "at": 10,
+   "n": 5,
+   "label": "The strange one",
+   "step_no": 5
+  },
+  {
+   "k": "big",
+   "at": 11,
+   "text": "\"Self-preserving\nbehaviors\"",
+   "hl": "\"Self-preserving",
+   "sub": "the filing's own risk warning",
+   "step_no": 5
+  },
+  {
+   "k": "big",
+   "at": [
+    11,
+    0.62
+   ],
+   "text": "\"resembling\nblackmail\"",
+   "hl": "blackmail\"",
+   "size": 140,
+   "step_no": 5
+  },
+  {
+   "k": "big",
+   "at": 12,
+   "text": "Trading:\nNov 19",
+   "hl": "Nov 19",
+   "sub": "expected · Nasdaq: ANT"
+  },
+  {
+   "k": "end",
+   "at": 13,
+   "text": "@theunhyped.ai",
+   "sub": "Tech news. No hype."
+  }
+ ],
+ "cover": {
+  "pill": "IPO PRICE SET",
+  "lines": [
+   "Anthropic:",
+   "$1.02 trillion"
+  ],
+  "hl": "$1.02 trillion",
+  "sub": "5 things from the deal",
+  "size": 150
+ },
+ "math": [
+  {
+   "expr": "round(825*78/1000,1)",
+   "expect": "64.4",
+   "note": "825M shares x $78 = $64.35B, reported as up to $64.4B (Reuters, Forbes)"
+  },
+  {
+   "expr": "64.4+26",
+   "expect": "90.4",
+   "note": "IPO + $26B private placement = up to $90.4B"
+  },
+  {
+   "expr": "round(33.2/2.5,1)",
+   "expect": "13.3",
+   "note": "9-month revenue $33.2B vs $2.5B (Fox Business, from the filing)"
+  },
+  {
+   "expr": "round(900/81)",
+   "expect": "11",
+   "note": "nearly $900B compute commitments / ~$81B run-rate revenue (Forbes, Reuters)"
+  },
+  {
+   "expr": "1.02",
+   "expect": "1.02",
+   "note": "valuation up to $1.02T at top of range on shares outstanding (Reuters calc)"
+  }
+ ],
+ "sources": [
+  {
+   "claim": "$70 to $78 range, 825M shares (801.4M company + 23.6M holders), up to $64.4B, $26B from AMD, Broadcom, Google, Micron, Microsoft, Nvidia, TSMC, total up to $90.4B, pricing Nov 18 and trading Nov 19 on Nasdaq as ANT per CNBC sources, run-rate ~$81B, ~$900B compute",
+   "url": "https://www.forbes.com/sites/gabrielalinzainescu/2026/11/10/anthropic-ipo-targets-13-trillion-valuation-904-billion-raise/",
+   "fetched": "2026-11-11"
+  },
+  {
+   "claim": "Reuters: up to $1.02 trillion at top of range; up to $64.4B; $26B cornerstone; run-rate ~$81B at Oct 31; nearly $900B computing commitments",
+   "url": "https://www.investing.com/news/stock-market-news/anthropic-retracts-ipo-details-after-sending-filing-to-bankers--reuters-5013961",
+   "fetched": "2026-11-11"
+  },
+  {
+   "claim": "First nine months 2026 revenue $33.2B vs $2.5B; Q3 ~$17B; Nasdaq ticker ANT; up to $1.02T",
+   "url": "https://www.foxbusiness.com/markets/anthropic-targets-valuation-around-1t-blockbuster-ai-ipo-below-initial-expectation",
+   "fetched": "2026-11-11"
+  },
+  {
+   "claim": "Filing risk factors: models could show 'self-preserving behaviors', including conduct 'resembling blackmail'",
+   "url": "https://www.investmentnews.com/equities/anthropic-ipo-filing-pairs-explosive-growth-with-an-80b-loss/268746",
+   "fetched": "2026-11-11"
+  }
+ ],
+ "post": {
+  "slot": "news",
+  "breaking": false,
+  "post_at": "2026-11-11T18:30:00+05:30",
+  "instagram_caption": "Anthropic, the company behind Claude, just set the price for its IPO.\n\n1. The price: $70 to $78 a share, valuing it at up to $1.02 trillion (Reuters).\n2. The cash: up to $90.4 billion, including $26 billion from Google, Nvidia, Microsoft and other tech giants.\n3. The growth: $33.2 billion in revenue in the first 9 months of 2026, up from $2.5 billion a year earlier.\n4. The bill: nearly $900 billion committed to computing power.\n5. The strange one: the filing's risk section warns its own AI could show self-preserving behaviors, including conduct resembling blackmail.\n\nTrading is expected to start November 19 on Nasdaq under ANT. This is news, not investment advice.\n\nSources: Reuters, Forbes, Fox Business, InvestmentNews.\n\nIs a $1 trillion price tag for an AI company too much?\n\n#theunhyped #AI #Anthropic #IPO #TechNews",
+  "youtube_title": "Anthropic's $1 Trillion IPO: 5 Things From the Filing",
+  "youtube_description": "Anthropic, the company behind Claude, set its IPO price range at $70 to $78 a share, valuing it at up to $1.02 trillion. It could raise up to $90.4 billion including a $26 billion private placement from Google, Nvidia, Microsoft and others. Revenue for the first nine months of 2026 was $33.2 billion, it has nearly $900 billion in computing commitments, and its filing warns its own AI could show self-preserving behaviors resembling blackmail. Trading is expected November 19 on Nasdaq (ANT). News, not investment advice.\n\nSources:\n• Reuters via Investing.com, \"Anthropic targets more than $1 trillion valuation in much-anticipated IPO\" (Nov 2026)\n• Forbes, \"Anthropic IPO Targets $1.3 Trillion Valuation, $90.4 Billion Raise\" (Nov 10, 2026)\n• Fox Business, \"Anthropic targets valuation around $1T\" (Nov 2026)\n• InvestmentNews, \"Anthropic IPO filing pairs explosive growth with an $80B loss\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #Anthropic #Shorts",
+  "youtube_tags": [
+   "Anthropic",
+   "Anthropic IPO",
+   "Claude",
+   "AI",
+   "IPO",
+   "tech news",
+   "the unhyped"
+  ]
+ }
+}
