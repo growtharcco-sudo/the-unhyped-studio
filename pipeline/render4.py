@@ -13,6 +13,7 @@ Spec: "engine": 4 and a "beats" list (instead of "scenes"). Each beat runs from 
       swap  {old, new, sub, new_at}       old value struck out, new value lands
       dots  {n, sub}                      a row of numbered circles, the last one in orange
       pair  {left: {title, lines}, right: {...}, mid, right_at}   two cards side by side
+      photo {image, lines, hl, pill, sub, ring}   a real photo (rounded, 540x540) with a 1 to 2 line headline under it
       end   {text, sub}                   follow card
   optional on any beat: sub_at (when the sub line appears), step_no (header 03/05 counter)
 """
@@ -65,6 +66,44 @@ def rich_line(cv, line, x, y, f, hl, a=1.0, anchor="c", track=0):
 def fit(lines, weight, size, maxw, track=0):
     while size > 40 and any(tw(l, font(weight, size), track * size) > maxw for l in lines): size -= 4
     return size
+
+
+_img = {}
+
+
+def photo_image(path, side):
+    """square crop (faces sit high, so keep the top), scaled to side x side, as a skia image"""
+    key = (path, side)
+    if key not in _img:
+        from PIL import Image
+        im = Image.open(path if os.path.isabs(path) else os.path.join(os.path.dirname(FD), "..", path)).convert("RGB")
+        w, h = im.size; m = min(w, h); top = 0 if h > w else 0; left = (w - m) // 2
+        im = im.crop((left, top, left + m, top + m)).resize((side, side), Image.LANCZOS)
+        _img[key] = skia.Image.fromarray(np.dstack([np.asarray(im), np.full((side, side), 255, np.uint8)]),
+                                         colorType=skia.kRGBA_8888_ColorType)
+    return _img[key]
+
+
+def draw_photo(cv, b, age, side=540, top=430):
+    q = ease(age / 0.3); x = CX - side / 2; y = top + 24 * (1 - q)
+    r = skia.RRect.MakeRectXY(skia.Rect(x, y, x + side, y + side), 44, 44)
+    cv.save(); cv.clipRRect(r, doAntiAlias=True)
+    p = skia.Paint(AntiAlias=True); p.setAlphaf(q)
+    cv.drawImageRect(photo_image(b["image"], side), skia.Rect(x, y, x + side, y + side), skia.SamplingOptions(skia.FilterMode.kLinear), p)
+    cv.drawRect(skia.Rect(x, y + side * 0.62, x + side, y + side), skia.Paint(Shader=skia.GradientShader.MakeLinear(
+        [(0, y + side * 0.62), (0, y + side)], [rgb(C["bg"], 0), rgb(C["bg"], 200)])))
+    cv.restore()
+    cv.drawRRect(r, paint("accent" if b.get("ring") else "card_edge", q, stroke=5 if b.get("ring") else 2))
+    if b.get("pill"):
+        pf = mono(30); pw = tw(b["pill"], pf, 5) + 44; py = y + 40
+        cv.drawRRect(skia.RRect.MakeRectXY(skia.Rect(x + 30, py - 4, x + 30 + pw, py + 48), 26, 26), paint("accent", q))
+        text(cv, b["pill"], x + 30 + pw / 2, py + 32, pf, "bg", q, track=5, anchor="c")
+    hl = set((b.get("hl") or "").split()); lines = b["lines"]
+    size = fit(lines, 900, b.get("size", 100), 940, -0.03); f = font(900, size); yy = y + side + 40 + size * 0.8
+    for ln in lines:
+        rich_line(cv, ln, CX, yy, f, hl, q, track=-0.03 * size); yy += size * 1.02
+    if b.get("sub"): text(cv, b["sub"], CX, yy + 6, font(600, 42), "soft", ease((age - 0.2) / 0.25), anchor="c")
+    return yy
 
 
 # ---------------- beats ----------------
@@ -140,6 +179,8 @@ def draw_beat(cv, b, t, t0, t1, at):
                 text(cv, ln, x + 40, yy, font(600, 40), "soft", q); yy += 64
             cv.restore()
         if b.get("mid"): text(cv, b["mid"].upper(), CX, y + ch + 110, mono(34), "soft", ease(age / 0.3), track=6, anchor="c")
+    elif k == "photo":
+        draw_photo(cv, b, age if t0 > 0 else 9.0)   # the hook is fully visible on frame 0
     elif k == "end":
         q = ease(age / 0.25)
         text(cv, b.get("text", "@theunhyped.ai"), CX, CY + 30, font(900, 110), "text", q, track=-3, anchor="c")
@@ -309,9 +350,11 @@ def render(spec, times, total, wav, out_mp4, stills=None, words=None):
 
 
 def cover(spec, out_png, dwg=None):
-    """cover: {"pill": "NEW", "lines": [...], "hl": "5.2", "sub": "5 things to know"}"""
+    """cover: {"pill": "NEW", "lines": [...], "hl": "5.2", "sub": "5 things to know", "image": optional photo path}"""
     c = spec["cover"]; s = skia.Surface(W, H); cv = s.getCanvas(); draw_bg(cv)
     b = {"k": "title", "pill": c.get("pill"), "lines": c["lines"], "hl": c.get("hl"), "sub": c.get("sub"), "size": c.get("size", 170)}
+    if c.get("image"): b = {"k": "photo", "image": c["image"], "pill": c.get("pill"), "lines": c["lines"], "hl": c.get("hl"),
+                            "sub": c.get("sub"), "size": c.get("size", 120), "ring": True}
     draw_beat(cv, b, 5.0, 0.0, 9.0, lambda a: 0.0)
     text(cv, "THE UNHYPED", CX, 1520, mono(32), "soft", track=8, anchor="c")
     from PIL import Image

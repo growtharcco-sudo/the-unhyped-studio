@@ -29,6 +29,8 @@ the first starts with the beat, the others cut in later in the same phrase ("at"
   statement  text ("line\\nline"), hl, sub, size                           one big statement
   compare    left={title, lines=[up to 3]}, right={title, lines, hl: true}, mid   two cards side by side
   ending     text ("@theunhyped.ai"), sub ("Tech news. No hype.")         follow card
+  photo      image ("assets/people/<name>.png"), lines=[1 to 2], hl, pill, sub, ring (orange frame)
+             a real photo with a headline under it. ONLY photos the owner supplied (never download photos of people)
 
 SHEET kinds (the light engineering-sheet look, engine 1). Every scene may set "sub" (the small header label).
   hook       kicker, number={prefix, value, suffix, decimals, final} (optional), lines=[1 to 2], hl, badge
@@ -170,7 +172,7 @@ def ref_bottom(s):
 
 # ---------------- KEYNOTE style (engine 4) ----------------
 KEY_MAP = {"hook": "title", "countdown": "dots", "step": "step", "number": "num", "swap": "swap",
-           "statement": "big", "compare": "pair", "ending": "end"}
+           "statement": "big", "compare": "pair", "ending": "end", "photo": "photo"}
 
 
 def keynote_beat(s, at):
@@ -196,6 +198,8 @@ def keynote_beat(s, at):
             if s.get(f): b[f] = s[f]
     elif k == "compare": b.update(left=s["left"], right=s["right"], right_at=frac(0.3), **({"mid": s["mid"]} if s.get("mid") else {}))
     elif k == "ending": b.update(text=s.get("text", "@theunhyped.ai"), sub=s.get("sub", "Tech news. No hype."))
+    elif k == "photo": b.update(image=s["image"], lines=s["lines"], hl=s.get("hl"), pill=s.get("pill"), sub=s.get("sub"),
+                                size=s.get("size", 100), ring=s.get("ring", False))
     return {x: y for x, y in b.items() if y is not None}
 
 
@@ -273,6 +277,13 @@ def layout_check(spec):
                     for ln in c.get("lines", []):
                         if R.tw(ln, R.font(600, 40)) > 360: probs.append(f'{tag}: {side} line too wide: "{ln}"')
             if k == "end" and R.tw(b.get("text", ""), R.font(900, 110), -3) > 940: probs.append(f'{tag}: text too wide')
+            if k == "photo":
+                if not os.path.exists(os.path.join(ROOT, b["image"])): probs.append(f'{tag}: image not found: {b["image"]}')
+                if len(b["lines"]) > 2: probs.append(f"{tag}: more than 2 lines under a photo")
+                size = R.fit(b["lines"], 900, b.get("size", 100), 940, -0.03)
+                if size < 70: probs.append(f'{tag}: headline shrinks to {size}px, too long')
+                bottom = 430 + 540 + 40 + size * 0.8 + (len(b["lines"]) - 1) * size * 1.02 + (50 if b.get("sub") else 0)
+                if bottom > cap_top: probs.append(f"{tag}: reaches the caption zone (bottom {int(bottom)} > {cap_top})")
             for ln in (b.get("sub") or "").split("\n"):
                 size = 58 if k == "dots" else 48 if k == "end" else 46
                 if ln and R.tw(ln, R.font(600, size)) > 940: probs.append(f'{tag}: sub line too wide: "{ln}"')

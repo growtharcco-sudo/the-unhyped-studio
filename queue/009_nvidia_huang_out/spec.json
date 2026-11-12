@@ -1,0 +1,295 @@
+{
+ "id": "009_nvidia_huang_out",
+ "series": "What It Means",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 4,
+ "steps": 4,
+ "phrases": [
+  {
+   "say": "Jensen Huang is out as Nvidia's C.E.O.",
+   "cap": "Jensen Huang is out as Nvidia's CEO.",
+   "pause": 0.3
+  },
+  {
+   "say": "He co-founded the company in nineteen ninety-three, and led it for thirty-three years.",
+   "cap": "He co-founded the company in 1993, and led it for 33 years.",
+   "pause": 0.3
+  },
+  {
+   "say": "Here's what we know, in four points.",
+   "cap": "Here's what we know, in 4 points.",
+   "pause": 0.3
+  },
+  {
+   "say": "One. It was effective immediately.",
+   "pause": 0.3
+  },
+  {
+   "say": "He left as C.E.O., as president, and from the board.",
+   "cap": "He left as CEO, as president, and from the board.",
+   "pause": 0.3
+  },
+  {
+   "say": "Two. Who's in charge.",
+   "pause": 0.3
+  },
+  {
+   "say": "Chief financial officer Colette Kress is interim C.E.O., while the board searches for a permanent one.",
+   "cap": "Chief financial officer Colette Kress is interim CEO, while the board searches for a permanent one.",
+   "pause": 0.3
+  },
+  {
+   "say": "Three. The stock.",
+   "pause": 0.3
+  },
+  {
+   "say": "Shares fell as much as fourteen percent at Thursday's open.",
+   "cap": "Shares fell as much as 14% at Thursday's open.",
+   "pause": 0.3
+  },
+  {
+   "say": "Before the open, rivals A M D and Broadcom were up.",
+   "cap": "Before the open, rivals AMD and Broadcom were up.",
+   "pause": 0.3
+  },
+  {
+   "say": "Four. What to watch.",
+   "pause": 0.3
+  },
+  {
+   "say": "Nvidia has not given a reason. On Sunday it opened an independent investigation into reports that he was targeted by a foreign intelligence operation.",
+   "pause": 0.3
+  },
+  {
+   "say": "And it still reports earnings on Tuesday, November seventeenth.",
+   "cap": "And it still reports earnings on Tuesday, November 17.",
+   "pause": 0.3
+  },
+  {
+   "say": "Follow for tech news, without the hype.",
+   "pause": 0.3
+  }
+ ],
+ "beats": [
+  {
+   "k": "photo",
+   "at": -1,
+   "image": "assets/people/jensen_huang.png",
+   "lines": [
+    "Jensen Huang",
+    "is out"
+   ],
+   "hl": "out",
+   "pill": "BREAKING",
+   "size": 100,
+   "ring": true
+  },
+  {
+   "k": "big",
+   "at": 1,
+   "text": "33 years\nat the top",
+   "hl": "33",
+   "sub": "co-founder, since 1993"
+  },
+  {
+   "k": "dots",
+   "at": 2,
+   "n": 4,
+   "sub": "#4 is what to watch",
+   "sub_at": [
+    2,
+    0.5
+   ]
+  },
+  {
+   "k": "step",
+   "at": 3,
+   "n": 1,
+   "label": "Effective now",
+   "step_no": 1
+  },
+  {
+   "k": "big",
+   "at": 4,
+   "text": "CEO. President.\nBoard seat.",
+   "hl": "Board seat.",
+   "sub": "all three, per Nvidia",
+   "step_no": 1
+  },
+  {
+   "k": "step",
+   "at": 5,
+   "n": 2,
+   "label": "Who's in charge",
+   "step_no": 2
+  },
+  {
+   "k": "photo",
+   "at": 6,
+   "image": "assets/people/colette_kress.png",
+   "lines": [
+    "Colette Kress",
+    "interim CEO"
+   ],
+   "hl": "Kress",
+   "sub": "Nvidia's CFO, keeps both jobs",
+   "size": 90,
+   "ring": false,
+   "step_no": 2
+  },
+  {
+   "k": "step",
+   "at": 7,
+   "n": 3,
+   "label": "The stock",
+   "step_no": 3
+  },
+  {
+   "k": "num",
+   "at": 8,
+   "to": 14,
+   "dec": 0,
+   "prefix": "",
+   "suffix": "%",
+   "label": "down as much as",
+   "sub": "at Thursday's open (AP)",
+   "sub_at": [
+    8,
+    0.5
+   ],
+   "step_no": 3
+  },
+  {
+   "k": "pair",
+   "at": 9,
+   "left": {
+    "title": "Nvidia",
+    "lines": [
+     "Down 7.6%",
+     "before the open"
+    ]
+   },
+   "right": {
+    "title": "AMD",
+    "lines": [
+     "Up 2.3%",
+     "Broadcom +1.4%",
+     "before the open"
+    ],
+    "hl": true
+   },
+   "right_at": [
+    9,
+    0.3
+   ],
+   "mid": "premarket, per Fox Business",
+   "step_no": 3
+  },
+  {
+   "k": "step",
+   "at": 10,
+   "n": 4,
+   "label": "What to watch",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 11,
+   "text": "No reason\ngiven",
+   "hl": "No",
+   "sub": "an independent probe opened Sunday",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 12,
+   "text": "Earnings:\nNov 17",
+   "hl": "Nov 17",
+   "sub": "still on schedule",
+   "step_no": 4
+  },
+  {
+   "k": "end",
+   "at": 13,
+   "text": "@theunhyped.ai",
+   "sub": "Tech news. No hype."
+  }
+ ],
+ "cover": {
+  "pill": "BREAKING",
+  "lines": [
+   "Jensen Huang",
+   "is out"
+  ],
+  "hl": "out",
+  "sub": "Nvidia shares fall up to 14%",
+  "image": "assets/people/jensen_huang.png"
+ },
+ "sources": [
+  {
+   "claim": "Huang resigned as President, CEO and board member, effective immediately; CFO Colette Kress interim CEO and keeps CFO role; board search for permanent CEO; Q3 results Tuesday Nov 17",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+   "fetched": "2026-11-12"
+  },
+  {
+   "claim": "Kress: foundation built 'over the last 33 years'; founded 1993; stock down about 10% on the news; board working with outside search firm",
+   "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html",
+   "fetched": "2026-11-12"
+  },
+  {
+   "claim": "Nvidia tumbled 14 per cent at the open (AP, 9:41 a.m. EST)",
+   "url": "https://www.cp24.com/news/money/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/",
+   "fetched": "2026-11-12"
+  },
+  {
+   "claim": "Nvidia opened an independent investigation on Sunday into reports Huang was targeted by a foreign intelligence operation; AMD +2.3%, Broadcom +1.4% premarket",
+   "url": "https://www.foxbusiness.com/markets/nvidia-shares-plunge-more-7-premarket-trading-ceo-uncertainty-rattles-ai-stocks",
+   "fetched": "2026-11-12"
+  }
+ ],
+ "post": {
+  "slot": "breaking",
+  "breaking": true,
+  "post_at": "2026-11-12T20:23:00+05:30",
+  "instagram_caption": "Jensen Huang has resigned as Nvidia's CEO, effective immediately.\n\nNvidia says he also left as president and from the board. CFO Colette Kress is interim CEO while the board searches for a permanent one. Huang co-founded Nvidia in 1993.\n\nShares fell as much as 14% at Thursday's open (AP). Nvidia has not given a reason. On Sunday it opened an independent investigation into reports that Huang was targeted by a foreign intelligence operation.\n\nWhat to watch: Nvidia still reports earnings on Tuesday, November 17. This is news, not investment advice.\n\nSources: Nvidia, AP, Yahoo Finance, Fox Business.\n\nCan Nvidia stay on top without its founder?\n\n#theunhyped #Nvidia #JensenHuang #AI #TechNews",
+  "youtube_title": "Jensen Huang Resigns as Nvidia CEO: What We Know",
+  "youtube_description": "Jensen Huang has resigned as Nvidia's president, CEO and board member, effective immediately, Nvidia announced on November 12, 2026. CFO Colette Kress is interim CEO while the board searches for a permanent successor. Shares fell as much as 14% at the open. Nvidia gave no reason; on Sunday it opened an independent investigation into reports that Huang was targeted by a foreign intelligence operation. Earnings are still due November 17. Here's what's known so far. News, not investment advice.\n\nSources:\n• Nvidia, \"NVIDIA Announces CEO Transition\" (Nov 12, 2026)\n• AP via CP24, \"Nvidia shares plunge at open after CEO Jensen Huang resigns\" (Nov 12, 2026)\n• Yahoo Finance, \"Nvidia live updates: Jensen Huang resigns, CFO Colette Kress to serve as interim CEO\" (Nov 12, 2026)\n• Fox Business, \"Nvidia shares fall as CEO Jensen Huang resigns\" (Nov 12, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Nvidia #AI #Shorts",
+  "youtube_tags": [
+   "Nvidia",
+   "Jensen Huang",
+   "Colette Kress",
+   "Nvidia CEO",
+   "NVDA",
+   "tech news",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "2026-1993",
+   "expect": "33",
+   "note": "co-founded 1993; Kress: 'over the last 33 years'"
+  },
+  {
+   "expr": "14",
+   "expect": "14",
+   "note": "down 14% at the open, AP via CP24, 9:41 a.m. EST Nov 12"
+  },
+  {
+   "expr": "2.3",
+   "expect": "2.3",
+   "note": "AMD +2.3% premarket (Fox Business)"
+  },
+  {
+   "expr": "1.4",
+   "expect": "1.4",
+   "note": "Broadcom +1.4% premarket (Fox Business)"
+  },
+  {
+   "expr": "7.6",
+   "expect": "7.6",
+   "note": "Nvidia -7.6% to $160.50 premarket (Fox Business)"
+  }
+ ]
+}
