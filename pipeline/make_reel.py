@@ -2,7 +2,8 @@
 
 Usage:
   python pipeline/make_reel.py specs/<id>.json            # full build into queue/<id>/
-  python pipeline/make_reel.py specs/<id>.json --stills   # quick check frames only (queue/<id>/check.still_*.png)
+  python pipeline/make_reel.py specs/<id>.json --sheet    # ONE check image: frame 0 + end of every scene + cover
+  python pipeline/make_reel.py specs/<id>.json --stills   # every phrase as a separate still (only for debugging)
   python pipeline/make_reel.py specs/<id>.json --check    # rules check only, no voice, no video
 """
 import datetime as dt, json, math, os, re, shutil, sys
@@ -76,6 +77,15 @@ def check_spec(spec, allow_old_sources=False):
     if errs: raise SystemExit("SPEC CHECK FAILED:\n- " + "\n- ".join(errs))
 
 
+def scene_ends(spec, times, total):
+    """time just before each scene (engine 1) or screen (engine 4) is replaced, so all its elements are on screen"""
+    if spec.get("engine") == 4:
+        import render4
+        beats, _, dur, _ = render4.plan(spec, times, total)
+        return [min(t1, dur) - 0.12 for _, t0, t1 in beats]
+    return [(times[sc["until"]][0] - 0.25) if sc["until"] != "end" else total - 0.3 for sc in spec["scenes"]]
+
+
 def main():
     path = sys.argv[1]
     spec = json.load(open(path))
@@ -89,8 +99,21 @@ def main():
     _, times, total, words = voice.synth(spec["phrases"], wav, spec.get("voice", voice.VOICE), spec.get("speed", 1.05))
     json.dump({"phrase_times": times, "total": total, "words": words}, open(os.path.join(out, "timing.json"), "w"), indent=1)
     lo, hi = SLOTS[spec["post"]["slot"]]
-    if not lo <= total <= hi:
+    if not lo <= total <= hi and "--any-length" not in sys.argv:   # --any-length: kit tests only
         raise SystemExit(f"LENGTH CHECK FAILED: {total:.1f}s, a {spec['post']['slot']} Reel must be {lo} to {hi} seconds")
+    if "--sheet" in sys.argv:          # cheap check: ONE image = frame 0 + the last frame of every scene + the cover
+        ts = [0.0] + [round(t, 2) for t in scene_ends(spec, times, total)]
+        base = os.path.join(out, "check")
+        render.render(spec, times, total, wav, base, stills=ts, words=words)
+        cov = os.path.join(out, "check.cover.png"); render.cover(spec, cov)
+        from PIL import Image
+        files = [f"{base}.still_{t:05.1f}.png" for t in ts] + [cov]
+        cols = 4; rows = (len(files) + cols - 1) // cols
+        sheet = Image.new("RGB", (360 * cols, 640 * rows), "white")
+        for i, f in enumerate(files): sheet.paste(Image.open(f).convert("RGB").resize((360, 640)), ((i % cols) * 360, (i // cols) * 640))
+        sheet.save(os.path.join(out, "sheet.png"))
+        for f in set(files): os.remove(f)
+        print("check sheet:", os.path.join(out, "sheet.png"), f"({total:.1f}s, {len(ts)} frames + cover)"); return
     if "--stills" in sys.argv:
         ts = [0.0] + [round(s + (e - s) * 0.8, 2) for s, e in times]
         render.render(spec, times, total, wav, os.path.join(out, "check"), stills=ts, words=words)

@@ -14,7 +14,8 @@ Nothing needs a laptop. Setup: see `SETUP.md`.
 
 ## Folders
 - `pipeline/` voice + word alignment (`voice.py`), engineering-sheet video engine (`render.py`), builder and rules checker (`make_reel.py`)
-- `specs/` one JSON file per Reel: phrases, scenes, cover, captions, sources, math
+- `briefs/` one short brief per Reel (what Claude writes); `pipeline/kit.py` turns it into `specs/<id>.json`
+- `specs/` the full spec per Reel, built by the kit: phrases, scenes, cover, captions, sources, math
 - `queue/` Reels waiting to post (`post.json`); videos live on the `media` branch (GitHub Pages)
 - `posted/` what went out, with Instagram and YouTube links in `result.json`
 - `poster/` Instagram and YouTube posting, media branch handling
@@ -23,7 +24,8 @@ Nothing needs a laptop. Setup: see `SETUP.md`.
 ## Manual commands
 ```
 python pipeline/make_reel.py specs/<id>.json --check    # rules only
-python pipeline/make_reel.py specs/<id>.json --stills   # preview frames + cover
+python pipeline/kit.py briefs/<id>.json                 # brief -> spec, with a layout check
+python pipeline/make_reel.py specs/<id>.json --sheet    # ONE check image: frame 0 + every scene + cover
 python pipeline/make_reel.py specs/<id>.json            # build video + cover into queue/<id>/
 python poster/media_branch.py add <id> queue/<id>/video.mp4 queue/<id>/cover.png
 python poster/publish_due.py --dry-run                  # show what would post now

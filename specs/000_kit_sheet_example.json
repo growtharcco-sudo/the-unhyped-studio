@@ -1,0 +1,464 @@
+{
+ "id": "000_kit_sheet_example",
+ "series": "Huge Claim, Checked",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 1,
+ "dwg": "005",
+ "phrases": [
+  {
+   "say": "Does every A I question really drink a whole bottle of water?",
+   "cap": "Does every AI question really drink a whole bottle of water?"
+  },
+  {
+   "say": "That claim went viral in twenty twenty four.",
+   "cap": "That claim went viral in 2024.",
+   "pause": 0.45
+  },
+  {
+   "say": "It came from a University of California, Riverside study, shared by The Washington Post.",
+   "pause": 0.4
+  },
+  {
+   "say": "Their estimate for one hundred words from G P T four depended on the data center's location.",
+   "cap": "Their estimate for 100 words from GPT-4 depended on the data center's location.",
+   "pause": 0.35
+  },
+  {
+   "say": "From two hundred and thirty five milliliters in Texas, to over fourteen hundred in Washington.",
+   "cap": "From 235 ml in Texas, to over 1,400 in Washington.",
+   "pause": 0.55
+  },
+  {
+   "say": "Then Google measured its own.",
+   "pause": 0.6
+  },
+  {
+   "say": "Its typical Gemini text prompt uses about zero point two six milliliters of water.",
+   "cap": "Its typical Gemini text prompt uses about 0.26 ml of water.",
+   "pause": 0.3
+  },
+  {
+   "say": "That's about five drops.",
+   "pause": 0.55
+  },
+  {
+   "say": "Open A I's Sam Altman claims about one fifteenth of a teaspoon for Chat G P T.",
+   "cap": "OpenAI's Sam Altman claims about 1/15 of a teaspoon for ChatGPT.",
+   "pause": 0.5
+  },
+  {
+   "say": "But these are company numbers. Google's counts only data center cooling water.",
+   "pause": 0.4
+  },
+  {
+   "say": "Images and video weren't included, and long reasoning tasks likely use more.",
+   "pause": 0.55
+  },
+  {
+   "say": "My take: one prompt isn't a bottle. But at global scale, small numbers add up.",
+   "pause": 0.6
+  },
+  {
+   "say": "Follow for more. Sources are in the description.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 2,
+   "sub": "The viral claim",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "Huge claim, checked",
+     "y": 500,
+     "at": -1
+    },
+    {
+     "type": "head",
+     "text": "1 AI prompt =",
+     "y": 660,
+     "at": -1,
+     "size": 96
+    },
+    {
+     "type": "head",
+     "text": "1 bottle of water?",
+     "y": 780,
+     "at": -1,
+     "size": 96,
+     "hl": "bottle of water?",
+     "underline": true
+    },
+    {
+     "type": "badge",
+     "text": "VIRAL · 2024",
+     "color": "orange",
+     "y": 890,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "sub": "Where it came from",
+   "els": [
+    {
+     "type": "card",
+     "y": 490,
+     "at": 2,
+     "rows": [
+      [
+       "Model",
+       "GPT-4"
+      ],
+      [
+       "Task",
+       "100 words of text"
+      ],
+      [
+       "Texas",
+       "235 ml",
+       "hl"
+      ],
+      [
+       "Washington",
+       "1,408 ml",
+       "hl"
+      ]
+     ],
+     "row_at": [
+      2,
+      [
+       2,
+       0.75
+      ],
+      [
+       3,
+       0.5
+      ],
+      [
+       4,
+       0.25
+      ]
+     ],
+     "title": "UC Riverside study · via Washington Post"
+    },
+    {
+     "type": "kicker",
+     "text": "Depends on where the data center is",
+     "color": "muted",
+     "size": 24,
+     "y": 856,
+     "at": [
+      4,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "until": 8,
+   "sub": "Google measured",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "Google · median Gemini text prompt",
+     "y": 500,
+     "at": 5
+    },
+    {
+     "type": "number",
+     "prefix": "",
+     "value": 0.26,
+     "suffix": " ml",
+     "decimals": 2,
+     "size": 200,
+     "y": 740,
+     "at": [
+      5,
+      0.3
+     ]
+    },
+    {
+     "type": "head",
+     "text": "About five drops.",
+     "y": 870,
+     "at": 6,
+     "size": 76,
+     "hl": "five drops.",
+     "underline": true
+    },
+    {
+     "type": "kicker",
+     "text": "Google's own paper · Aug 2025",
+     "color": "muted",
+     "size": 24,
+     "y": 960,
+     "at": [
+      7,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "sub": "Side by side",
+   "els": [
+    {
+     "type": "kicker",
+     "text": "",
+     "y": 480,
+     "at": 8
+    },
+    {
+     "type": "bar",
+     "label": "GPT-4 study · lowest (Texas)",
+     "value": "235 ml",
+     "y": 570,
+     "at": 8
+    },
+    {
+     "type": "bar",
+     "label": "ChatGPT · per Altman",
+     "value": "≈0.32 ml",
+     "y": 680,
+     "at": [
+      8,
+      0.333
+     ],
+     "fill": 0.0014,
+     "color": "blue"
+    },
+    {
+     "type": "bar",
+     "label": "Gemini · per Google",
+     "value": "0.26 ml",
+     "y": 790,
+     "at": [
+      8,
+      0.667
+     ],
+     "fill": 0.0011,
+     "color": "blue"
+    },
+    {
+     "type": "kicker",
+     "text": "Too small to see on this scale",
+     "color": "muted",
+     "size": 24,
+     "y": 910,
+     "at": [
+      8,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "until": 11,
+   "sub": "The catch",
+   "els": [
+    {
+     "type": "card",
+     "y": 490,
+     "at": 9,
+     "rows": [
+      [
+       "Who measured",
+       "The companies",
+       "hl"
+      ],
+      [
+       "Google counts",
+       "Cooling water only"
+      ],
+      [
+       "Not included",
+       "Images and video"
+      ],
+      [
+       "Long reasoning",
+       "Likely uses more"
+      ]
+     ],
+     "row_at": [
+      9,
+      [
+       9,
+       0.5
+      ],
+      10,
+      [
+       10,
+       0.5
+      ]
+     ],
+     "title": "The catch"
+    }
+   ]
+  },
+  {
+   "until": 12,
+   "sub": "My take",
+   "els": [
+    {
+     "type": "badge",
+     "text": "MY TAKE",
+     "color": "orange",
+     "y": 450,
+     "at": 11
+    },
+    {
+     "type": "strike",
+     "text": "1 prompt = 1 bottle.",
+     "y": 590,
+     "at": 11,
+     "delay": 0.3,
+     "strike_at": [
+      11,
+      0.4
+     ]
+    },
+    {
+     "type": "head",
+     "text": "Tiny per prompt.",
+     "y": 740,
+     "at": [
+      11,
+      0.5
+     ],
+     "size": 80
+    },
+    {
+     "type": "head",
+     "text": "Adds up at scale.",
+     "y": 840,
+     "at": [
+      11,
+      0.7
+     ],
+     "size": 80,
+     "hl": "Adds up at scale.",
+     "underline": true
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "sub": "References",
+   "els": [
+    {
+     "type": "ref",
+     "y": 440,
+     "at": 12,
+     "headline": "In a first, Google has released data on how much energy an AI prompt uses",
+     "site": "technologyreview.com",
+     "line": "Aug 21, 2025 · plus Google's paper and Tom's Hardware"
+    },
+    {
+     "type": "follow",
+     "y": 926,
+     "at": 12,
+     "delay": 0.2
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "lines": [
+   "1 AI prompt =",
+   "1 bottle of water?"
+  ],
+  "box": "Checked.",
+  "stamp": "5 DROPS",
+  "footer": "Huge claim · Checked"
+ },
+ "sources": [
+  {
+   "claim": "Median Gemini text prompt: 0.24 Wh, 0.26 ml water (about five drops); text only, median query; reasoning models likely use more; critics' caveats on self-reported data",
+   "url": "https://www.technologyreview.com/2025/08/21/1122288/google.gemini.ai.energy/",
+   "fetched": "2026-11-05"
+  },
+  {
+   "claim": "Google paper: 0.26 mL is water consumed for cooling in data centers, calculated from Water Usage Effectiveness",
+   "url": "https://arxiv.org/html/2508.15734v1",
+   "fetched": "2026-11-05"
+  },
+  {
+   "claim": "UC Riverside research shared by The Washington Post: 100 words from GPT-4 uses 235 ml (Texas) to 1,408 ml (Washington) of water",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/using-gpt-4-to-generate-100-words-consumes-up-to-3-bottles-of-water-ai-data-centers-also-raise-power-and-water-bills-for-nearby-residents",
+   "fetched": "2026-11-05"
+  },
+  {
+   "claim": "Sam Altman: average ChatGPT query uses about 0.34 Wh and 0.000085 gallons of water, roughly one fifteenth of a teaspoon; no methodology given",
+   "url": "https://www.techradar.com/computing/artificial-intelligence/sam-altman-doesnt-think-you-should-be-worried-about-chatgpts-energy-usage-reveals-exactly-how-much-power-each-prompt-uses",
+   "fetched": "2026-11-05"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "breaking": false,
+  "post_at": "2026-11-05T23:30:00+05:30",
+  "instagram_caption": "Does one AI prompt really use a whole bottle of water? Not by today's best numbers.\n\nThe viral claim came from a UC Riverside study shared by The Washington Post in 2024: generating 100 words with GPT-4 was estimated at 235 ml of water in Texas and over 1,400 ml in Washington. In 2025 Google published its own measurement: a median Gemini text prompt uses about 0.26 ml, roughly five drops. OpenAI's Sam Altman says an average ChatGPT query uses about one fifteenth of a teaspoon.\n\nThe catch: these are the companies' own numbers. Google's figure counts only data center cooling water, covers text prompts only, and long reasoning tasks likely use more.\n\nThe lesson: one prompt is tiny, but at global scale small numbers add up.\n\nSource: MIT Technology Review, Aug 21, 2025, and Google's paper.\n\nDid you believe the bottle of water claim?\n\n#theunhyped #AI #ChatGPT #Sustainability #TechMyths",
+  "youtube_title": "Does One AI Prompt Really Use a Bottle of Water? Checked",
+  "youtube_description": "A viral 2024 estimate from UC Riverside, shared by The Washington Post, said generating 100 words with GPT-4 could use 235 ml to over 1,400 ml of water, depending on the data center. In 2025 Google measured a median Gemini text prompt at about 0.26 ml, roughly five drops, and OpenAI's Sam Altman claims about one fifteenth of a teaspoon per ChatGPT query. These are company figures: Google's counts only data center cooling water and text prompts.\n\nSources:\n• MIT Technology Review, \"In a first, Google has released data on how much energy an AI prompt uses\" (Aug 21, 2025)\n• Google, \"Measuring the environmental impact of delivering AI at Google Scale\" (arXiv, Aug 2025)\n• Tom's Hardware, \"Using GPT-4 to generate 100 words consumes up to 3 bottles of water\" (Sep 19, 2024)\n• TechRadar, \"Sam Altman thinks ChatGPT's energy usage is nothing to worry about\" (Jun 2025)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#AI #ChatGPT #Shorts",
+  "youtube_tags": [
+   "AI water use",
+   "ChatGPT",
+   "Gemini",
+   "AI environment",
+   "fact check",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "2024",
+   "expect": "2024",
+   "note": "UC Riverside estimate shared by The Washington Post, reported by Tom's Hardware on Sep 19, 2024"
+  },
+  {
+   "expr": "100",
+   "expect": "100",
+   "note": "estimate is for generating 100 words with GPT-4 (Tom's Hardware)"
+  },
+  {
+   "expr": "235",
+   "expect": "235",
+   "note": "lowest state estimate, Texas, 235 ml (Tom's Hardware)"
+  },
+  {
+   "expr": "int(1408 > 1400)",
+   "expect": "1",
+   "note": "highest state estimate, Washington, 1,408 ml: 'over 1,400'"
+  },
+  {
+   "expr": "0.26",
+   "expect": "0.26",
+   "note": "Google paper and MIT Technology Review: median Gemini Apps text prompt uses 0.26 mL of water, about five drops"
+  },
+  {
+   "expr": "round(0.000085 * 3785.411784, 2)",
+   "expect": "0.32",
+   "note": "Altman's 0.000085 gallons in ml (TechRadar)"
+  },
+  {
+   "expr": "round(4.92892 / 15, 2)",
+   "expect": "0.33",
+   "note": "one fifteenth of a US teaspoon, consistent with 0.32 ml"
+  },
+  {
+   "expr": "round(0.32 / 235, 4)",
+   "expect": "0.0014",
+   "note": "bar fill for the Altman figure vs the 235 ml estimate"
+  },
+  {
+   "expr": "round(0.26 / 235, 4)",
+   "expect": "0.0011",
+   "note": "bar fill for the Google figure vs the 235 ml estimate"
+  }
+ ]
+}
