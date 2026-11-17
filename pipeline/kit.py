@@ -32,6 +32,12 @@ the first starts with the beat, the others cut in later in the same phrase ("at"
   photo      image ("assets/people/<name>.png"), lines=[1 to 2], hl, pill, sub, ring (orange frame)
              a real photo with a headline under it. ONLY photos the owner supplied (never download photos of people)
 
+STICK style (engine 5, a stickman explainer on the black stage). Every "show" is one scene (no kind needed):
+  head ("line\nline", max 2), hl, sub, pose (idle|point|shrug|swipe|sign|wave|facepalm), sign (text on the sign
+  when pose is "sign"), bit (Bit the robot's speech bubble, short; Bit takes the prop's place, so no prop on that scene), prop = phone {state: swipe|standby} |
+  battery {label} | drains {items: [[sun|pin|note|wifi|bolt, label]] up to 3} | settings {path, rows up to 4} |
+  big {text, hl}. Cover: the same fields. The stickman stays on screen and moves between poses.
+
 SHEET kinds (the light engineering-sheet look, engine 1). Every scene may set "sub" (the small header label).
   hook       kicker, number={prefix, value, suffix, decimals, final} (optional), lines=[1 to 2], hl, badge
              (lines and number at frame 0; badge appears @1, or at the end of a one-beat hook)
@@ -230,6 +236,12 @@ def build_spec(brief):
         spec.update(engine=4, steps=brief.get("steps", max([sh.get("n", 0) for b in starts for sh in
                     (beats[b]["show"] if isinstance(beats[b]["show"], list) else [beats[b]["show"]]) if sh["kind"] == "step"] or [5])),
                     phrases=phrases, beats=out)
+    elif style == "stick":
+        out = []
+        for b in starts:
+            sh = dict(beats[b]["show"]); sh.pop("kind", None)
+            out.append(dict(k="scene", at=-1 if b == 0 else b, **sh))
+        spec.update(engine=5, phrases=phrases, beats=out)
     elif style == "sheet":
         scenes = []
         for k, b in enumerate(starts):
@@ -240,7 +252,7 @@ def build_spec(brief):
                            "els": sheet_block(sh["kind"], sh, sc)})
         spec.update(engine=1, dwg=brief.get("dwg", brief["id"][:3]), phrases=phrases, scenes=scenes)
     else:
-        raise ValueError("style must be 'keynote' or 'sheet'")
+        raise ValueError("style must be 'sheet', 'keynote' or 'stick'")
     for k in ("cover", "sources", "post", "math"):
         if k in brief: spec[k] = brief[k]
     return spec
@@ -250,6 +262,23 @@ def build_spec(brief):
 def layout_check(spec):
     """Text too wide for the frame, or anything reaching into the caption zone. Cheap, no rendering."""
     sys.path.insert(0, HERE); probs = []
+    if spec.get("engine") == 5:
+        import render4 as R
+        for i, b in enumerate(spec["beats"]):
+            tag = f"scene {i}"; lines = b["head"].split("\n")
+            if len(lines) > 2: probs.append(f"{tag}: headline has more than 2 lines")
+            if R.fit(lines, 900, b.get("size", 84), 936, -0.03) < 60: probs.append(f'{tag}: headline too long: "{b["head"]}"')
+            if b.get("sub") and R.tw(b["sub"], R.font(600, 38)) > 940: probs.append(f'{tag}: sub too wide')
+            if b.get("bit") and R.tw(b["bit"], R.font(900, 44)) + 52 > 430: probs.append(f'{tag}: Bit bubble too wide: "{b["bit"]}"')
+            if b.get("bit") and b.get("prop"): probs.append(f"{tag}: Bit and a prop share the right side: drop one")
+            if b.get("sign") and R.tw(b["sign"], R.font(900, 50)) + 56 > 560: probs.append(f'{tag}: sign too wide: "{b["sign"]}"')
+            pr = b.get("prop") or {}
+            for it in pr.get("items", []):
+                if R.tw(it[1], R.font(800, 44)) > 290: probs.append(f'{tag}: drains label too wide: "{it[1]}"')
+            for lab in pr.get("rows", []):
+                if R.tw(lab, R.font(600, 34)) > 320: probs.append(f'{tag}: settings row too wide: "{lab}"')
+            if len(pr.get("items", [])) > 3 or len(pr.get("rows", [])) > 4: probs.append(f"{tag}: too many items in the prop")
+        return probs
     if spec.get("engine") == 4:
         import render4 as R
         cap_top = R.CAP_Y - R.CAP_SIZE - 40

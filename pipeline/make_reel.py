@@ -63,7 +63,7 @@ def check_spec(spec, allow_old_sources=False):
     nums = re.findall(r"\d", " ".join(p.get("cap", p.get("say", "")) for p in spec.get("phrases", [])))
     if nums and not spec.get("math"): errs.append("the script has numbers but spec.math is empty: compute every derived number in Python")
     # hook on the very first frame
-    if spec.get("engine") == 4:
+    if spec.get("engine") in (4, 5):
         if not spec.get("beats") or spec["beats"][0].get("at") != -1: errs.append("beats[0] needs \"at\": -1 (the hook on frame 1)")
     else:
         first = spec.get("scenes", [{}])[0].get("els", [])
@@ -71,7 +71,7 @@ def check_spec(spec, allow_old_sources=False):
     for e in (x for sc in spec.get("scenes", []) for x in sc.get("els", [])):
         y = e.get("y", 600)
         if e.get("type") != "block" and not (400 <= y <= 1080): errs.append(f"{e.get('type')} at y {y}: keep visuals between y 400 and 1080")
-    if not spec.get("cover", {}).get("lines"): errs.append("cover.lines is missing")
+    if not (spec.get("cover", {}).get("lines") or spec.get("cover", {}).get("head")): errs.append("cover.lines (or cover.head for stick) is missing")
     for bad in ("guaranteed", "you should buy", "buy now", "100% sure", "will 10x"):
         if bad in every.lower(): errs.append(f"forbidden phrase: {bad!r}")
     if errs: raise SystemExit("SPEC CHECK FAILED:\n- " + "\n- ".join(errs))
@@ -79,7 +79,7 @@ def check_spec(spec, allow_old_sources=False):
 
 def scene_ends(spec, times, total):
     """time just before each scene (engine 1) or screen (engine 4) is replaced, so all its elements are on screen"""
-    if spec.get("engine") == 4:
+    if spec.get("engine") in (4, 5):
         import render4
         beats, _, dur, _ = render4.plan(spec, times, total)
         return [min(t1, dur) - 0.12 for _, t0, t1 in beats]
@@ -92,7 +92,7 @@ def main():
     check_spec(spec, allow_old_sources="--allow-old-sources" in sys.argv)
     if "--check" in sys.argv: print("spec OK"); return
     import voice, importlib
-    render = importlib.import_module({1: "render", 2: "render2", 3: "render3", 4: "render4"}[spec.get("engine", 1)])
+    render = importlib.import_module({1: "render", 2: "render2", 3: "render3", 4: "render4", 5: "render5"}[spec.get("engine", 1)])
     out = os.path.join(ROOT, "queue", spec["id"])
     os.makedirs(out, exist_ok=True)
     wav = os.path.join(out, "voice.wav")
