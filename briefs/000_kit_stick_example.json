@@ -1,0 +1,183 @@
+{
+ "id": "000_kit_stick_example",
+ "series": "Myth vs Reality",
+ "style": "stick",
+ "beats": [
+  {
+   "say": "You close all your apps to save battery?",
+   "pause": 0.25,
+   "show": {
+    "head": "Closing apps\nsaves battery?",
+    "hl": "battery?",
+    "pose": "swipe",
+    "prop": {
+     "kind": "phone",
+     "state": "swipe"
+    }
+   }
+  },
+  {
+   "say": "Stop. It doesn't help.",
+   "pause": 0.25,
+   "show": {
+    "head": "Stop.",
+    "hl": "Stop.",
+    "size": 130,
+    "pose": "facepalm",
+    "bit": "Wait, what?"
+   }
+  },
+  {
+   "say": "Apple says the apps in your switcher aren't really open. They're on standby.",
+   "pause": 0.25,
+   "show": {
+    "head": "They're not\nreally open",
+    "hl": "not",
+    "sub": "Apple: they're in standby",
+    "pose": "point",
+    "prop": {
+     "kind": "phone",
+     "state": "standby"
+    }
+   }
+  },
+  {
+   "say": "Close one, and it has to start from scratch next time. That startup burst costs more power.",
+   "pause": 0.25,
+   "show": {
+    "head": "Reopening\ncosts more",
+    "hl": "more",
+    "pose": "shrug",
+    "prop": {
+     "kind": "battery",
+     "label": "cold start"
+    }
+   }
+  },
+  {
+   "say": "Apple's software chief, Craig Federighi, was asked if he quits apps for battery life. His reply, as reported in twenty sixteen:",
+   "pause": 0.25,
+   "cap": "Apple's software chief, Craig Federighi, was asked if he quits apps for battery life. His reply, as reported in 2016:",
+   "show": {
+    "head": "Apple's software\nchief was asked",
+    "hl": "chief",
+    "sub": "Craig Federighi, as reported in 2016",
+    "pose": "point",
+    "prop": {
+     "kind": "big",
+     "text": "?",
+     "size": 260
+    }
+   }
+  },
+  {
+   "say": "No, and no.",
+   "pause": 0.25,
+   "show": {
+    "head": "His answer:",
+    "pose": "sign",
+    "sign": "NO AND NO.",
+    "bit": "Ouch."
+   }
+  },
+  {
+   "say": "So what does drain it? A bright screen, G.P.S., and apps that keep working in the background, like music or maps.",
+   "pause": 0.25,
+   "cap": "So what does drain it? A bright screen, GPS, and apps that keep working in the background, like music or maps.",
+   "show": {
+    "head": "What really\ndrains it",
+    "hl": "drains",
+    "pose": "point",
+    "prop": {
+     "kind": "drains",
+     "items": [
+      [
+       "sun",
+       "Brightness"
+      ],
+      [
+       "pin",
+       "GPS"
+      ],
+      [
+       "note",
+       "Music, maps"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "say": "Check Settings, then Battery, to see the real culprits.",
+   "pause": 0.25,
+   "show": {
+    "head": "Find the\nreal culprits",
+    "hl": "culprits",
+    "pose": "point",
+    "prop": {
+     "kind": "settings",
+     "path": "Settings > Battery",
+     "rows": [
+      "App A",
+      "App B",
+      "App C"
+     ]
+    }
+   }
+  },
+  {
+   "say": "Close an app only when it freezes.",
+   "pause": 0.25,
+   "show": {
+    "head": "Close it only\nwhen it freezes",
+    "hl": "freezes",
+    "pose": "idle",
+    "bit": "Got it!"
+   }
+  },
+  {
+   "say": "Follow for tech, without the hype.",
+   "pause": 0.25,
+   "show": {
+    "head": "@theunhyped.ai",
+    "hl": "",
+    "sub": "Tech, without the hype.",
+    "pose": "wave",
+    "bit": "Bye!"
+   }
+  }
+ ],
+ "cover": {
+  "head": "Closing apps\nsaves battery?",
+  "hl": "battery?",
+  "pose": "swipe",
+  "bit": "Myth!"
+ },
+ "math": [
+  {
+   "expr": "2016",
+   "expect": "2016",
+   "note": "Federighi 'no and no', reported by MacRumors in 2016 (TechRadar)"
+  }
+ ],
+ "sources": [
+  {
+   "claim": "Apple: 'you should only close an app if it's unresponsive'; Federighi replied 'no and no' (MacRumors, 2016); launching an app takes a burst of power, suspended apps use less; background apps like music and GPS navigation keep using power; Settings > Battery shows usage by app",
+   "url": "https://www.techradar.com/phones/iphone/does-closing-apps-on-your-iphone-save-battery-life-the-surprising-answer-is-no-heres-why",
+   "fetched": "2026-11-18"
+  },
+  {
+   "claim": "Apple: apps in the multitasking view 'aren't open, but they're in standby mode'; save battery with lower brightness and GPS off; Google's Lockheimer 2016 'could very slightly worsen'",
+   "url": "https://www.gearbrain.com/force-closing-smartphone-apps-2633380613.html",
+   "fetched": "2026-11-18"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-18T23:59:00+05:30",
+  "instagram_caption": "SAMPLE, not for posting.\n\nDo you still swipe all your apps closed?\n\n#theunhyped #iPhone #Android #TechMyths #Battery",
+  "youtube_title": "Does Closing Apps Save Battery? (Sample)",
+  "youtube_description": "Sample only.\n\nSources:\n• TechRadar\n• GearBrain\n\n#Tech #Myth #Shorts"
+ }
+}
