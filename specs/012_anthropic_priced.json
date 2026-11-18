@@ -1,0 +1,272 @@
+{
+ "id": "012_anthropic_priced",
+ "series": "What It Means",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 4,
+ "steps": 4,
+ "phrases": [
+  {
+   "say": "Anthropic, the company behind Claude, priced its I P O at eighty three dollars a share.",
+   "cap": "Anthropic, the company behind Claude, priced its IPO at $83 a share."
+  },
+  {
+   "say": "Four things to know before it trades, and number four is the warning.",
+   "cap": "4 things to know before it trades, and number 4 is the warning.",
+   "pause": 0.3
+  },
+  {
+   "say": "One. The price."
+  },
+  {
+   "say": "The range was seventy to seventy eight dollars. It landed at eighty three, five dollars above the top.",
+   "cap": "The range was $70 to $78. It landed at $83, $5 above the top.",
+   "pause": 0.3
+  },
+  {
+   "say": "Two. The demand."
+  },
+  {
+   "say": "Bloomberg reported orders for as much as six times the shares on offer.",
+   "cap": "Bloomberg reported orders for as much as 6 times the shares on offer.",
+   "pause": 0.3
+  },
+  {
+   "say": "Three. The crowd."
+  },
+  {
+   "say": "Up to twenty percent of the shares are set aside for individual investors, through apps like Robinhood and Fidelity.",
+   "cap": "Up to 20% of the shares are set aside for individual investors, through apps like Robinhood and Fidelity.",
+   "pause": 0.3
+  },
+  {
+   "say": "And four.",
+   "pause": 0.4
+  },
+  {
+   "say": "This year's three biggest U.S. stock debuts, Space X, S K high nix and Sarah brass, all trade below their first trades.",
+   "cap": "This year's three biggest US stock debuts, SpaceX, SK hynix and Cerebras, all trade below their first trades.",
+   "pause": 0.3
+  },
+  {
+   "say": "Trading is expected to start Thursday, November nineteenth, on Nasdaq, under A N T.",
+   "cap": "Trading is expected to start Thursday, November 19, on Nasdaq, under ANT.",
+   "pause": 0.3
+  },
+  {
+   "say": "My take: big demand sets the price. It does not promise what comes next. This is news, not investment advice.",
+   "pause": 0.3
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "title",
+   "at": -1,
+   "pill": "IPO PRICED",
+   "lines": [
+    "Anthropic:",
+    "$83 a share"
+   ],
+   "hl": "$83 a share",
+   "size": 150
+  },
+  {
+   "k": "dots",
+   "at": 1,
+   "n": 4,
+   "sub": "#4 is the warning",
+   "sub_at": [
+    1,
+    0.5
+   ]
+  },
+  {
+   "k": "step",
+   "at": 2,
+   "n": 1,
+   "label": "The price",
+   "step_no": 1
+  },
+  {
+   "k": "swap",
+   "at": 3,
+   "old": "$70 to $78",
+   "new": "$83",
+   "new_at": [
+    3,
+    0.45
+   ],
+   "sub": "Bloomberg, CNBC, Reuters",
+   "sub_at": [
+    3,
+    0.75
+   ],
+   "step_no": 1
+  },
+  {
+   "k": "step",
+   "at": 4,
+   "n": 2,
+   "label": "The demand",
+   "step_no": 2
+  },
+  {
+   "k": "num",
+   "at": 5,
+   "to": 6,
+   "dec": 0,
+   "prefix": "",
+   "suffix": "x",
+   "label": "oversubscribed, up to",
+   "sub": "orders vs shares on offer\nper Bloomberg",
+   "sub_at": [
+    5,
+    0.5
+   ],
+   "step_no": 2
+  },
+  {
+   "k": "step",
+   "at": 6,
+   "n": 3,
+   "label": "The crowd",
+   "step_no": 3
+  },
+  {
+   "k": "num",
+   "at": 7,
+   "to": 20,
+   "dec": 0,
+   "prefix": "",
+   "suffix": "%",
+   "label": "for individual investors",
+   "sub": "up to · via Schwab, Fidelity,\nRobinhood and others",
+   "sub_at": [
+    7,
+    0.5
+   ],
+   "step_no": 3
+  },
+  {
+   "k": "step",
+   "at": 8,
+   "n": 4,
+   "label": "The warning",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 9,
+   "text": "Top 3 US IPOs\nthis year:\nbelow first trade",
+   "hl": "below first trade",
+   "sub": "SpaceX · SK hynix · Cerebras",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 10,
+   "text": "Trading:\nNov 19",
+   "hl": "Nov 19",
+   "sub": "expected · Nasdaq: ANT",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 11,
+   "text": "Demand sets\nthe price",
+   "hl": "the price",
+   "sub": "Not investment advice.",
+   "step_no": 4
+  },
+  {
+   "k": "end",
+   "at": 12,
+   "text": "@theunhyped.ai",
+   "sub": "Tech news. No hype."
+  }
+ ],
+ "cover": {
+  "pill": "IPO PRICED",
+  "lines": [
+   "Anthropic:",
+   "$83 a share"
+  ],
+  "hl": "$83 a share",
+  "sub": "4 things before it trades",
+  "size": 150
+ },
+ "sources": [
+  {
+   "claim": "Bloomberg: Anthropic will price its IPO at $83 per share, ahead of trading Thursday; 825M Class A shares; original range $70 to $78; trades as ANT on Nasdaq Thursday Nov 19; up to 20% of shares for individual investors via Schwab, Fidelity, Robinhood; this year's three biggest US IPOs SpaceX, SK hynix and Cerebras all trade below their first trades; Bloomberg: oversubscribed by as much as 6x",
+   "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-said-to-price-stock-at-83-begin-trading-thursday-212656452.html",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "Bloomberg via Seeking Alpha (Nov 18, 2026, 4:24 PM ET): Anthropic said to price IPO at $83 per share, up from prior range, amid heavy demand; orders about six times the shares available; roughly 20% set aside for retail",
+   "url": "https://seekingalpha.com/news/4674403-anthropic-said-to-price-ipo-at-83-per-share-up-from-prior-range-amid-heavy-demand",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "CNBC, citing people familiar: Anthropic set its IPO price at $83, above the $70 to $78 range; expects to trade on Nasdaq under ANT on Thursday",
+   "url": "https://panews.io/articles/01a1f092-88be-72de-86a0-c1ae22f61040",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "Reuters via Finimize: Anthropic priced its IPO at $83 a share on Wednesday, above its $70-78 range; demand several times the shares on offer",
+   "url": "https://finimize.com/content/anthropic-priced-its-ipo-above-range-at-83",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "AFP: trading Thursday Nov 19 on Nasdaq under ANT; $26B private placement at the IPO price",
+   "url": "https://www.koreatimes.co.kr/amp/world/20261119/anthropic-prices-blockbuster-ipo-as-nvidia-scandal-rattles-ai-stocks",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "post": {
+  "slot": "news",
+  "breaking": false,
+  "post_at": "2026-11-19T18:30:00+05:30",
+  "instagram_caption": "Anthropic, the company behind Claude, priced its IPO at $83 a share.\n\n1. The price: above its $70 to $78 range, as reported by Bloomberg, CNBC and Reuters.\n2. The demand: Bloomberg reported orders for as much as 6 times the shares on offer.\n3. The crowd: up to 20% of shares are set aside for individual investors through brokers like Schwab, Fidelity and Robinhood.\n4. The warning: this year's three biggest US IPOs, SpaceX, SK hynix and Cerebras, all trade below their first trades (Yahoo Finance).\n\nTrading is expected to start Thursday, November 19, on Nasdaq under ANT. How the first day goes is still unknown.\n\nWhy it matters: big demand sets the price, it does not promise what comes next. This is news, not investment advice.\n\nSource: Bloomberg, CNBC, Reuters, Nov 18, 2026.\n\nWould you buy a stock on its first day of trading?\n\n#theunhyped #Anthropic #IPO #AI #TechNews",
+  "youtube_title": "Anthropic Prices Its IPO at $83: 4 Things to Know",
+  "youtube_description": "Anthropic, the company behind Claude, priced its IPO at $83 a share, above its $70 to $78 range, according to Bloomberg, CNBC and Reuters. Bloomberg reported orders for as much as six times the shares on offer, and up to 20% of shares are set aside for individual investors. This year's three biggest US IPOs all trade below their first trades. Trading is expected to start Thursday, November 19, on Nasdaq under ANT. News, not investment advice. Here's what's known so far.\n\nSources:\n• Bloomberg via Yahoo Finance, \"Anthropic IPO live: Company said to price stock at $83, begin trading Thursday\" (Nov 18, 2026)\n• Bloomberg via Seeking Alpha, \"Anthropic said to price IPO at $83 per share, up from prior range\" (Nov 18, 2026)\n• CNBC via PANews, \"Anthropic Sets IPO Price at $83 per Share, Above Expected Range\" (Nov 19, 2026)\n• Reuters via Finimize, \"Anthropic Priced Its IPO Above Range At $83\" (Nov 18, 2026)\n• AFP via The Korea Times, \"Anthropic prices blockbuster IPO as Nvidia scandal rattles AI stocks\" (Nov 19, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Anthropic #IPO #Shorts",
+  "youtube_tags": [
+   "Anthropic",
+   "Anthropic IPO",
+   "ANT stock",
+   "Claude",
+   "IPO",
+   "tech news",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "83",
+   "expect": "83",
+   "note": "IPO price per share (Bloomberg, CNBC, Reuters)"
+  },
+  {
+   "expr": "83-78",
+   "expect": "5",
+   "note": "$5 above the top of the $70 to $78 range"
+  },
+  {
+   "expr": "6",
+   "expect": "6",
+   "note": "oversubscribed by as much as 6x (Bloomberg)"
+  },
+  {
+   "expr": "20",
+   "expect": "20",
+   "note": "up to 20% of shares for individual investors (Yahoo Finance)"
+  },
+  {
+   "expr": "3",
+   "expect": "3",
+   "note": "SpaceX, SK hynix, Cerebras below first trades (Yahoo Finance)"
+  }
+ ]
+}
