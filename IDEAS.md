@@ -28,7 +28,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 ## Open ideas: morning (20 to 35 s)
 | Series | Hook | Check against |
 |---|---|---|
-| Myth vs Reality | "Closing apps saves battery" | Apple / Google support docs |
 | Myth vs Reality | "Charging overnight ruins your battery" | Apple battery page, Battery University |
 | Myth vs Reality | "More megapixels means better photos" | camera sensor explainers |
 | Myth vs Reality | "Macs can't get viruses" | Apple security docs, security firm reports |
@@ -42,3 +41,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-04 003_incognito_myth: "Incognito mode makes you anonymous" (Myth vs Reality)
 - 2026-11-05 005_ai_water_claim: "One AI query uses a bottle of water" (Huge Claim, Checked)
 - 2026-11-05 006_computer_bug: Why it's called a "bug" (Quick Fact)
+- 2026-11-19 011_closing_apps_myth: "Closing apps saves battery" (Myth vs Reality)

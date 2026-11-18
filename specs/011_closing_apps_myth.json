@@ -1,0 +1,220 @@
+{
+ "id": "011_closing_apps_myth",
+ "series": "Myth vs Reality",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "You close all your apps to save battery?",
+   "pause": 0.25
+  },
+  {
+   "say": "Stop. It doesn't help.",
+   "pause": 0.25
+  },
+  {
+   "say": "Apple's own guide says close an app only if it's unresponsive.",
+   "pause": 0.25
+  },
+  {
+   "say": "Close one, and it has to load from scratch next time. That startup burst uses power.",
+   "pause": 0.25
+  },
+  {
+   "say": "Apple's software chief was asked if he quits apps to save battery. His reply, reported in twenty sixteen:",
+   "cap": "Apple's software chief was asked if he quits apps to save battery. His reply, reported in 2016:",
+   "pause": 0.25
+  },
+  {
+   "say": "No, and no.",
+   "pause": 0.25
+  },
+  {
+   "say": "So what does drain it? A bright screen, G.P.S., and apps working in the background, like music or maps.",
+   "cap": "So what does drain it? A bright screen, GPS, and apps working in the background, like music or maps.",
+   "pause": 0.25
+  },
+  {
+   "say": "Check Settings, then Battery, for the real culprits.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: close an app only when it freezes.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description.",
+   "pause": 0.25
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "Closing apps\nsaves battery?",
+   "hl": "battery?",
+   "pose": "swipe",
+   "prop": {
+    "kind": "phone",
+    "state": "swipe"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "Stop.",
+   "hl": "Stop.",
+   "size": 130,
+   "pose": "facepalm",
+   "bit": "Wait, what?"
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "Only if it's\nfrozen",
+   "hl": "frozen",
+   "sub": "Apple: close it only if it's unresponsive",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "!",
+    "size": 260
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "Reopening\ncosts more",
+   "hl": "more",
+   "pose": "shrug",
+   "prop": {
+    "kind": "battery",
+    "label": "cold start"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "Apple's software\nchief was asked",
+   "hl": "chief",
+   "sub": "Craig Federighi, as reported in 2016",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "?",
+    "size": 260
+   }
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "His answer:",
+   "pose": "sign",
+   "sign": "NO AND NO.",
+   "bit": "Ouch."
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "What really\ndrains it",
+   "hl": "drains",
+   "pose": "point",
+   "prop": {
+    "kind": "drains",
+    "items": [
+     [
+      "sun",
+      "Brightness"
+     ],
+     [
+      "pin",
+      "GPS"
+     ],
+     [
+      "note",
+      "Music, maps"
+     ]
+    ]
+   }
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "Find the\nreal culprits",
+   "hl": "culprits",
+   "pose": "point",
+   "prop": {
+    "kind": "settings",
+    "path": "Settings > Battery",
+    "rows": [
+     "App A",
+     "App B",
+     "App C"
+    ]
+   }
+  },
+  {
+   "k": "scene",
+   "at": 8,
+   "head": "Close it only\nwhen it freezes",
+   "hl": "freezes",
+   "pose": "idle",
+   "bit": "Got it!"
+  },
+  {
+   "k": "scene",
+   "at": 9,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "Closing apps\nsaves battery?",
+  "hl": "battery?",
+  "pose": "swipe",
+  "bit": "Myth!"
+ },
+ "sources": [
+  {
+   "claim": "Apple's guide: 'you should only close an app if it's unresponsive'; Federighi replied 'no and no' (MacRumors, 2016); opening an app causes a short power spike; music and GPS navigation keep using power in the background; Settings > Battery shows battery usage by app",
+   "url": "https://www.techradar.com/phones/iphone/does-closing-apps-on-your-iphone-save-battery-life-the-surprising-answer-is-no-heres-why",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "Craig Federighi, Apple SVP of Software Engineering, answered a user's email asking if quitting apps is necessary for battery life with 'no and no' (March 10, 2016)",
+   "url": "https://www.macrumors.com/2016/03/10/force-quitting-apps-doesnt-help-battery/",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "Apple Support: force closing an app is a troubleshooting step when an app stops responding",
+   "url": "https://support.apple.com/ht201398",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-19T08:00:00+05:30",
+  "instagram_caption": "Swiping all your apps closed does not save battery.\n\nApple's own guide says you should only close an app if it's unresponsive. Reopening a closed app means loading it from scratch, and that startup burst uses power. When a user asked if quitting apps helps battery life, Apple software chief Craig Federighi replied \"no and no\" (MacRumors, 2016).\n\nWhat really drains it: a bright screen, GPS, and apps that keep working in the background, like music or maps. Settings > Battery shows the real culprits.\n\nThe lesson: close an app only when it freezes.\n\nSource: TechRadar and MacRumors, checked Nov 19, 2026.\n\nWhich app tops your battery list in Settings?\n\n#theunhyped #iPhone #Battery #TechMyths #Smartphone",
+  "youtube_title": "Does Closing Apps Save Battery? Apple Says No",
+  "youtube_description": "Swiping apps closed is one of the most common phone habits, and it does not save battery. Apple's guide says to close an app only if it's unresponsive, reopening an app from scratch costs a burst of power, and Apple's software chief Craig Federighi answered \"no and no\" when asked if he quits apps for battery life. The real drains are screen brightness, GPS and apps that keep working in the background.\n\nSources:\n• TechRadar, \"Does closing apps on your iPhone save battery life? The surprising answer is no\"\n• MacRumors, \"Apple Reiterates: Force Quitting iOS Apps Doesn't Help Battery Life\" (Mar 10, 2016)\n• Apple Support, \"If an app on your iPhone or iPad stops responding\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#iPhone #TechMyths #Shorts",
+  "youtube_tags": [
+   "iPhone battery",
+   "closing apps",
+   "battery myth",
+   "tech myths",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "2016",
+   "expect": "2016",
+   "note": "Federighi 'no and no', MacRumors, March 10, 2016"
+  }
+ ]
+}
