@@ -1,0 +1,184 @@
+{
+ "id": "013_first_hard_drive",
+ "series": "Quick Fact",
+ "style": "stick",
+ "beats": [
+  {
+   "say": "The first commercial hard drive weighed more than a ton.",
+   "pause": 0.25,
+   "show": {
+    "head": "The first hard\ndrive: over a ton",
+    "hl": "over a ton",
+    "pose": "shrug",
+    "prop": {
+     "kind": "big",
+     "text": "1+ TON",
+     "hl": "1+ TON",
+     "size": 180
+    }
+   }
+  },
+  {
+   "say": "It was I B M's Model three fifty, shipped in nineteen fifty six.",
+   "cap": "It was IBM's Model 350, shipped in 1956.",
+   "pause": 0.25,
+   "show": {
+    "head": "IBM Model 350",
+    "hl": "350",
+    "sub": "Shipped in 1956",
+    "pose": "point",
+    "bit": "A ton?!"
+   }
+  },
+  {
+   "say": "Fifty disks, each two feet across, in a cabinet the size of two kitchen fridges.",
+   "cap": "50 disks, each 2 feet across, in a cabinet the size of two kitchen fridges.",
+   "pause": 0.25,
+   "show": {
+    "head": "50 disks,\n2 feet across",
+    "hl": "50",
+    "sub": "About the size of two fridges",
+    "pose": "point",
+    "prop": {
+     "kind": "big",
+     "text": "50",
+     "size": 260
+    }
+   }
+  },
+  {
+   "say": "And it held about three point seven five megabytes.",
+   "cap": "And it held about 3.75 megabytes.",
+   "pause": 0.5,
+   "show": {
+    "head": "It held\n3.75 MB",
+    "hl": "3.75 MB",
+    "pose": "facepalm",
+    "bit": "That's it?"
+   }
+  },
+  {
+   "say": "Companies leased it for seven hundred fifty dollars a month.",
+   "cap": "Companies leased it for $750 a month.",
+   "pause": 0.25,
+   "show": {
+    "head": "Leased for\n$750 a month",
+    "hl": "$750",
+    "pose": "point",
+    "prop": {
+     "kind": "big",
+     "text": "$750",
+     "hl": "$750",
+     "size": 200
+    }
+   }
+  },
+  {
+   "say": "One terabyte today equals about two hundred sixty seven thousand of them.",
+   "cap": "One terabyte today equals about 267,000 of them.",
+   "pause": 0.25,
+   "show": {
+    "head": "1 TB = about\n267,000 of them",
+    "hl": "267,000",
+    "pose": "shrug",
+    "prop": {
+     "kind": "big",
+     "text": "267,000",
+     "hl": "267,000",
+     "size": 130
+    }
+   }
+  },
+  {
+   "say": "My take: storage got cheap, so now we keep everything.",
+   "pause": 0.25,
+   "show": {
+    "head": "Storage got\ncheap",
+    "hl": "cheap",
+    "pose": "idle",
+    "bit": "Keep it all!"
+   }
+  },
+  {
+   "say": "Follow for more. Sources are in the description.",
+   "show": {
+    "head": "@theunhyped.ai",
+    "hl": "",
+    "sub": "Tech, without the hype.",
+    "pose": "wave",
+    "bit": "Bye!"
+   }
+  }
+ ],
+ "cover": {
+  "head": "The first hard\ndrive: over a ton",
+  "hl": "over a ton",
+  "pose": "shrug",
+  "bit": "A ton?!"
+ },
+ "math": [
+  {
+   "expr": "1956",
+   "expect": "1956",
+   "note": "IBM 350 shipped in 1956 (Computer History Museum)"
+  },
+  {
+   "expr": "50",
+   "expect": "50",
+   "note": "fifty 24-inch disks (Computer History Museum)"
+  },
+  {
+   "expr": "24/12",
+   "expect": "2.0",
+   "note": "24-inch disks = 2 feet across"
+  },
+  {
+   "expr": "3.75",
+   "expect": "3.75",
+   "note": "equivalent of 3.75 MB (Computer History Museum)"
+  },
+  {
+   "expr": "750",
+   "expect": "750",
+   "note": "leased for $750 per month (Computer History Museum)"
+  },
+  {
+   "expr": "round(1_000_000/3.75, -3)",
+   "expect": "267000.0",
+   "note": "1 TB = 1,000,000 MB / 3.75 MB = 266,667, about 267,000"
+  }
+ ],
+ "sources": [
+  {
+   "claim": "1956: IBM Model 350 shipped (to Zellerbach Paper, San Francisco, June); fifty 24-inch disks; equivalent of 3.75 megabytes (5 million 6-bit characters); 5 ft high by 6 ft wide; weighed over one ton; leased for $750 per month",
+   "url": "https://www.computerhistory.org/storageengine/first-commercial-hard-disk-drive-shipped/",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "IBM: RAMAC 'was the size of two kitchen refrigerators, weighed more than a ton'",
+   "url": "https://www.ibm.com/history/ramac",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "IBM 350: fifty 24-inch platters, 3.75 megabytes, announced 1956",
+   "url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-20T08:00:00+05:30",
+  "instagram_caption": "The first commercial hard drive weighed more than a ton.\n\nIBM's Model 350 shipped in 1956. It stacked fifty 24-inch disks in a cabinet IBM compares to two kitchen refrigerators, and it held the equivalent of about 3.75 megabytes. Companies leased it for $750 a month (Computer History Museum).\n\nToday, one terabyte equals about 267,000 of them.\n\nThe lesson: storage got cheap, so now we keep everything.\n\nSource: Computer History Museum and IBM, checked Nov 20, 2026.\n\nHow much free storage is left on your phone right now?\n\n#theunhyped #TechHistory #IBM #HardDrive #QuickFact",
+  "youtube_title": "The First Commercial Hard Drive Weighed Over a Ton",
+  "youtube_description": "IBM's Model 350, the first commercial hard disk drive, shipped in 1956. It used fifty 24-inch disks, was about the size of two kitchen refrigerators, weighed more than a ton and stored the equivalent of about 3.75 megabytes. Companies leased it for $750 a month. One terabyte today equals about 267,000 of them.\n\nSources:\n• Computer History Museum, \"1956: First commercial hard disk drive shipped\"\n• IBM, \"RAMAC\" (IBM History)\n• Wikipedia, \"History of hard disk drives\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#TechHistory #IBM #Shorts",
+  "youtube_tags": [
+   "first hard drive",
+   "IBM 350",
+   "RAMAC",
+   "tech history",
+   "hard drive",
+   "the unhyped"
+  ]
+ }
+}
