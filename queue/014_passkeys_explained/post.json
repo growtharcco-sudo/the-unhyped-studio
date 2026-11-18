@@ -1,0 +1,16 @@
+{
+ "slot": "evening",
+ "breaking": false,
+ "post_at": "2026-11-20T23:30:00+05:30",
+ "instagram_caption": "With a passkey, your secret never even reaches the website.\n\nWhen you create a passkey, your device makes a key pair just for that account. The public key goes to the website, and Apple says the server doesn't even need to protect it. The private key stays with you, and the site never learns it. To sign in, the site sends a random challenge and your device signs it (FIDO Alliance).\n\nYour face, fingerprint or PIN only unlocks the key, and that step stays on your device. A passkey only works on the site it was made for, so a fake lookalike site gets nothing.\n\nWhy it matters: no password to leak, reuse or type into the wrong site.\n\nSource: Apple Support and the FIDO Alliance, checked Nov 19, 2026.\n\nHave you switched any of your accounts to passkeys yet?\n\n#theunhyped #Passkeys #Cybersecurity #Privacy #TechExplained",
+ "youtube_title": "How Passkeys Actually Work, Explained Simply",
+ "youtube_description": "A passkey replaces your password with a pair of cryptographic keys. The public key goes to the website, which doesn't need to protect it, and the private key stays on your device or in your password manager. To sign in, the site sends a random challenge that your device signs, your face, fingerprint or PIN only unlocks the key locally, and the passkey only works on the site it was made for, which is why fake lookalike sites get nothing.\n\nSources:\n• Apple Support, \"About the security of passkeys\"\n• FIDO Alliance, \"How Passkeys Work\" (Passkey Central)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Passkeys #Cybersecurity #Shorts",
+ "youtube_tags": [
+  "passkeys",
+  "how passkeys work",
+  "passwordless",
+  "cybersecurity",
+  "FIDO",
+  "the unhyped"
+ ]
+}

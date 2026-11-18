@@ -1,0 +1,201 @@
+{
+ "id": "014_passkeys_explained",
+ "series": "How It Actually Works",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "Every site you use has to guard your password. A pass key's secret never even reaches the site.",
+   "cap": "Every site you use has to guard your password. A passkey's secret never even reaches the site.",
+   "pause": 0.25
+  },
+  {
+   "say": "Here's how a pass key actually works.",
+   "cap": "Here's how a passkey actually works.",
+   "pause": 0.25
+  },
+  {
+   "say": "When you sign up, your device makes a matching pair of keys, just for that one account.",
+   "pause": 0.25
+  },
+  {
+   "say": "The public key goes to the website. Apple says the server doesn't even need to protect it.",
+   "pause": 0.25
+  },
+  {
+   "say": "The private key stays with you, in your device or password manager. The site never learns it.",
+   "pause": 0.25
+  },
+  {
+   "say": "To sign in, the site sends a random challenge, and your device signs it with the private key.",
+   "pause": 0.25
+  },
+  {
+   "say": "Your face, fingerprint or PIN just opens the key. That step stays on your device.",
+   "cap": "Your face, fingerprint or PIN just opens the key. That step stays on your device.",
+   "pause": 0.25
+  },
+  {
+   "say": "And a pass key only works on the site it was made for, so a fake look alike site gets nothing.",
+   "cap": "And a passkey only works on the site it was made for, so a fake lookalike site gets nothing.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: if an account offers pass keys, turn them on.",
+   "cap": "My take: if an account offers passkeys, turn them on.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "The secret never\nreaches the site",
+   "hl": "never",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "KEY?",
+    "hl": "KEY?",
+    "size": 200
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "How passkeys\nwork",
+   "hl": "passkeys",
+   "pose": "idle",
+   "bit": "Show me!"
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "One key pair\nper account",
+   "hl": "key pair",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "2 KEYS",
+    "hl": "2 KEYS",
+    "size": 150
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "Public key:\nto the site",
+   "hl": "Public",
+   "sub": "Apple: the server needn't protect it",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "PUBLIC",
+    "size": 130
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "Private key:\nstays with you",
+   "hl": "Private",
+   "sub": "The server never learns it",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "PRIVATE",
+    "hl": "PRIVATE",
+    "size": 120
+   }
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "Sign the\nchallenge",
+   "hl": "challenge",
+   "pose": "swipe",
+   "prop": {
+    "kind": "phone",
+    "state": "swipe"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "Face or PIN:\nstays local",
+   "hl": "local",
+   "pose": "idle",
+   "bit": "Nice."
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "Fake sites\nget nothing",
+   "hl": "nothing",
+   "pose": "sign",
+   "sign": "WRONG SITE."
+  },
+  {
+   "k": "scene",
+   "at": 8,
+   "head": "Turn them on",
+   "hl": "on",
+   "pose": "point",
+   "bit": "Done!"
+  },
+  {
+   "k": "scene",
+   "at": 9,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "How passkeys\nreally work",
+  "hl": "passkeys",
+  "pose": "point",
+  "bit": "No password?"
+ },
+ "sources": [
+  {
+   "claim": "Apple: when you create an account, the OS creates a unique cryptographic key pair; one key is public and stored on the server; the server does not need to protect the public key; the server never learns what the private key is; Face ID/Touch ID can authorise use of the passkey; passkeys are resistant to phishing and tied to an app or website",
+   "url": "https://support.apple.com/en-gb/102195",
+   "fetched": "2026-11-19"
+  },
+  {
+   "claim": "FIDO Alliance (Passkey Central, How Passkeys Work): a keypair unique to the account; the public key is registered with the online service; the device or security key retains the private key; at sign-in the server sends a random challenge which the authenticator signs with the private key; device unlock (biometric or PIN) stays local; a passkey is only presented to the site it was registered with",
+   "url": "https://fidoalliance.org/how-fido-works/",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "breaking": false,
+  "post_at": "2026-11-20T23:30:00+05:30",
+  "instagram_caption": "With a passkey, your secret never even reaches the website.\n\nWhen you create a passkey, your device makes a key pair just for that account. The public key goes to the website, and Apple says the server doesn't even need to protect it. The private key stays with you, and the site never learns it. To sign in, the site sends a random challenge and your device signs it (FIDO Alliance).\n\nYour face, fingerprint or PIN only unlocks the key, and that step stays on your device. A passkey only works on the site it was made for, so a fake lookalike site gets nothing.\n\nWhy it matters: no password to leak, reuse or type into the wrong site.\n\nSource: Apple Support and the FIDO Alliance, checked Nov 19, 2026.\n\nHave you switched any of your accounts to passkeys yet?\n\n#theunhyped #Passkeys #Cybersecurity #Privacy #TechExplained",
+  "youtube_title": "How Passkeys Actually Work, Explained Simply",
+  "youtube_description": "A passkey replaces your password with a pair of cryptographic keys. The public key goes to the website, which doesn't need to protect it, and the private key stays on your device or in your password manager. To sign in, the site sends a random challenge that your device signs, your face, fingerprint or PIN only unlocks the key locally, and the passkey only works on the site it was made for, which is why fake lookalike sites get nothing.\n\nSources:\n• Apple Support, \"About the security of passkeys\"\n• FIDO Alliance, \"How Passkeys Work\" (Passkey Central)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Passkeys #Cybersecurity #Shorts",
+  "youtube_tags": [
+   "passkeys",
+   "how passkeys work",
+   "passwordless",
+   "cybersecurity",
+   "FIDO",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "2",
+   "expect": "2",
+   "note": "a passkey is one cryptographic key pair: a public and a private key (Apple, FIDO Alliance)"
+  }
+ ]
+}

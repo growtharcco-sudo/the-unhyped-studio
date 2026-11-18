@@ -20,7 +20,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 | Road to Superintelligence | What the big AI labs say their goal is, in their own words | OpenAI Charter, DeepMind, Anthropic sites |
 | How It Actually Works | How Starlink gets internet from space | SpaceX / FCC filings |
 | How It Actually Works | How a deepfake is made, and 3 ways they still slip up | research papers, reputable explainers |
-| How It Actually Works | Passkeys vs passwords: why your password is going away | FIDO Alliance, Apple/Google docs |
 | How It Actually Works | Open-source AI vs closed AI: what "open weights" means | model licences, OSI definition |
 | Huge Claim, Checked | "Quantum computers will break all encryption" | NIST post-quantum standards |
 | How It Actually Works | What happens inside a data center | company sustainability reports, IEA |
@@ -42,3 +41,5 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-05 005_ai_water_claim: "One AI query uses a bottle of water" (Huge Claim, Checked)
 - 2026-11-05 006_computer_bug: Why it's called a "bug" (Quick Fact)
 - 2026-11-19 011_closing_apps_myth: "Closing apps saves battery" (Myth vs Reality)
+- 2026-11-19 013_first_hard_drive: The first commercial hard drive weighed over a ton (Quick Fact)
+- 2026-11-19 014_passkeys_explained: How passkeys actually work (How It Actually Works)
