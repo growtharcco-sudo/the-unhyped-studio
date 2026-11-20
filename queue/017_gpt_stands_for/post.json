@@ -1,0 +1,16 @@
+{
+ "slot": "morning",
+ "breaking": false,
+ "post_at": "2026-11-22T08:00:00+05:30",
+ "instagram_caption": "GPT stands for Generative Pre-trained Transformer.\n\nGenerative: it produces new text. Pre-trained: it first learns from a large amount of text before being tuned for specific tasks. Transformer: the model design it is built on (OpenAI).\n\nOpenAI published the first GPT in June 2018. It learned from over 7,000 unpublished books, and pre-training took about a month on 8 GPUs.\n\nThe lesson: the name describes exactly how it works, no magic required.\n\nSource: OpenAI, \"Improving Language Understanding by Generative Pre-Training\", June 2018.\n\nDid you know what GPT stood for before today?\n\n#theunhyped #ChatGPT #AI #OpenAI #TechExplained",
+ "youtube_title": "What Does GPT Actually Stand For?",
+ "youtube_description": "GPT stands for Generative Pre-trained Transformer: it generates text, it is pre-trained on a large amount of text before being tuned for tasks, and it is built on the Transformer design. OpenAI published the first GPT in June 2018, trained on over 7,000 unpublished books, with pre-training that took about a month on 8 GPUs.\n\nSources:\n• OpenAI, \"Improving language understanding with unsupervised learning\" (Jun 11, 2018)\n• Radford et al., OpenAI, \"Improving Language Understanding by Generative Pre-Training\" (2018)\n• Wikipedia, \"GPT-1\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#ChatGPT #AI #Shorts",
+ "youtube_tags": [
+  "GPT",
+  "what does GPT stand for",
+  "ChatGPT",
+  "OpenAI",
+  "AI explained",
+  "the unhyped"
+ ]
+}

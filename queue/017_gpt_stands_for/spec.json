@@ -1,0 +1,210 @@
+{
+ "id": "017_gpt_stands_for",
+ "series": "Quick Fact",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "You use Chat G P T. But what does G P T stand for?",
+   "cap": "You use ChatGPT. But what does GPT stand for?",
+   "pause": 0.25
+  },
+  {
+   "say": "G is for generative. It generates new text.",
+   "pause": 0.25
+  },
+  {
+   "say": "P is for pre trained. First it learns from a huge pile of text, before any specific task.",
+   "cap": "P is for pre-trained. First it learns from a huge pile of text, before any specific task.",
+   "pause": 0.25
+  },
+  {
+   "say": "T is for transformer, the design of the model inside.",
+   "pause": 0.25
+  },
+  {
+   "say": "Open A I published the first G P T in June twenty eighteen.",
+   "cap": "OpenAI published the first GPT in June 2018.",
+   "pause": 0.25
+  },
+  {
+   "say": "It learned from over seven thousand unpublished books.",
+   "cap": "It learned from over 7,000 unpublished books.",
+   "pause": 0.25
+  },
+  {
+   "say": "And training took about a month, on eight G P Us.",
+   "cap": "And training took about a month, on 8 GPUs.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: knowing the name makes it a little less magic.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "What does GPT\nstand for?",
+   "hl": "GPT",
+   "pose": "shrug",
+   "prop": {
+    "kind": "big",
+    "text": "GPT?",
+    "hl": "GPT?",
+    "size": 220
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "G = Generative",
+   "hl": "Generative",
+   "sub": "It writes new text",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "G",
+    "hl": "G",
+    "size": 280
+   }
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "P = Pre-trained",
+   "hl": "Pre-trained",
+   "sub": "Learns first, specializes later",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "P",
+    "hl": "P",
+    "size": 280
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "T = Transformer",
+   "hl": "Transformer",
+   "sub": "The model's design",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "T",
+    "hl": "T",
+    "size": 280
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "First GPT:\nJune 2018",
+   "hl": "2018",
+   "pose": "idle",
+   "bit": "That long ago?"
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "Over 7,000\nbooks",
+   "hl": "7,000",
+   "sub": "Unpublished books, per the paper",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "7,000+",
+    "hl": "7,000+",
+    "size": 170
+   }
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "1 month,\n8 GPUs",
+   "hl": "8 GPUs",
+   "sub": "OpenAI, 2018",
+   "pose": "shrug",
+   "bit": "Tiny!"
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "Less magic,\nmore machine",
+   "hl": "machine",
+   "pose": "point",
+   "bit": "Got it!"
+  },
+  {
+   "k": "scene",
+   "at": 8,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "What does GPT\nstand for?",
+  "hl": "GPT",
+  "pose": "shrug",
+  "bit": "Hmm?"
+ },
+ "sources": [
+  {
+   "claim": "OpenAI (June 11, 2018): 'Our system works in two stages; first we train a transformer model on a very large amount of data' then fine-tune; 'expensive pre-training step, 1 month on 8 GPUs'",
+   "url": "https://openai.com/index/language-unsupervised/",
+   "fetched": "2026-11-21"
+  },
+  {
+   "claim": "OpenAI paper 'Improving Language Understanding by Generative Pre-Training' (Radford, Narasimhan, Salimans, Sutskever): two-stage training procedure; multi-layer Transformer decoder; BooksCorpus 'over 7,000 unique unpublished books'",
+   "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+   "fetched": "2026-11-21"
+  },
+  {
+   "claim": "Wikipedia, GPT-1: 'Generative Pre-trained Transformer 1 (GPT-1)', released June 2018 by OpenAI",
+   "url": "https://en.wikipedia.org/wiki/GPT-1",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-22T08:00:00+05:30",
+  "instagram_caption": "GPT stands for Generative Pre-trained Transformer.\n\nGenerative: it produces new text. Pre-trained: it first learns from a large amount of text before being tuned for specific tasks. Transformer: the model design it is built on (OpenAI).\n\nOpenAI published the first GPT in June 2018. It learned from over 7,000 unpublished books, and pre-training took about a month on 8 GPUs.\n\nThe lesson: the name describes exactly how it works, no magic required.\n\nSource: OpenAI, \"Improving Language Understanding by Generative Pre-Training\", June 2018.\n\nDid you know what GPT stood for before today?\n\n#theunhyped #ChatGPT #AI #OpenAI #TechExplained",
+  "youtube_title": "What Does GPT Actually Stand For?",
+  "youtube_description": "GPT stands for Generative Pre-trained Transformer: it generates text, it is pre-trained on a large amount of text before being tuned for tasks, and it is built on the Transformer design. OpenAI published the first GPT in June 2018, trained on over 7,000 unpublished books, with pre-training that took about a month on 8 GPUs.\n\nSources:\n• OpenAI, \"Improving language understanding with unsupervised learning\" (Jun 11, 2018)\n• Radford et al., OpenAI, \"Improving Language Understanding by Generative Pre-Training\" (2018)\n• Wikipedia, \"GPT-1\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#ChatGPT #AI #Shorts",
+  "youtube_tags": [
+   "GPT",
+   "what does GPT stand for",
+   "ChatGPT",
+   "OpenAI",
+   "AI explained",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "2018",
+   "expect": "2018",
+   "note": "OpenAI post 'Improving language understanding with unsupervised learning', June 11, 2018"
+  },
+  {
+   "expr": "7000",
+   "expect": "7000",
+   "note": "BooksCorpus: 'over 7,000 unique unpublished books' (OpenAI GPT paper, section 4.1)"
+  },
+  {
+   "expr": "8",
+   "expect": "8",
+   "note": "'1 month on 8 GPUs' pre-training (OpenAI post, 2018)"
+  }
+ ]
+}
