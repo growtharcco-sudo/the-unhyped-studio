@@ -6,3 +6,4 @@
 2026-11-11 14:10 IST | news | 008_anthropic_ipo | Anthropic sets IPO price range, up to $1.02T
 2026-11-12 20:25 IST | breaking | 009_nvidia_huang_out | Jensen Huang resigns as Nvidia CEO, Kress interim
 2026-11-19 03:19 IST | news | 012_anthropic_priced | Anthropic prices IPO at $83, above range
+2026-11-21 03:19 IST | news | 016_gta6_day_one | GTA VI hits $3.79B in day one sales

@@ -1,0 +1,269 @@
+{
+ "id": "016_gta6_day_one",
+ "series": "What It Means",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 4,
+ "steps": 4,
+ "phrases": [
+  {
+   "say": "Grand Theft Auto Six made three point seven nine billion dollars in a single day.",
+   "cap": "Grand Theft Auto VI made $3.79 billion in a single day."
+  },
+  {
+   "say": "Four numbers from the launch, and number four is the most surprising.",
+   "cap": "4 numbers from the launch, and number 4 is the most surprising.",
+   "pause": 0.3
+  },
+  {
+   "say": "One. The money."
+  },
+  {
+   "say": "Rockstar says day one retail sales hit three point seven nine billion dollars worldwide, by its own estimate.",
+   "cap": "Rockstar says day one retail sales hit $3.79 billion worldwide, by its own estimate.",
+   "pause": 0.3
+  },
+  {
+   "say": "Two. The copies."
+  },
+  {
+   "say": "Thirty two and a half million copies sold before release. Rockstar calls it a record.",
+   "cap": "32.5 million copies sold before release. Rockstar calls it a record.",
+   "pause": 0.3
+  },
+  {
+   "say": "Three. The comparison."
+  },
+  {
+   "say": "An analyst says Grand Theft Auto Five made about eight hundred million dollars on day one. Six made nearly five times that.",
+   "cap": "An analyst says Grand Theft Auto V made about $800 million on day one. VI made nearly 5 times that.",
+   "pause": 0.3
+  },
+  {
+   "say": "And four. The hours.",
+   "pause": 0.4
+  },
+  {
+   "say": "Data firm Sir khanna says sixty one percent of U.S. PlayStation Five players played it on launch day.",
+   "cap": "Data firm Circana says 61% of US PlayStation 5 players played it on launch day.",
+   "pause": 0.3
+  },
+  {
+   "say": "Those players averaged five hundred thirteen minutes that day. About eight and a half hours.",
+   "cap": "Those players averaged 513 minutes that day. About 8.5 hours.",
+   "pause": 0.3
+  },
+  {
+   "say": "My take: these are the company's own numbers, so watch for independent counts.",
+   "pause": 0.3
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "title",
+   "at": -1,
+   "pill": "DAY ONE SALES",
+   "lines": [
+    "GTA VI:",
+    "$3.79 billion"
+   ],
+   "hl": "$3.79 billion",
+   "size": 150
+  },
+  {
+   "k": "dots",
+   "at": 1,
+   "n": 4,
+   "sub": "#4 is the most surprising",
+   "sub_at": [
+    1,
+    0.5
+   ]
+  },
+  {
+   "k": "step",
+   "at": 2,
+   "n": 1,
+   "label": "The money",
+   "step_no": 1
+  },
+  {
+   "k": "num",
+   "at": 3,
+   "to": 3.79,
+   "dec": 2,
+   "prefix": "$",
+   "suffix": "B",
+   "label": "day one retail sales",
+   "sub": "company estimate\nworldwide, Nov 19",
+   "sub_at": [
+    3,
+    0.5
+   ],
+   "step_no": 1
+  },
+  {
+   "k": "step",
+   "at": 4,
+   "n": 2,
+   "label": "The copies",
+   "step_no": 2
+  },
+  {
+   "k": "num",
+   "at": 5,
+   "to": 32.5,
+   "dec": 1,
+   "prefix": "",
+   "suffix": "M",
+   "label": "sold before release",
+   "sub": "a record, says Rockstar",
+   "sub_at": [
+    5,
+    0.55
+   ],
+   "step_no": 2
+  },
+  {
+   "k": "step",
+   "at": 6,
+   "n": 3,
+   "label": "The comparison",
+   "step_no": 3
+  },
+  {
+   "k": "swap",
+   "at": 7,
+   "old": "$800M",
+   "new": "$3.79B",
+   "new_at": [
+    7,
+    0.6
+   ],
+   "sub": "GTA V vs GTA VI, day one\nnearly 5x",
+   "sub_at": [
+    7,
+    0.75
+   ],
+   "step_no": 3
+  },
+  {
+   "k": "step",
+   "at": 8,
+   "n": 4,
+   "label": "The hours",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 9,
+   "text": "61% of US\nPS5 players",
+   "hl": "61%",
+   "sub": "played it on launch day · Circana",
+   "step_no": 4
+  },
+  {
+   "k": "num",
+   "at": 10,
+   "to": 513,
+   "dec": 0,
+   "prefix": "",
+   "suffix": " min",
+   "label": "average play, launch day",
+   "sub": "about 8.5 hours",
+   "sub_at": [
+    10,
+    0.6
+   ],
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 11,
+   "text": "Company numbers.\nWatch for checks.",
+   "hl": "checks.",
+   "sub": "my take",
+   "step_no": 4
+  },
+  {
+   "k": "end",
+   "at": 12,
+   "text": "@theunhyped.ai",
+   "sub": "Tech news. No hype."
+  }
+ ],
+ "cover": {
+  "pill": "DAY ONE SALES",
+  "lines": [
+   "GTA VI:",
+   "$3.79 billion"
+  ],
+  "hl": "$3.79 billion",
+  "sub": "4 numbers from the launch",
+  "size": 150
+ },
+ "sources": [
+  {
+   "claim": "Rockstar Games / Take-Two press release (Nov 20, 2026, SEC 8-K exhibit 99.1): 'day one retail sales reached $3.79 billion', footnote 'based on company estimates through end of day November 19th worldwide'; 'sold 32.5 million units pre-release, a new record across all platforms'; 'biggest entertainment launch in history'",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm",
+   "fetched": "2026-11-21"
+  },
+  {
+   "claim": "Kotaku (Nov 20, 2026): $3.79B and 32.5M copies; Niko Partners' Daniel Ahmad: GTA V sold 11 million copies on its first day and generated $800 million; Circana's Mat Piscatella: 61% of US PS5 players engaged with GTA VI on Nov 19, averaging 513 minutes",
+   "url": "https://kotaku.com/gta-6-sold-32-5-million-copies-in-pre-release-as-take-two-crowns-it-the-biggest-entertainment-launch-in-history-2000758965",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "post": {
+  "slot": "news",
+  "breaking": false,
+  "post_at": "2026-11-21T18:30:00+05:30",
+  "instagram_caption": "Grand Theft Auto VI made $3.79 billion in a single day.\n\n1. The money: Rockstar says day one retail sales hit $3.79 billion worldwide, by its own estimate through the end of November 19.\n2. The copies: 32.5 million sold before release, a record according to Rockstar.\n3. The comparison: GTA V made about $800 million on its first day, an analyst told Kotaku. VI made nearly 5 times that.\n4. The hours: Circana says 61% of US PlayStation 5 players played it on launch day, averaging 513 minutes, about 8.5 hours.\n\nWhat's still unknown: these are the company's own estimates, and independent sales tracking will take longer.\n\nWhy it matters: Rockstar says it is a new record for entertainment across any medium, which shows how big games have become.\n\nSource: Rockstar Games / Take-Two, Nov 20, 2026; Kotaku, Nov 20, 2026.\n\nDid you play GTA VI on launch day, or are you waiting?\n\n#theunhyped #GTA6 #Gaming #Rockstar #TechNews",
+  "youtube_title": "GTA VI's $3.79 Billion Day One: 4 Numbers That Matter",
+  "youtube_description": "Rockstar Games says Grand Theft Auto VI reached $3.79 billion in day one retail sales worldwide, based on company estimates through the end of November 19. It sold 32.5 million units before release, which Rockstar calls a record. An analyst says GTA V made about $800 million on its first day, and data firm Circana says 61% of US PS5 players played GTA VI on launch day, averaging 513 minutes. Here's what's known so far.\n\nSources:\n• Rockstar Games / Take-Two Interactive, \"Grand Theft Auto VI Shatters Entertainment Box Office Records with $3.79 Billion in Day One Retail Sales\" (Nov 20, 2026)\n• Kotaku, \"GTA 6 Sold 32.5 Million Copies In Pre-Release As Take-Two Crowns It The Biggest Entertainment Launch In History\" (Nov 20, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#GTA6 #Gaming #Shorts",
+  "youtube_tags": [
+   "GTA 6",
+   "GTA VI",
+   "GTA 6 sales",
+   "Rockstar Games",
+   "Take-Two",
+   "gaming news",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "3.79",
+   "expect": "3.79",
+   "note": "day one retail sales, $B, company estimate worldwide through end of Nov 19 (Rockstar press release, Take-Two 8-K)"
+  },
+  {
+   "expr": "32.5",
+   "expect": "32.5",
+   "note": "million units sold pre-release, a record (Rockstar press release)"
+  },
+  {
+   "expr": "800",
+   "expect": "800",
+   "note": "GTA V first day revenue, $M, per Niko Partners analyst Daniel Ahmad (Kotaku)"
+  },
+  {
+   "expr": "round(3790/800,2)",
+   "expect": "4.74",
+   "note": "$3.79B vs $800M = 4.74x, said as 'nearly five times'"
+  },
+  {
+   "expr": "61",
+   "expect": "61",
+   "note": "% of US PS5 players who engaged with GTA VI on Nov 19 (Circana's Mat Piscatella, via Kotaku)"
+  },
+  {
+   "expr": "round(513/60,2)",
+   "expect": "8.55",
+   "note": "513 minutes average for those PS5 players = 8.55 hours, said as 'about eight and a half hours'"
+  }
+ ]
+}
