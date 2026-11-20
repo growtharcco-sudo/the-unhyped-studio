@@ -1,0 +1,253 @@
+{
+ "id": "018_face_id_explained",
+ "series": "How It Actually Works",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "Less than one in a million. Apple's odds that a random stranger could unlock your iPhone with their face.",
+   "cap": "Less than 1 in 1,000,000. Apple's odds that a random stranger could unlock your iPhone with their face.",
+   "pause": 0.3
+  },
+  {
+   "say": "So how does Face I D actually know it's you?",
+   "cap": "So how does Face ID actually know it's you?",
+   "pause": 0.25
+  },
+  {
+   "say": "First, it projects thousands of invisible dots onto your face.",
+   "pause": 0.25
+  },
+  {
+   "say": "Those dots build a depth map of your face. It also takes an infrared image.",
+   "pause": 0.25
+  },
+  {
+   "say": "Then it turns both into math, and compares that math to the face you enrolled.",
+   "pause": 0.25
+  },
+  {
+   "say": "Apple says that data never leaves your device, and is never backed up to I Cloud.",
+   "cap": "Apple says that data never leaves your device, and is never backed up to iCloud.",
+   "pause": 0.25
+  },
+  {
+   "say": "It adapts as you change, like makeup or growing a beard.",
+   "pause": 0.25
+  },
+  {
+   "say": "And it's attention aware: it checks that your eyes are open.",
+   "cap": "And it's attention-aware: it checks that your eyes are open.",
+   "pause": 0.25
+  },
+  {
+   "say": "The catch: Apple says the odds are higher for twins, look alike siblings, and kids under thirteen.",
+   "cap": "The catch: Apple says the odds are higher for twins, lookalike siblings, and kids under 13.",
+   "pause": 0.25
+  },
+  {
+   "say": "And after five failed tries, it asks for your pass code.",
+   "cap": "And after 5 failed tries, it asks for your passcode.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: it's strong for most people. If you have a twin, Apple suggests a pass code.",
+   "cap": "My take: it's strong for most people. If you have a twin, Apple suggests a passcode.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "Less than\n1 in a million",
+   "hl": "1 in a million",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "1 IN 1M",
+    "hl": "1 IN 1M",
+    "size": 150
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "How Face ID\nknows it's you",
+   "hl": "Face ID",
+   "pose": "idle",
+   "bit": "Show me!"
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "Thousands of\ninvisible dots",
+   "hl": "invisible",
+   "sub": "Projected onto your face",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "· · · ·",
+    "hl": "· · · ·",
+    "size": 200
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "A depth map,\nnot a photo",
+   "hl": "depth map,",
+   "sub": "Plus an infrared image",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "DEPTH",
+    "hl": "DEPTH",
+    "size": 170
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "Turned into\nmath",
+   "hl": "math",
+   "sub": "Compared to your saved face",
+   "pose": "shrug",
+   "prop": {
+    "kind": "big",
+    "text": "= ?",
+    "hl": "= ?",
+    "size": 220
+   }
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "It never leaves\nyour phone",
+   "hl": "never",
+   "pose": "sign",
+   "sign": "STAYS HERE."
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "It adapts\nas you change",
+   "hl": "adapts",
+   "sub": "Makeup, facial hair",
+   "pose": "idle",
+   "bit": "Nice."
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "Eyes open,\npaying attention",
+   "hl": "attention",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "EYES?",
+    "hl": "EYES?",
+    "size": 180
+   }
+  },
+  {
+   "k": "scene",
+   "at": 8,
+   "head": "The catch:\ntwins and kids",
+   "hl": "catch:",
+   "sub": "Apple: higher odds of a match",
+   "pose": "shrug",
+   "prop": {
+    "kind": "big",
+    "text": "TWINS?",
+    "hl": "TWINS?",
+    "size": 170
+   }
+  },
+  {
+   "k": "scene",
+   "at": 9,
+   "head": "5 misses,\nthen passcode",
+   "hl": "passcode",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "5",
+    "hl": "5",
+    "size": 260
+   }
+  },
+  {
+   "k": "scene",
+   "at": 10,
+   "head": "Got a twin?\nUse a passcode",
+   "hl": "passcode",
+   "pose": "point",
+   "bit": "Noted!"
+  },
+  {
+   "k": "scene",
+   "at": 11,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "How Face ID\nknows it's you",
+  "hl": "Face ID",
+  "pose": "point",
+  "bit": "1 in a million?"
+ },
+ "sources": [
+  {
+   "claim": "Apple Support 'About Face ID advanced technology': projects and analyzes thousands of invisible dots to create a depth map, also captures an infrared image; transforms them into a mathematical representation compared to enrolled data; data encrypted with a key available only to the Secure Enclave, doesn't leave the device, never backed up to iCloud; less than 1 in 1,000,000 for a random person; five unsuccessful attempts before passcode; adapts to makeup or facial hair; attention-aware, recognizes if eyes are open; higher probability for twins, siblings, children under 13, use a passcode if concerned",
+   "url": "https://support.apple.com/102381",
+   "fetched": "2026-11-21"
+  },
+  {
+   "claim": "Apple Platform Security guide (Face ID security): TrueDepth camera, Secure Enclave protection of facial data",
+   "url": "https://support.apple.com/guide/security/sec469d47bd8",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "breaking": false,
+  "post_at": "2026-11-22T23:30:00+05:30",
+  "instagram_caption": "Apple puts the odds that a random stranger could unlock your iPhone with their face at less than 1 in 1,000,000.\n\nHere's how Face ID does it. It projects thousands of invisible dots onto your face to build a depth map, and takes an infrared image. It turns both into a mathematical representation and compares it to the face you enrolled. Apple says that data never leaves your device and is never backed up to iCloud.\n\nIt adapts to changes like makeup or a beard, checks that your eyes are open, and after 5 failed tries it asks for your passcode. The catch: Apple says the odds are higher for twins, lookalike siblings and kids under 13.\n\nThe lesson: Face ID compares the shape of your face, not a photo, and keeps it on your phone.\n\nSource: Apple Support, \"About Face ID advanced technology\", checked Nov 21, 2026.\n\nDo you use Face ID, or do you still type your passcode?\n\n#theunhyped #FaceID #iPhone #Privacy #TechExplained",
+  "youtube_title": "How Face ID Actually Knows It's You",
+  "youtube_description": "Apple says the chance a random person could unlock your iPhone with Face ID is less than 1 in 1,000,000. Face ID projects thousands of invisible dots to build a depth map of your face, adds an infrared image, turns both into math and compares it with your enrolled face, and Apple says that data never leaves your device. It adapts to changes like a beard, checks that your eyes are open, and Apple notes the odds are higher for twins, lookalike siblings and children under 13.\n\nSources:\n• Apple Support, \"About Face ID advanced technology\"\n• Apple Platform Security guide\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#FaceID #iPhone #Shorts",
+  "youtube_tags": [
+   "Face ID",
+   "how Face ID works",
+   "iPhone",
+   "TrueDepth",
+   "biometrics",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "1000000",
+   "expect": "1000000",
+   "note": "Apple: chance a random person could unlock with Face ID is less than 1 in 1,000,000 with a single enrolled appearance"
+  },
+  {
+   "expr": "5",
+   "expect": "5",
+   "note": "Apple: only five unsuccessful match attempts before a passcode is required"
+  },
+  {
+   "expr": "13",
+   "expect": "13",
+   "note": "Apple: probability is higher for twins, look-alike siblings and children under 13"
+  }
+ ]
+}

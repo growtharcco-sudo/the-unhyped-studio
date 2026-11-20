@@ -1,0 +1,16 @@
+{
+ "slot": "evening",
+ "breaking": false,
+ "post_at": "2026-11-22T23:30:00+05:30",
+ "instagram_caption": "Apple puts the odds that a random stranger could unlock your iPhone with their face at less than 1 in 1,000,000.\n\nHere's how Face ID does it. It projects thousands of invisible dots onto your face to build a depth map, and takes an infrared image. It turns both into a mathematical representation and compares it to the face you enrolled. Apple says that data never leaves your device and is never backed up to iCloud.\n\nIt adapts to changes like makeup or a beard, checks that your eyes are open, and after 5 failed tries it asks for your passcode. The catch: Apple says the odds are higher for twins, lookalike siblings and kids under 13.\n\nThe lesson: Face ID compares the shape of your face, not a photo, and keeps it on your phone.\n\nSource: Apple Support, \"About Face ID advanced technology\", checked Nov 21, 2026.\n\nDo you use Face ID, or do you still type your passcode?\n\n#theunhyped #FaceID #iPhone #Privacy #TechExplained",
+ "youtube_title": "How Face ID Actually Knows It's You",
+ "youtube_description": "Apple says the chance a random person could unlock your iPhone with Face ID is less than 1 in 1,000,000. Face ID projects thousands of invisible dots to build a depth map of your face, adds an infrared image, turns both into math and compares it with your enrolled face, and Apple says that data never leaves your device. It adapts to changes like a beard, checks that your eyes are open, and Apple notes the odds are higher for twins, lookalike siblings and children under 13.\n\nSources:\n• Apple Support, \"About Face ID advanced technology\"\n• Apple Platform Security guide\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#FaceID #iPhone #Shorts",
+ "youtube_tags": [
+  "Face ID",
+  "how Face ID works",
+  "iPhone",
+  "TrueDepth",
+  "biometrics",
+  "the unhyped"
+ ]
+}

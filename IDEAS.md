@@ -14,7 +14,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 | How It Actually Works | What an AI agent actually is (and isn't) | vendor docs, a real agent product |
 | Road to Superintelligence | When AI improves itself: what's real today | lab publications, Flint follow-ups |
 | How It Actually Works | Why almost every advanced chip comes from one company in Taiwan | TSMC annual report, market share data |
-| How It Actually Works | How Face ID knows it's you | Apple Platform Security guide |
 | How It Actually Works | How end-to-end encryption works, in one picture | Signal protocol docs, WhatsApp white paper |
 | How It Actually Works | What a "parameter" is in a 1-trillion-parameter model | model cards, papers |
 | Road to Superintelligence | What the big AI labs say their goal is, in their own words | OpenAI Charter, DeepMind, Anthropic sites |
@@ -43,3 +42,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-19 014_passkeys_explained: How passkeys actually work (How It Actually Works)
 - 2026-11-21 015_mac_virus_myth: "Macs can't get viruses" (Myth vs Reality)
 - 2026-11-21 017_gpt_stands_for: What "GPT" stands for (Quick Fact)
+- 2026-11-21 018_face_id_explained: How Face ID knows it's you (How It Actually Works)
