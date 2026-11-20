@@ -1,0 +1,131 @@
+{
+ "id": "015_mac_virus_myth",
+ "series": "Myth vs Reality",
+ "style": "stick",
+ "beats": [
+  {
+   "say": "Macs can't get viruses? Apple's own software chief disagrees.",
+   "pause": 0.25,
+   "show": {
+    "head": "Macs can't get\nviruses?",
+    "hl": "viruses?",
+    "pose": "shrug",
+    "prop": {"kind": "big", "text": "MYTH?", "hl": "MYTH?", "size": 200}
+   }
+  },
+  {
+   "say": "In twenty twenty one, Craig Fed a reggie told a court this.",
+   "cap": "In 2021, Craig Federighi told a court this.",
+   "pause": 0.25,
+   "show": {
+    "head": "Apple's software\nchief, in court",
+    "hl": "in court",
+    "sub": "Craig Federighi, 2021",
+    "pose": "point",
+    "prop": {"kind": "big", "text": "?", "size": 260}
+   }
+  },
+  {
+   "say": "We have a level of malware on the Mac that we don't find acceptable.",
+   "pause": 0.5,
+   "show": {
+    "head": "\"Not\nacceptable\"",
+    "hl": "acceptable\"",
+    "pose": "sign",
+    "sign": "NOT OK.",
+    "bit": "Wait, what?"
+   }
+  },
+  {
+   "say": "He said Apple found about a hundred and thirty kinds of Mac malware in one year.",
+   "cap": "He said Apple found about 130 kinds of Mac malware in one year.",
+   "pause": 0.25,
+   "show": {
+    "head": "About 130 kinds\nin one year",
+    "hl": "130",
+    "sub": "Federighi's testimony, via CNBC",
+    "pose": "point",
+    "prop": {"kind": "big", "text": "130", "hl": "130", "size": 240}
+   }
+  },
+  {
+   "say": "Macs do have built in protection. Apple's antivirus is called X Protect.",
+   "cap": "Macs do have built-in protection. Apple's antivirus is called XProtect.",
+   "pause": 0.25,
+   "show": {
+    "head": "Built in:\nXProtect",
+    "hl": "XProtect",
+    "pose": "idle",
+    "bit": "Phew."
+   }
+  },
+  {
+   "say": "But many threats now trick you instead, like fake pages that ask you to paste a command into Terminal.",
+   "pause": 0.25,
+   "show": {
+    "head": "Now they\ntrick you",
+    "hl": "trick",
+    "sub": "Fake pages, real malware",
+    "pose": "facepalm",
+    "prop": {"kind": "big", "text": "PASTE?", "hl": "PASTE?", "size": 180}
+   }
+  },
+  {
+   "say": "My take: keep mac O S updated, and only install apps from sources you trust.",
+   "cap": "My take: keep macOS updated, and only install apps from sources you trust.",
+   "pause": 0.25,
+   "show": {
+    "head": "Update. Install\nwith care.",
+    "hl": "care.",
+    "pose": "point",
+    "bit": "Got it!"
+   }
+  },
+  {
+   "say": "Follow for more. Sources are in the description.",
+   "show": {
+    "head": "@theunhyped.ai",
+    "hl": "",
+    "sub": "Tech, without the hype.",
+    "pose": "wave",
+    "bit": "Bye!"
+   }
+  }
+ ],
+ "cover": {
+  "head": "Macs can't get\nviruses?",
+  "hl": "viruses?",
+  "pose": "shrug",
+  "bit": "Myth!"
+ },
+ "math": [
+  {"expr": "2021", "expect": "2021", "note": "Federighi testified in Epic v. Apple on May 19, 2021 (CNBC)"},
+  {"expr": "130", "expect": "130", "note": "about 130 kinds of Mac malware in the prior year, per Federighi's testimony (CNBC)"}
+ ],
+ "sources": [
+  {
+   "claim": "Federighi in court (Epic v. Apple, May 19, 2021): 'Today, we have a level of malware on the Mac that we don't find acceptable'; Apple's tool found about 130 different kinds of Mac malware the prior year, infecting hundreds of thousands of systems",
+   "url": "https://www.cnbc.com/2021/05/19/apples-head-of-software-says-current-level-of-mac-malware-is-not-acceptable.html",
+   "fetched": "2026-11-21"
+  },
+  {
+   "claim": "Apple Platform Security: 'macOS includes built-in antivirus technology called XProtect for the signature-based detection and removal of malware'",
+   "url": "https://support.apple.com/guide/security/sec469d47bd8",
+   "fetched": "2026-11-21"
+  },
+  {
+   "claim": "Macworld (Aug 2026): 'Yes. Macs can get viruses and other forms of malware'; many of today's biggest threats rely on social engineering; ClickLock Stealer uses a fake CAPTCHA to get users to paste a Terminal command",
+   "url": "https://www.macworld.com/article/670537/macs-can-get-viruses-but-do-macs-need-antivirus-software.html",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-21T08:00:00+05:30",
+  "instagram_caption": "\"Macs can't get viruses\" is a myth, and Apple's own software chief said so in court.\n\nIn 2021, during the Epic v. Apple trial, Craig Federighi testified: \"We have a level of malware on the Mac that we don't find acceptable.\" He said Apple found about 130 kinds of Mac malware in a single year (CNBC). Macs do ship with built-in antivirus called XProtect (Apple).\n\nToday many Mac threats don't break in, they trick you in, like fake pages that ask you to paste a command into Terminal (Macworld).\n\nThe lesson: keep macOS updated and only install apps from sources you trust.\n\nSource: CNBC, May 19, 2021; Apple Platform Security; Macworld, Aug 2026.\n\nDid you grow up believing Macs were virus-proof?\n\n#theunhyped #Mac #Cybersecurity #TechMyths #Apple",
+  "youtube_title": "Can Macs Get Viruses? Apple's Software Chief Answered",
+  "youtube_description": "\"Macs can't get viruses\" is a myth. In 2021, Apple's software chief Craig Federighi told a court that Apple had a level of Mac malware it didn't find acceptable, and that Apple found about 130 kinds of Mac malware in one year. Macs do include built-in antivirus called XProtect, but many threats now rely on tricking people, like fake pages asking you to paste a command into Terminal.\n\nSources:\n• CNBC, \"Apple's head of software says current level of Mac malware is not acceptable\" (May 19, 2021)\n• Apple Platform Security, \"Protecting against malware in macOS\"\n• Macworld, \"Do Macs need antivirus in 2026?\" (Aug 28, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Mac #Cybersecurity #Shorts",
+  "youtube_tags": ["mac viruses", "can macs get viruses", "xprotect", "mac malware", "cybersecurity", "the unhyped"]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "slot": "morning",
+ "breaking": false,
+ "post_at": "2026-11-21T08:00:00+05:30",
+ "instagram_caption": "\"Macs can't get viruses\" is a myth, and Apple's own software chief said so in court.\n\nIn 2021, during the Epic v. Apple trial, Craig Federighi testified: \"We have a level of malware on the Mac that we don't find acceptable.\" He said Apple found about 130 kinds of Mac malware in a single year (CNBC). Macs do ship with built-in antivirus called XProtect (Apple).\n\nToday many Mac threats don't break in, they trick you in, like fake pages that ask you to paste a command into Terminal (Macworld).\n\nThe lesson: keep macOS updated and only install apps from sources you trust.\n\nSource: CNBC, May 19, 2021; Apple Platform Security; Macworld, Aug 2026.\n\nDid you grow up believing Macs were virus-proof?\n\n#theunhyped #Mac #Cybersecurity #TechMyths #Apple",
+ "youtube_title": "Can Macs Get Viruses? Apple's Software Chief Answered",
+ "youtube_description": "\"Macs can't get viruses\" is a myth. In 2021, Apple's software chief Craig Federighi told a court that Apple had a level of Mac malware it didn't find acceptable, and that Apple found about 130 kinds of Mac malware in one year. Macs do include built-in antivirus called XProtect, but many threats now rely on tricking people, like fake pages asking you to paste a command into Terminal.\n\nSources:\n• CNBC, \"Apple's head of software says current level of Mac malware is not acceptable\" (May 19, 2021)\n• Apple Platform Security, \"Protecting against malware in macOS\"\n• Macworld, \"Do Macs need antivirus in 2026?\" (Aug 28, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Mac #Cybersecurity #Shorts",
+ "youtube_tags": [
+  "mac viruses",
+  "can macs get viruses",
+  "xprotect",
+  "mac malware",
+  "cybersecurity",
+  "the unhyped"
+ ]
+}

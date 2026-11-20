@@ -29,7 +29,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 |---|---|---|
 | Myth vs Reality | "Charging overnight ruins your battery" | Apple battery page, Battery University |
 | Myth vs Reality | "More megapixels means better photos" | camera sensor explainers |
-| Myth vs Reality | "Macs can't get viruses" | Apple security docs, security firm reports |
 | Myth vs Reality | "AI understands what it says" | research on LLM behaviour |
 | Quick Fact | The first 1 GB hard drive weighed about 250 kg (1980) | IBM archives |
 | Quick Fact | Your phone has more computing power than the Apollo guidance computer | NASA, chip specs (compute in Python) |
@@ -43,3 +42,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-19 011_closing_apps_myth: "Closing apps saves battery" (Myth vs Reality)
 - 2026-11-19 013_first_hard_drive: The first commercial hard drive weighed over a ton (Quick Fact)
 - 2026-11-19 014_passkeys_explained: How passkeys actually work (How It Actually Works)
+- 2026-11-21 015_mac_virus_myth: "Macs can't get viruses" (Myth vs Reality)
