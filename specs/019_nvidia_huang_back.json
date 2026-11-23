@@ -1,0 +1,261 @@
+{
+ "id": "019_nvidia_huang_back",
+ "series": "What It Means",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 4,
+ "steps": 4,
+ "phrases": [
+  {
+   "say": "Jensen Huang is back as Nvidia's C.E.O.",
+   "cap": "Jensen Huang is back as Nvidia's CEO.",
+   "pause": 0.3
+  },
+  {
+   "say": "Just eleven days after he resigned.",
+   "cap": "Just 11 days after he resigned.",
+   "pause": 0.3
+  },
+  {
+   "say": "Four things to know. Number four is the twist.",
+   "cap": "4 things to know. Number 4 is the twist.",
+   "pause": 0.3
+  },
+  {
+   "say": "One. The vote.",
+   "pause": 0.3
+  },
+  {
+   "say": "Nvidia's board voted unanimously. He's back as C.E.O., president, and on the board, effective immediately.",
+   "cap": "Nvidia's board voted unanimously. He's back as CEO, president, and on the board, effective immediately.",
+   "pause": 0.3
+  },
+  {
+   "say": "Two. The stock.",
+   "pause": 0.3
+  },
+  {
+   "say": "Shares jumped more than twenty five percent on the news.",
+   "cap": "Shares jumped more than 25% on the news.",
+   "pause": 0.3
+  },
+  {
+   "say": "Three. Colette Kress steps back.",
+   "pause": 0.3
+  },
+  {
+   "say": "The interim C.E.O. goes back to her job as chief financial officer.",
+   "cap": "The interim CEO goes back to her job as chief financial officer.",
+   "pause": 0.3
+  },
+  {
+   "say": "Four. The twist.",
+   "pause": 0.3
+  },
+  {
+   "say": "Just days earlier, the board had rejected his offer to return.",
+   "pause": 0.3
+  },
+  {
+   "say": "Now it says senior U.S. government officials told it his return poses no national security risk.",
+   "cap": "Now it says senior US government officials told it his return poses no national security risk.",
+   "pause": 0.3
+  },
+  {
+   "say": "Follow for tech news, without the hype.",
+   "pause": 0.3
+  }
+ ],
+ "beats": [
+  {
+   "k": "photo",
+   "at": -1,
+   "image": "assets/people/jensen_huang.png",
+   "lines": [
+    "Jensen Huang",
+    "is back"
+   ],
+   "hl": "back",
+   "pill": "BREAKING",
+   "size": 100,
+   "ring": true
+  },
+  {
+   "k": "swap",
+   "at": 1,
+   "old": "Nov 12",
+   "new": "Nov 23",
+   "new_at": [
+    1,
+    0.5
+   ],
+   "sub": "out, then back in",
+   "sub_at": [
+    1,
+    0.7
+   ]
+  },
+  {
+   "k": "dots",
+   "at": 2,
+   "n": 4,
+   "sub": "#4 is the twist",
+   "sub_at": [
+    2,
+    0.5
+   ]
+  },
+  {
+   "k": "step",
+   "at": 3,
+   "n": 1,
+   "label": "The vote",
+   "step_no": 1
+  },
+  {
+   "k": "big",
+   "at": 4,
+   "text": "Unanimous",
+   "hl": "Unanimous",
+   "sub": "CEO, president, board seat",
+   "step_no": 1
+  },
+  {
+   "k": "step",
+   "at": 5,
+   "n": 2,
+   "label": "The stock",
+   "step_no": 2
+  },
+  {
+   "k": "num",
+   "at": 6,
+   "to": 25,
+   "dec": 0,
+   "prefix": "+",
+   "suffix": "%",
+   "label": "more than",
+   "sub": "on the news (CNBC, Bloomberg)",
+   "sub_at": [
+    6,
+    0.5
+   ],
+   "step_no": 2
+  },
+  {
+   "k": "step",
+   "at": 7,
+   "n": 3,
+   "label": "Kress steps back",
+   "step_no": 3
+  },
+  {
+   "k": "photo",
+   "at": 8,
+   "image": "assets/people/colette_kress.png",
+   "lines": [
+    "Back to CFO"
+   ],
+   "hl": "CFO",
+   "sub": "Colette Kress",
+   "size": 96,
+   "ring": false,
+   "step_no": 3
+  },
+  {
+   "k": "step",
+   "at": 9,
+   "n": 4,
+   "label": "The twist",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 10,
+   "text": "Days ago:\n\"No.\"",
+   "hl": "\"No.\"",
+   "sub": "the board rejected his return (AP)",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 11,
+   "text": "\"No national\nsecurity risk\"",
+   "hl": "risk\"",
+   "sub": "board, citing senior US officials",
+   "step_no": 4
+  },
+  {
+   "k": "end",
+   "at": 12,
+   "text": "@theunhyped.ai",
+   "sub": "Tech news. No hype."
+  }
+ ],
+ "cover": {
+  "pill": "BREAKING",
+  "lines": [
+   "Jensen Huang",
+   "is back"
+  ],
+  "hl": "back",
+  "sub": "Nvidia shares up more than 25%",
+  "image": "assets/people/jensen_huang.png"
+ },
+ "sources": [
+  {
+   "claim": "Nov 23, 2026: Huang reinstated as President, CEO and board member, effective immediately; unanimous board vote; input from senior levels of the US government, board confident reinstatement poses no national security risk",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm",
+   "fetched": "2026-11-23"
+  },
+  {
+   "claim": "Shares soaring more than 26% on the news",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+   "fetched": "2026-11-23"
+  },
+  {
+   "claim": "AP: surprise move shortly after rejecting his offer to return; interim CEO Colette Kress returns to her role as CFO",
+   "url": "https://www.wral.com/news/ap/39d4b-nvidia-board-unanimously-reinstates-jensen-huang-as-ceo/",
+   "fetched": "2026-11-23"
+  },
+  {
+   "claim": "11-day exit from the company",
+   "url": "https://www.tomshardware.com/tech-industry/nvidia-reinstates-jensen-huang-as-ceo-following-unanimous-vote-by-company-board-11-day-exit-from-company-saw-stock-prices-fall-by-24-percent-after-affair-scandal",
+   "fetched": "2026-11-23"
+  },
+  {
+   "claim": "stock soaring more than 25%; reverses the board's stated position",
+   "url": "https://qz.com/nvidia-jensen-huang-reinstated-ceo-stock-soars-112326",
+   "fetched": "2026-11-23"
+  }
+ ],
+ "post": {
+  "slot": "breaking",
+  "breaking": true,
+  "post_at": "2026-11-23T19:51:00+05:30",
+  "instagram_caption": "Jensen Huang is back as Nvidia's CEO, 11 days after he resigned.\n\nNvidia's board voted unanimously to reinstate him as president, CEO and board member, effective immediately. Shares jumped more than 25% on the news. Interim CEO Colette Kress returns to her role as CFO.\n\nThe twist: days earlier the board had rejected his offer to return (AP). Now it says input from senior US government officials left it confident his return poses no national security risk.\n\nThis is news, not investment advice.\n\nSources: Nvidia (SEC filing), CNBC, AP, Tom's Hardware, Quartz.\n\nWas bringing him back the right call?\n\n#theunhyped #Nvidia #JensenHuang #AI #TechNews",
+  "youtube_title": "Jensen Huang Is Back as Nvidia CEO: 4 Things to Know",
+  "youtube_description": "Nvidia's board unanimously reinstated Jensen Huang as president, CEO and board member on November 23, 2026, 11 days after he resigned. Shares jumped more than 25%. Interim CEO Colette Kress returns to her CFO role. Days earlier the board had rejected his offer to return; it now says input from senior US government officials left it confident his return poses no national security risk. News, not investment advice.\n\nSources:\n• Nvidia, \"NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director\" (SEC filing, Nov 23, 2026)\n• CNBC, \"Nvidia reinstates Jensen Huang as CEO\" (Nov 23, 2026)\n• AP via WRAL, \"Nvidia board unanimously reinstates Jensen Huang as CEO\" (Nov 23, 2026)\n• Tom's Hardware (Nov 23, 2026)\n• Quartz (Nov 23, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Nvidia #AI #Shorts",
+  "youtube_tags": [
+   "Nvidia",
+   "Jensen Huang",
+   "Nvidia CEO",
+   "NVDA",
+   "Colette Kress",
+   "tech news",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "23-12",
+   "expect": "11",
+   "note": "resigned Nov 12, reinstated Nov 23 (Tom's Hardware: 11-day exit)"
+  },
+  {
+   "expr": "25",
+   "expect": "25",
+   "note": "more than 25% (QZ, JPost); CNBC more than 26%, Bloomberg more than 27%"
+  }
+ ]
+}
