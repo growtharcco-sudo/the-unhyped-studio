@@ -1,0 +1,17 @@
+{
+ "slot": "evening",
+ "breaking": false,
+ "post_at": "2026-11-26T23:30:00+05:30",
+ "instagram_caption": "\"Quantum computers will break all encryption.\" Not quite.\n\nEncryption comes in two main kinds. Public-key encryption, like RSA, is the kind a big enough quantum computer could break. The other kind, like AES, scrambles the data itself, and NIST says AES-128 will remain secure for decades to come. NIST also says machines able to break today's public-key systems may be years or decades away.\n\nThe risk is still real: attackers could collect encrypted data now and read it later, known as \"harvest now, decrypt later\". That is why NIST released its first 3 quantum-safe standards in August 2024, and its final timeline deprecates quantum-vulnerable public-key cryptography after 2030 and disallows it after 2035 (Help Net Security).\n\nThe lesson: it is not doomsday, it is a deadline.\n\nSource: NIST, Post-Quantum Cryptography FAQ and Aug 13, 2024 release; Help Net Security, Oct 28, 2026.\n\nDid you think quantum computers would break all encryption?\n\n#theunhyped #QuantumComputing #Encryption #Cybersecurity #TechExplained",
+ "youtube_title": "Will Quantum Computers Break All Encryption? Claim Checked",
+ "youtube_description": "The claim: quantum computers will break all encryption. The reality: a big enough quantum computer could break public-key encryption like RSA, but NIST says AES-128 will remain secure for decades. The risk is real because attackers could harvest encrypted data now and decrypt it later, so NIST released its first 3 post-quantum standards in August 2024 and plans to deprecate quantum-vulnerable public-key cryptography after 2030 and disallow it after 2035.\n\nSources:\n• NIST, \"Post-Quantum Cryptography FAQs\"\n• NIST, \"NIST Releases First 3 Finalized Post-Quantum Encryption Standards\" (Aug 13, 2024)\n• Help Net Security, \"NIST starts the countdown to retire quantum-vulnerable encryption\" (Oct 28, 2026)\n• Quantum Computing Report, on NIST IR 8547 (Oct 27, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#QuantumComputing #Encryption #Shorts",
+ "youtube_tags": [
+  "quantum computing",
+  "encryption",
+  "post-quantum cryptography",
+  "NIST",
+  "AES",
+  "RSA",
+  "the unhyped"
+ ]
+}

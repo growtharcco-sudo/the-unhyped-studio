@@ -20,7 +20,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 | How It Actually Works | How Starlink gets internet from space | SpaceX / FCC filings |
 | How It Actually Works | How a deepfake is made, and 3 ways they still slip up | research papers, reputable explainers |
 | How It Actually Works | Open-source AI vs closed AI: what "open weights" means | model licences, OSI definition |
-| Huge Claim, Checked | "Quantum computers will break all encryption" | NIST post-quantum standards |
 | How It Actually Works | What happens inside a data center | company sustainability reports, IEA |
 
 ## Open ideas: morning (20 to 35 s)
@@ -43,3 +42,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-21 018_face_id_explained: How Face ID knows it's you (How It Actually Works)
 - 2026-11-25 020_overnight_charging_myth: "Charging overnight ruins your battery" (Myth vs Reality)
 - 2026-11-25 022_apollo_computer: The Apollo 11 computer had about 4 KB of RAM (Quick Fact)
+- 2026-11-25 023_quantum_encryption_claim: "Quantum computers will break all encryption" (Huge Claim, Checked)

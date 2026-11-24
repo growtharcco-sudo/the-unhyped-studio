@@ -1,0 +1,252 @@
+{
+ "id": "023_quantum_encryption_claim",
+ "series": "Huge Claim, Checked",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "Quantum computers will break all encryption? Not quite.",
+   "pause": 0.4
+  },
+  {
+   "say": "Encryption comes in two main kinds, and quantum hits them very differently.",
+   "pause": 0.25
+  },
+  {
+   "say": "One is public key encryption, like R S A. A big enough quantum computer could break it.",
+   "cap": "One is public-key encryption, like RSA. A big enough quantum computer could break it.",
+   "pause": 0.25
+  },
+  {
+   "say": "The other kind, like A E S, scrambles the data itself.",
+   "cap": "The other kind, like AES, scrambles the data itself.",
+   "pause": 0.25
+  },
+  {
+   "say": "And NIST, the U S standards agency, says A E S one twenty eight will remain secure for decades to come.",
+   "cap": "And NIST, the US standards agency, says AES-128 will remain secure for decades to come.",
+   "pause": 0.5
+  },
+  {
+   "say": "So, not all encryption. But the risk is real, and NIST says such machines may be years or decades away.",
+   "pause": 0.25
+  },
+  {
+   "say": "Attackers could save encrypted data now, and read it once quantum arrives. It's called harvest now, de-crypt later.",
+   "cap": "Attackers could save encrypted data now, and read it once quantum arrives. It's called harvest now, decrypt later.",
+   "pause": 0.25
+  },
+  {
+   "say": "That's why NIST released its first three quantum safe standards in August twenty twenty four.",
+   "cap": "That's why NIST released its first 3 quantum-safe standards in August 2024.",
+   "pause": 0.25
+  },
+  {
+   "say": "And its final timeline phases out the vulnerable kind after twenty thirty, and dis-allows it after twenty thirty five.",
+   "cap": "And its final timeline phases out the vulnerable kind after 2030, and disallows it after 2035.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: it's not doomsday. It's a deadline.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "Quantum breaks\nALL encryption?",
+   "hl": "ALL",
+   "pose": "shrug",
+   "prop": {
+    "kind": "big",
+    "text": "ALL?",
+    "hl": "ALL?"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "Two kinds of\nencryption",
+   "hl": "Two",
+   "pose": "point",
+   "bit": "Two?"
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "Public-key:\nat risk",
+   "hl": "at risk",
+   "sub": "Like RSA (quantum-vulnerable)",
+   "pose": "facepalm",
+   "prop": {
+    "kind": "big",
+    "text": "RSA",
+    "hl": "RSA"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "The other kind:\nAES",
+   "hl": "AES",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "AES",
+    "hl": "AES"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "Secure for\ndecades",
+   "hl": "decades",
+   "sub": "NIST, on AES-128",
+   "pose": "idle",
+   "bit": "Phew."
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "Not all.\nBut real.",
+   "hl": "real.",
+   "sub": "Years or decades away (NIST)",
+   "pose": "shrug",
+   "bit": "When?"
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "Harvest now,\ndecrypt later",
+   "hl": "decrypt later",
+   "sub": "Help Net Security",
+   "pose": "facepalm",
+   "bit": "Sneaky."
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "3 new standards,\nAugust 2024",
+   "hl": "3",
+   "sub": "NIST",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "3",
+    "hl": "3"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 8,
+   "head": "Out by 2035",
+   "hl": "2035",
+   "sub": "Deprecated after 2030 (NIST)",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "2035",
+    "hl": "2035"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 9,
+   "head": "Not doomsday.\nA deadline.",
+   "hl": "deadline.",
+   "pose": "idle",
+   "bit": "Got it!"
+  },
+  {
+   "k": "scene",
+   "at": 10,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "Quantum breaks\nALL encryption?",
+  "hl": "ALL",
+  "pose": "shrug",
+  "bit": "Not quite."
+ },
+ "sources": [
+  {
+   "claim": "NIST PQC FAQ: Grover's algorithm 'will provide little or no advantage in attacking AES, and AES 128 will remain secure for decades to come'; machines 'may be years or decades away but could eventually break many of today's widely used cryptographic systems'",
+   "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/faqs",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "NIST, Aug 13, 2024: NIST releases first 3 finalized post-quantum encryption standards: FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA)",
+   "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "Help Net Security, Oct 28, 2026: a sufficiently powerful quantum computer could break some widely used methods; NIST will deprecate quantum-vulnerable public-key cryptography after 2030 and disallow its use after 2035; attackers could collect encrypted data and hold it until quantum technology allows them to read it, 'harvest now, decrypt later'",
+   "url": "https://www.helpnetsecurity.com/2026/10/28/nist-post-quantum-cryptography-migration-roadmap/",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "Quantum Computing Report on final NIST IR 8547: RSA, DH/ECDH, ECDSA, EdDSA listed as quantum-vulnerable; deprecated after 2030, completely disallowed after 2035; AES-128/192/256 remain approved",
+   "url": "https://quantumcomputingreport.com/nist-releases-final-ir-8547-establishing-definitive-post-quantum-cryptography-transition-timeline-and-deprecation-schedules/",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "breaking": false,
+  "post_at": "2026-11-26T23:30:00+05:30",
+  "instagram_caption": "\"Quantum computers will break all encryption.\" Not quite.\n\nEncryption comes in two main kinds. Public-key encryption, like RSA, is the kind a big enough quantum computer could break. The other kind, like AES, scrambles the data itself, and NIST says AES-128 will remain secure for decades to come. NIST also says machines able to break today's public-key systems may be years or decades away.\n\nThe risk is still real: attackers could collect encrypted data now and read it later, known as \"harvest now, decrypt later\". That is why NIST released its first 3 quantum-safe standards in August 2024, and its final timeline deprecates quantum-vulnerable public-key cryptography after 2030 and disallows it after 2035 (Help Net Security).\n\nThe lesson: it is not doomsday, it is a deadline.\n\nSource: NIST, Post-Quantum Cryptography FAQ and Aug 13, 2024 release; Help Net Security, Oct 28, 2026.\n\nDid you think quantum computers would break all encryption?\n\n#theunhyped #QuantumComputing #Encryption #Cybersecurity #TechExplained",
+  "youtube_title": "Will Quantum Computers Break All Encryption? Claim Checked",
+  "youtube_description": "The claim: quantum computers will break all encryption. The reality: a big enough quantum computer could break public-key encryption like RSA, but NIST says AES-128 will remain secure for decades. The risk is real because attackers could harvest encrypted data now and decrypt it later, so NIST released its first 3 post-quantum standards in August 2024 and plans to deprecate quantum-vulnerable public-key cryptography after 2030 and disallow it after 2035.\n\nSources:\n• NIST, \"Post-Quantum Cryptography FAQs\"\n• NIST, \"NIST Releases First 3 Finalized Post-Quantum Encryption Standards\" (Aug 13, 2024)\n• Help Net Security, \"NIST starts the countdown to retire quantum-vulnerable encryption\" (Oct 28, 2026)\n• Quantum Computing Report, on NIST IR 8547 (Oct 27, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#QuantumComputing #Encryption #Shorts",
+  "youtube_tags": [
+   "quantum computing",
+   "encryption",
+   "post-quantum cryptography",
+   "NIST",
+   "AES",
+   "RSA",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "128",
+   "expect": "128",
+   "note": "NIST PQC FAQ: 'AES 128 will remain secure for decades to come'"
+  },
+  {
+   "expr": "3",
+   "expect": "3",
+   "note": "NIST, Aug 13, 2024: first 3 finalized post-quantum encryption standards (FIPS 203, 204, 205)"
+  },
+  {
+   "expr": "205-203+1",
+   "expect": "3",
+   "note": "FIPS 203 ML-KEM, FIPS 204 ML-DSA, FIPS 205 SLH-DSA"
+  },
+  {
+   "expr": "2024",
+   "expect": "2024",
+   "note": "NIST press release dated August 13, 2024"
+  },
+  {
+   "expr": "2030",
+   "expect": "2030",
+   "note": "NIST IR 8547 final: deprecate quantum-vulnerable public-key cryptography after 2030 (Help Net Security, Oct 28, 2026)"
+  },
+  {
+   "expr": "2035",
+   "expect": "2035",
+   "note": "disallow its use under NIST standards and guidelines after 2035 (Help Net Security; Quantum Computing Report)"
+  }
+ ]
+}
