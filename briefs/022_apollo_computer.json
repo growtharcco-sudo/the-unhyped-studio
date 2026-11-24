@@ -1,0 +1,222 @@
+{
+ "id": "022_apollo_computer",
+ "series": "Quick Fact",
+ "style": "stick",
+ "beats": [
+  {
+   "say": "The computer that guided Apollo eleven had about four kilobytes of working memory.",
+   "cap": "The computer that guided Apollo 11 had about 4 KB of working memory.",
+   "pause": 0.3,
+   "show": {
+    "head": "Apollo 11's computer:\n4 KB",
+    "hl": "4 KB",
+    "pose": "shrug",
+    "prop": {
+     "kind": "big",
+     "text": "4 KB",
+     "hl": "4 KB"
+    }
+   }
+  },
+  {
+   "say": "That's two thousand and forty eight words of erasable memory, its version of RAM.",
+   "cap": "That's 2,048 words of erasable memory, its version of RAM.",
+   "pause": 0.25,
+   "show": {
+    "head": "2,048 words\nof RAM",
+    "hl": "2,048",
+    "sub": "Erasable memory (NASA)",
+    "pose": "point",
+    "prop": {
+     "kind": "big",
+     "text": "2,048",
+     "hl": "2,048"
+    }
+   }
+  },
+  {
+   "say": "Its programs lived in thirty six thousand, eight hundred and sixty four words of fixed memory.",
+   "cap": "Its programs lived in 36,864 words of fixed memory.",
+   "pause": 0.25,
+   "show": {
+    "head": "Programs:\n36,864 words",
+    "hl": "36,864",
+    "sub": "Fixed memory, about 72 KB",
+    "pose": "point",
+    "prop": {
+     "kind": "big",
+     "text": "72 KB",
+     "hl": "72 KB"
+    }
+   }
+  },
+  {
+   "say": "That memory was wires, literally sewn together by women in factories.",
+   "pause": 0.5,
+   "show": {
+    "head": "Memory, sewn\nby hand",
+    "hl": "sewn",
+    "sub": "Core rope memory",
+    "pose": "facepalm",
+    "bit": "Sewn?!"
+   }
+  },
+  {
+   "say": "Its clock ran at about one megahertz.",
+   "cap": "Its clock ran at about 1 MHz.",
+   "pause": 0.25,
+   "show": {
+    "head": "About 1 MHz",
+    "hl": "1 MHz",
+    "pose": "point",
+    "prop": {
+     "kind": "big",
+     "text": "1 MHz",
+     "hl": "1 MHz"
+    }
+   }
+  },
+  {
+   "say": "The whole box weighed seventy pounds.",
+   "cap": "The whole box weighed 70 pounds.",
+   "pause": 0.25,
+   "show": {
+    "head": "It weighed\n70 pounds",
+    "hl": "70 pounds",
+    "sub": "About 32 kg",
+    "pose": "shrug",
+    "bit": "Heavy!"
+   }
+  },
+  {
+   "say": "A phone with eight gigabytes of RAM has about two million times more.",
+   "cap": "A phone with 8 GB of RAM has about 2 million times more.",
+   "pause": 0.4,
+   "show": {
+    "head": "An 8 GB phone:\n2 million x more",
+    "hl": "2 million",
+    "pose": "point",
+    "prop": {
+     "kind": "phone",
+     "state": "standby"
+    }
+   }
+  },
+  {
+   "say": "My take: they reached the Moon by making every byte count.",
+   "pause": 0.25,
+   "show": {
+    "head": "Every byte\ncounted",
+    "hl": "byte",
+    "pose": "idle",
+    "bit": "Respect."
+   }
+  },
+  {
+   "say": "Follow for more. Sources are in the description.",
+   "show": {
+    "head": "@theunhyped.ai",
+    "hl": "",
+    "sub": "Tech, without the hype.",
+    "pose": "wave",
+    "bit": "Bye!"
+   }
+  }
+ ],
+ "cover": {
+  "head": "Apollo 11's computer:\n4 KB",
+  "hl": "4 KB",
+  "pose": "shrug",
+  "bit": "4 KB?!"
+ },
+ "math": [
+  {
+   "expr": "11",
+   "expect": "11",
+   "note": "Apollo 11"
+  },
+  {
+   "expr": "2048",
+   "expect": "2048",
+   "note": "erasable memory 2K words (NASA); 2048 words (righto.com)"
+  },
+  {
+   "expr": "2048*16/8/1024",
+   "expect": "4.0",
+   "note": "2,048 words x 16 bits = 4 KB"
+  },
+  {
+   "expr": "36864",
+   "expect": "36864",
+   "note": "fixed memory 36K words (NASA: six modules of 6,144 words)"
+  },
+  {
+   "expr": "6*6144",
+   "expect": "36864",
+   "note": "NASA Box 2-1: six core rope modules x 6,144 words"
+  },
+  {
+   "expr": "36864*16/8/1024",
+   "expect": "72.0",
+   "note": "fixed memory in KB at 16-bit words"
+  },
+  {
+   "expr": "1",
+   "expect": "1",
+   "note": "NASA: clock speed of one megahertz"
+  },
+  {
+   "expr": "70",
+   "expect": "70",
+   "note": "weighed 70.1 pounds (NASA, CBS)"
+  },
+  {
+   "expr": "round(70.1*0.45359237)",
+   "expect": "32",
+   "note": "70.1 lb in kg"
+  },
+  {
+   "expr": "8",
+   "expect": "8",
+   "note": "example phone with 8 GB of RAM"
+  },
+  {
+   "expr": "round(8*1024**3/(2048*2)/1e6)",
+   "expect": "2",
+   "note": "8 GiB / 4,096 bytes = 2,097,152, about 2 million"
+  }
+ ],
+ "sources": [
+  {
+   "claim": "NASA, Computers in Spaceflight ch. 2: erasable memory final configuration 2K words; fixed memory 36K words (six core rope modules of 6,144 16-bit words); clock speed of one megahertz; weighed 70.1 pounds; Raytheon built the computers MIT designed",
+   "url": "https://www.nasa.gov/wp-content/uploads/static/history/computers/Ch2-5.html",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "CBS News Boston: AGC weighed 70.1 pounds; Core Rope Memory with wires literally sewn together by women in factories",
+   "url": "https://www.cbsnews.com/amp/boston/news/apollo-11-guidance-computer",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "Ken Shirriff: 32768 cores to support 2048 words of erasable memory; 36,864 words of ROM in core rope memory; weighs about 70 pounds",
+   "url": "https://www.righto.com/2019/01/inside-apollo-guidance-computers-core.html",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-26T08:00:00+05:30",
+  "instagram_caption": "The computer that guided Apollo 11 to the Moon had about 4 KB of working memory.\n\nNASA's history of the Apollo Guidance Computer lists 2,048 words of erasable memory and 36,864 words of fixed memory, a clock of about one megahertz, and a weight of 70.1 pounds. The fixed memory was core rope: wires sewn together by women in factories (CBS News).\n\nFor scale: a phone with 8 GB of RAM has about 2 million times more working memory.\n\nThe lesson: it is not how much computer you have, it is how well you use it.\n\nSource: NASA, \"Computers in Spaceflight: The NASA Experience\"; CBS News.\n\nCould you write code that fits in 4 KB?\n\n#theunhyped #Apollo11 #NASA #Computing #TechHistory",
+  "youtube_title": "The Apollo 11 Computer Had About 4 KB of Memory",
+  "youtube_description": "The Apollo Guidance Computer that took Apollo 11 to the Moon had 2,048 words of erasable memory (about 4 KB) and 36,864 words of fixed memory, ran at about one megahertz and weighed 70.1 pounds, according to NASA. Its fixed memory was core rope, wires sewn together by hand in factories. A phone with 8 GB of RAM has about 2 million times more working memory.\n\nSources:\n• NASA, \"Computers in Spaceflight: The NASA Experience\", Chapter 2\n• CBS News Boston, \"Apollo 11's 4th Crew Member: A Ground-Breaking, 70 Pound Computer\" (Jun 28, 2019)\n• Ken Shirriff, \"Inside the Apollo Guidance Computer's core memory\" (2019)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Apollo11 #NASA #Shorts",
+  "youtube_tags": [
+   "Apollo 11",
+   "Apollo Guidance Computer",
+   "NASA",
+   "core rope memory",
+   "tech history",
+   "the unhyped"
+  ]
+ }
+}

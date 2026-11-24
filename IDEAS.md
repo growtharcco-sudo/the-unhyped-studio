@@ -29,7 +29,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 | Myth vs Reality | "More megapixels means better photos" | camera sensor explainers |
 | Myth vs Reality | "AI understands what it says" | research on LLM behaviour |
 | Quick Fact | The first 1 GB hard drive weighed about 250 kg (1980) | IBM archives |
-| Quick Fact | Your phone has more computing power than the Apollo guidance computer | NASA, chip specs (compute in Python) |
 
 ## Used
 - 2026-11-04 002_context_window: Why chatbots "forget" long chats (How It Actually Works)
@@ -43,3 +42,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-21 017_gpt_stands_for: What "GPT" stands for (Quick Fact)
 - 2026-11-21 018_face_id_explained: How Face ID knows it's you (How It Actually Works)
 - 2026-11-25 020_overnight_charging_myth: "Charging overnight ruins your battery" (Myth vs Reality)
+- 2026-11-25 022_apollo_computer: The Apollo 11 computer had about 4 KB of RAM (Quick Fact)
