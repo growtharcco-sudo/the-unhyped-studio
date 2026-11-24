@@ -1,0 +1,211 @@
+{
+ "id": "020_overnight_charging_myth",
+ "series": "Myth vs Reality",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "Charging your phone overnight ruins the battery?",
+   "pause": 0.3
+  },
+  {
+   "say": "Apple says no.",
+   "pause": 0.55
+  },
+  {
+   "say": "Your iPhone stops charging by itself when the battery is full.",
+   "cap": "Your iPhone stops charging by itself when the battery is full.",
+   "pause": 0.25
+  },
+  {
+   "say": "In Apple's words, it's safe to keep it on a charger overnight.",
+   "pause": 0.25
+  },
+  {
+   "say": "It even learns your routine, and can hold at eighty percent when it expects a long charge.",
+   "cap": "It even learns your routine, and can hold at 80% when it expects a long charge.",
+   "pause": 0.25
+  },
+  {
+   "say": "It needs at least fourteen days to learn your habits.",
+   "cap": "It needs at least 14 days to learn your habits.",
+   "pause": 0.25
+  },
+  {
+   "say": "The real enemy is heat.",
+   "pause": 0.55
+  },
+  {
+   "say": "Apple says charging above thirty five degrees Celsius, ninety five Fahrenheit, can permanently cut battery life.",
+   "cap": "Apple says charging above 35°C (95°F) can permanently cut battery life.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: plug it in at night, just keep it somewhere cool.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "Charging overnight\nruins it?",
+   "hl": "overnight",
+   "pose": "shrug",
+   "prop": {
+    "kind": "battery",
+    "label": "overnight"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "Apple says:",
+   "pose": "sign",
+   "sign": "NO.",
+   "bit": "Really?"
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "It stops\nwhen it's full",
+   "hl": "stops",
+   "pose": "point",
+   "prop": {
+    "kind": "battery",
+    "label": "full = stop"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "\"Safe\"\novernight",
+   "hl": "\"Safe\"",
+   "sub": "Apple support page",
+   "pose": "point",
+   "prop": {
+    "kind": "phone",
+    "state": "standby"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "It can hold\nat 80%",
+   "hl": "80%",
+   "sub": "Optimized Battery Charging",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "80%",
+    "hl": "80%"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "14 days\nto learn you",
+   "hl": "14 days",
+   "pose": "idle",
+   "bit": "Smart."
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "The real enemy:\nheat",
+   "hl": "heat",
+   "pose": "facepalm",
+   "bit": "Hot!"
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "Above 35°C\ndoes damage",
+   "hl": "35°C",
+   "sub": "That's 95°F (Apple)",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "35°C",
+    "hl": "35°C"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 8,
+   "head": "Plug it in.\nKeep it cool.",
+   "hl": "cool.",
+   "pose": "idle",
+   "bit": "Got it!"
+  },
+  {
+   "k": "scene",
+   "at": 9,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "Charging overnight\nruins it?",
+  "hl": "overnight",
+  "pose": "shrug",
+  "bit": "Myth!"
+ },
+ "sources": [
+  {
+   "claim": "Apple: 'iPhone automatically stops charging when the battery is fully charged, so it's safe to keep your iPhone connected to a charger overnight'; avoid using or charging in ambient temperatures higher than 95 F (35 C), which can permanently reduce battery lifespan",
+   "url": "https://support.apple.com/en-ae/105105",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "Apple: Optimized Battery Charging uses on-device machine learning to learn your daily charging routine; iPhone will delay charging past 80 percent in certain situations; needs at least 14 days to learn your charging habits",
+   "url": "https://support.apple.com/108055",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-25T08:00:00+05:30",
+  "instagram_caption": "Charging your phone overnight does not ruin the battery.\n\nApple says an iPhone stops charging on its own when the battery is full, and that it is safe to keep it connected to a charger overnight. Optimized Battery Charging learns your routine (it needs at least 14 days) and can hold the charge at 80% when it expects a long charge.\n\nThe real enemy is heat: Apple says using or charging above 35°C (95°F) can permanently reduce battery lifespan.\n\nThe lesson: plug it in at night, just keep it somewhere cool.\n\nSource: Apple Support, \"Charge and maintain your iPhone battery\" and \"About Charge Limit and Optimized Battery Charging on iPhone\".\n\nDo you charge your phone overnight, or unplug it at 100%?\n\n#theunhyped #iPhone #Battery #TechMyths #Smartphone",
+  "youtube_title": "Does Charging Overnight Ruin Your Phone Battery?",
+  "youtube_description": "Charging overnight does not ruin your iPhone battery. Apple says iPhone stops charging when the battery is full and that it is safe to keep it on a charger overnight. Optimized Battery Charging learns your routine over at least 14 days and can hold at 80% when it expects a long charge. The real enemy is heat: Apple says charging above 35°C (95°F) can permanently reduce battery lifespan.\n\nSources:\n• Apple Support, \"Charge and maintain your iPhone battery\"\n• Apple Support, \"About Charge Limit and Optimized Battery Charging on iPhone\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#iPhone #Battery #Shorts",
+  "youtube_tags": [
+   "charging overnight",
+   "iPhone battery",
+   "battery myth",
+   "optimized battery charging",
+   "tech myths",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "80",
+   "expect": "80",
+   "note": "Apple: iPhone 'will delay charging past 80 percent in certain situations' (support.apple.com/108055)"
+  },
+  {
+   "expr": "14",
+   "expect": "14",
+   "note": "Apple: Optimized Battery Charging 'needs at least 14 days to learn your charging habits'"
+  },
+  {
+   "expr": "35",
+   "expect": "35",
+   "note": "Apple: avoid charging in ambient temperatures higher than 35 C, 'can permanently reduce battery lifespan'"
+  },
+  {
+   "expr": "35*9/5+32",
+   "expect": "95.0",
+   "note": "35 C in Fahrenheit, Apple states 95 F"
+  }
+ ]
+}
