@@ -1,0 +1,310 @@
+{
+ "id": "021_tidal_ai_ban",
+ "series": "What It Means",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 4,
+ "steps": 4,
+ "phrases": [
+  {
+   "say": "Tidal is deleting twenty nine million songs, all made entirely by A I.",
+   "cap": "Tidal is deleting 29 million songs, all made entirely by AI.",
+   "pause": 0.3
+  },
+  {
+   "say": "Four things to know. Number four is the twist.",
+   "cap": "4 things to know. Number 4 is the twist.",
+   "pause": 0.3
+  },
+  {
+   "say": "One. The date."
+  },
+  {
+   "say": "Starting December ninth, Tidal will reject and remove tracks made wholly by A I.",
+   "cap": "Starting December 9, Tidal will reject and remove tracks made wholly by AI.",
+   "pause": 0.3
+  },
+  {
+   "say": "It says they'll be gone by the start of the new year.",
+   "pause": 0.3
+  },
+  {
+   "say": "Two. The flood."
+  },
+  {
+   "say": "In the last ninety days, Tidal says forty three percent of tracks delivered to it were fully A I generated.",
+   "cap": "In the last 90 days, Tidal says 43% of tracks delivered to it were fully AI-generated.",
+   "pause": 0.3
+  },
+  {
+   "say": "It expects to reject eighty to eighty five thousand songs a day.",
+   "cap": "It expects to reject 80,000 to 85,000 songs a day.",
+   "pause": 0.3
+  },
+  {
+   "say": "Three. What stays."
+  },
+  {
+   "say": "Songs made with help from A I tools stay. Only fully generated tracks go.",
+   "cap": "Songs made with help from AI tools stay. Only fully generated tracks go.",
+   "pause": 0.3
+  },
+  {
+   "say": "Four. The twist.",
+   "pause": 0.3
+  },
+  {
+   "say": "Tidal says ninety six percent of A I generated songs get zero plays.",
+   "cap": "Tidal says 96% of AI-generated songs get zero plays.",
+   "pause": 0.5
+  },
+  {
+   "say": "Spotify and YouTube Music label A I music instead, TechCrunch reports.",
+   "cap": "Spotify and YouTube Music label AI music instead, TechCrunch reports.",
+   "pause": 0.3
+  },
+  {
+   "say": "My take: it's easier to delete music when almost nobody is listening to it.",
+   "pause": 0.3
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "title",
+   "at": -1,
+   "pill": "AI MUSIC BAN",
+   "lines": [
+    "Tidal deletes",
+    "29M songs"
+   ],
+   "hl": "29M songs",
+   "size": 150
+  },
+  {
+   "k": "dots",
+   "at": 1,
+   "n": 4,
+   "sub": "#4 is the twist",
+   "sub_at": [
+    1,
+    0.5
+   ]
+  },
+  {
+   "k": "step",
+   "at": 2,
+   "n": 1,
+   "label": "The date",
+   "step_no": 1
+  },
+  {
+   "k": "big",
+   "at": 3,
+   "text": "Dec 9",
+   "hl": "Dec 9",
+   "sub": "wholly AI-made tracks start to go",
+   "size": 200,
+   "step_no": 1
+  },
+  {
+   "k": "big",
+   "at": 4,
+   "text": "Gone by\nthe new year",
+   "hl": "new year",
+   "sub": "Tidal, via Gizmodo and Newsweek",
+   "step_no": 1
+  },
+  {
+   "k": "step",
+   "at": 5,
+   "n": 2,
+   "label": "The flood",
+   "step_no": 2
+  },
+  {
+   "k": "num",
+   "at": 6,
+   "to": 43,
+   "dec": 0,
+   "prefix": "",
+   "suffix": "%",
+   "label": "of new tracks",
+   "sub": "fully AI-generated,\nlast 90 days (Tidal)",
+   "sub_at": [
+    6,
+    0.5
+   ],
+   "step_no": 2
+  },
+  {
+   "k": "big",
+   "at": 7,
+   "text": "80,000 to\n85,000 a day",
+   "hl": "85,000",
+   "sub": "expected rejections (Gizmodo)",
+   "step_no": 2
+  },
+  {
+   "k": "step",
+   "at": 8,
+   "n": 3,
+   "label": "What stays",
+   "step_no": 3
+  },
+  {
+   "k": "pair",
+   "at": 9,
+   "left": {
+    "title": "Stays",
+    "lines": [
+     "AI-assisted"
+    ]
+   },
+   "right": {
+    "title": "Goes",
+    "lines": [
+     "Fully AI"
+    ],
+    "hl": true
+   },
+   "right_at": [
+    9,
+    0.3
+   ],
+   "step_no": 3
+  },
+  {
+   "k": "step",
+   "at": 10,
+   "n": 4,
+   "label": "The twist",
+   "step_no": 4
+  },
+  {
+   "k": "num",
+   "at": 11,
+   "to": 96,
+   "dec": 0,
+   "prefix": "",
+   "suffix": "%",
+   "label": "of AI songs",
+   "sub": "get zero plays (Tidal)",
+   "sub_at": [
+    11,
+    0.55
+   ],
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 12,
+   "text": "Others:\nlabel it",
+   "hl": "label it",
+   "sub": "Spotify, YouTube Music (TechCrunch)",
+   "step_no": 4
+  },
+  {
+   "k": "big",
+   "at": 13,
+   "text": "Almost nobody\nwas listening",
+   "hl": "nobody",
+   "sub": "my take",
+   "step_no": 4
+  },
+  {
+   "k": "end",
+   "at": 14,
+   "text": "@theunhyped.ai",
+   "sub": "Tech news. No hype."
+  }
+ ],
+ "cover": {
+  "pill": "AI MUSIC BAN",
+  "lines": [
+   "Tidal deletes",
+   "29M songs"
+  ],
+  "hl": "29M songs",
+  "sub": "4 things to know",
+  "size": 150
+ },
+ "sources": [
+  {
+   "claim": "Tidal will start removing fully AI-generated music on December 9; more than 29 million songs deleted by end of year; rejecting roughly 80,000-85,000 tracks per day; over past 90 days more than 43% of uploads AI-generated; still accepts songs made with AI assistance; Spotify and YouTube Music label AI music instead",
+   "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "Robert Anderson, Tidal platform lead: 'On December 9, we'll begin removing all wholly AI-generated tracks ... completely gone by the beginning of the year'; 'deletion of 29 million songs, and the estimated rejection of 80-85,000 songs per day'; 43% in last 90 days; 96% receive zero plays; only tracks generated solely by AI",
+   "url": "https://gizmodo.com/tidal-will-soon-ban-fully-ai-generated-songs-2000844674",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "Starting December 9, any track entirely generated with AI will be rejected and removed; 29 million songs; 43 percent of tracks in last 90 days 'wholly AI-generated'; 96 percent of AI-generated songs receive zero plays; AI-assisted tracks still allowed",
+   "url": "https://www.newsweek.com/tidal-music-takes-a-stand-against-ai-music-12763646",
+   "fetched": "2026-11-25"
+  },
+  {
+   "claim": "Tidal AI Policy: defines AI-generated recordings as wholly generated using generative AI; acts only on wholly AI-generated recordings",
+   "url": "https://support.tidal.com/hc/en-us/articles/48031883413521-AI-Policy",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "post": {
+  "slot": "news",
+  "breaking": false,
+  "post_at": "2026-11-25T18:30:00+05:30",
+  "instagram_caption": "Tidal is deleting 29 million songs made entirely by AI.\n\nStarting December 9, the streaming service will reject and remove tracks that are wholly AI-generated, and says they will be gone by the new year. Tidal says 43% of tracks delivered to it in the last 90 days were fully AI-generated, and it expects to reject 80,000 to 85,000 songs a day (Gizmodo, Newsweek, TechCrunch).\n\nMusic made with help from AI tools is still allowed. Tidal also says 96% of AI-generated songs get zero plays. Spotify and YouTube Music label AI music instead, TechCrunch reports.\n\nWhy it matters: streaming services are now drawing a hard line between AI as a tool and AI as the whole artist.\n\nSources: TechCrunch, Gizmodo, Newsweek, Tidal, Nov 24, 2026.\n\nShould every streaming app ban fully AI-made songs?\n\n#theunhyped #Tidal #AIMusic #MusicStreaming #TechNews",
+  "youtube_title": "Tidal Is Deleting 29 Million AI Songs: 4 Things to Know",
+  "youtube_description": "Tidal says it will start rejecting and removing wholly AI-generated tracks on December 9, deleting about 29 million songs by the new year. It says 43% of tracks delivered to it in the last 90 days were fully AI-generated, and that 96% of AI-generated songs get zero plays. Music made with help from AI tools is still allowed. Here's what's known so far.\n\nSources:\n• TechCrunch, \"Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming\" (Nov 24, 2026)\n• Gizmodo, \"Tidal Will Soon Ban Fully AI-Generated Songs\" (Nov 24, 2026)\n• Newsweek, \"Tidal Music Takes a Stand Against AI Music\" (Nov 24, 2026)\n• Tidal, \"AI Policy\"\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Tidal #AIMusic #Shorts",
+  "youtube_tags": [
+   "Tidal",
+   "AI music",
+   "AI generated songs",
+   "music streaming",
+   "Spotify",
+   "tech news",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "29_000_000",
+   "expect": "29000000",
+   "note": "29 million songs to be deleted (Tidal's Robert Anderson via Gizmodo; Newsweek; TechCrunch)"
+  },
+  {
+   "expr": "9",
+   "expect": "9",
+   "note": "removals start December 9 (TechCrunch, Gizmodo, Newsweek)"
+  },
+  {
+   "expr": "43",
+   "expect": "43",
+   "note": "43% of tracks distributed to Tidal in the last 90 days detected as wholly AI-generated (Newsweek, Gizmodo, TechCrunch)"
+  },
+  {
+   "expr": "90",
+   "expect": "90",
+   "note": "last 90 days window (Tidal via Newsweek)"
+  },
+  {
+   "expr": "80_000",
+   "expect": "80000",
+   "note": "estimated rejection of 80-85,000 songs per day (Gizmodo quoting Anderson; TechCrunch)"
+  },
+  {
+   "expr": "85_000",
+   "expect": "85000",
+   "note": "upper end of the daily rejection estimate"
+  },
+  {
+   "expr": "96",
+   "expect": "96",
+   "note": "96% of AI-generated songs receive zero plays (Tidal via Newsweek, Gizmodo)"
+  }
+ ]
+}

@@ -8,3 +8,4 @@
 2026-11-19 03:19 IST | news | 012_anthropic_priced | Anthropic prices IPO at $83, above range
 2026-11-21 03:19 IST | news | 016_gta6_day_one | GTA VI hits $3.79B in day one sales
 2026-11-23 19:52 IST | breaking | 019_nvidia_huang_back | Jensen Huang reinstated as Nvidia CEO
+2026-11-25 03:30 IST | news | 021_tidal_ai_ban | Tidal to delete 29M fully AI-generated songs

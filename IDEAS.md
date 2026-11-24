@@ -26,7 +26,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 ## Open ideas: morning (20 to 35 s)
 | Series | Hook | Check against |
 |---|---|---|
-| Myth vs Reality | "Charging overnight ruins your battery" | Apple battery page, Battery University |
 | Myth vs Reality | "More megapixels means better photos" | camera sensor explainers |
 | Myth vs Reality | "AI understands what it says" | research on LLM behaviour |
 | Quick Fact | The first 1 GB hard drive weighed about 250 kg (1980) | IBM archives |
@@ -43,3 +42,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-21 015_mac_virus_myth: "Macs can't get viruses" (Myth vs Reality)
 - 2026-11-21 017_gpt_stands_for: What "GPT" stands for (Quick Fact)
 - 2026-11-21 018_face_id_explained: How Face ID knows it's you (How It Actually Works)
+- 2026-11-25 020_overnight_charging_myth: "Charging overnight ruins your battery" (Myth vs Reality)
