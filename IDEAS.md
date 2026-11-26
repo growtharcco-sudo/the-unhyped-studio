@@ -25,7 +25,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 ## Open ideas: morning (20 to 35 s)
 | Series | Hook | Check against |
 |---|---|---|
-| Myth vs Reality | "More megapixels means better photos" | camera sensor explainers |
 | Myth vs Reality | "AI understands what it says" | research on LLM behaviour |
 | Quick Fact | The first 1 GB hard drive weighed about 250 kg (1980) | IBM archives |
 
@@ -43,3 +42,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-25 020_overnight_charging_myth: "Charging overnight ruins your battery" (Myth vs Reality)
 - 2026-11-25 022_apollo_computer: The Apollo 11 computer had about 4 KB of RAM (Quick Fact)
 - 2026-11-25 023_quantum_encryption_claim: "Quantum computers will break all encryption" (Huge Claim, Checked)
+- 2026-11-27 024_megapixels_myth: "More megapixels means better photos" (Myth vs Reality)

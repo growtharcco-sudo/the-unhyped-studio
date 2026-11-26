@@ -1,0 +1,187 @@
+{
+ "id": "024_megapixels_myth",
+ "series": "Myth vs Reality",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "You'd think a two hundred mega pixel camera takes better photos.",
+   "cap": "You'd think a 200 megapixel camera takes better photos.",
+   "pause": 0.25
+  },
+  {
+   "say": "But by default, Samsung's Galaxy S twenty three Ultra saves a twelve mega pixel photo.",
+   "cap": "But by default, Samsung's Galaxy S23 Ultra saves a 12 megapixel photo.",
+   "pause": 0.55
+  },
+  {
+   "say": "It merges up to sixteen tiny pixels into one bigger one. That's called pixel binning.",
+   "cap": "It merges up to 16 tiny pixels into one bigger one. That's called pixel binning.",
+   "pause": 0.25
+  },
+  {
+   "say": "Why? Bigger pixels catch more light, so night photos look cleaner.",
+   "pause": 0.25
+  },
+  {
+   "say": "Two phones with the same hundred and eight mega pixels can take very different photos.",
+   "cap": "Two phones with the same 108 megapixels can take very different photos.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: mega pixels tell you how much, not how good.",
+   "cap": "My take: megapixels tell you how much, not how good.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "More megapixels,\nbetter photos?",
+   "hl": "better photos?",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "200 MP",
+    "hl": "200 MP"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "It saves\n12 MP",
+   "hl": "12 MP",
+   "sub": "Galaxy S23 Ultra default (TechRadar)",
+   "pose": "facepalm",
+   "bit": "Wait, what?"
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "16 pixels\nbecome 1",
+   "hl": "16",
+   "sub": "Pixel binning",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "16",
+    "hl": "16"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "Bigger pixels,\nmore light",
+   "hl": "more light",
+   "sub": "Less grain at night",
+   "pose": "shrug",
+   "prop": {
+    "kind": "big",
+    "text": "Light",
+    "hl": "Light"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "Same 108 MP,\ndifferent photos",
+   "hl": "different",
+   "pose": "sign",
+   "sign": "NOT EQUAL"
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "How much,\nnot how good",
+   "hl": "not how good",
+   "pose": "idle",
+   "bit": "Noted."
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "More megapixels,\nbetter photos?",
+  "hl": "better photos?",
+  "pose": "point",
+  "bit": "Myth!"
+ },
+ "sources": [
+  {
+   "claim": "A 200MP Galaxy S23 Ultra shot is binned to a 12MP final image by default; binning combines up to 16 pixels; megapixels tell 'how much', not 'how good'; Galaxy S22 Ultra and OnePlus Nord N30 both have 108MP sensors but photos are 'not even close', the S22 Ultra having a larger sensor and larger pixels",
+   "url": "https://www.techradar.com/phones/megapixels-dont-matter-heres-whats-really-important-on-your-phones-camera",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "A larger pixel can capture more light than a smaller pixel; binned night photos are brighter with reduced noise; Samsung 200MP HP2 sixteen-in-one is comparable to a 12.5MP camera with 2.56-micron pixels",
+   "url": "https://www.androidauthority.com/what-is-pixel-binning-966179/",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "Two sensors with the same megapixel count can have very different quality; sensor and photosite size matter more; in low light pixels are binned together to combine their light-gathering abilities",
+   "url": "https://www.howtogeek.com/773762/what-is-pixel-binning-in-cameras/",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-27T08:00:00+05:30",
+  "instagram_caption": "A 200 megapixel phone camera usually saves a 12 megapixel photo.\n\nBy default, Samsung's Galaxy S23 Ultra merges up to 16 tiny pixels into one bigger one, a trick called pixel binning, and saves a 12MP image (TechRadar). Bigger pixels catch more light, so night shots come out brighter and less grainy (Android Authority).\n\nTechRadar also compared two phones with the same 108MP count and found the photos were not even close: the one with the larger sensor won.\n\nThe lesson: megapixels tell you how much, not how good. Look at sensor size first.\n\nSource: TechRadar, Android Authority, How-To Geek.\n\nWhat did you look at when you bought your last phone?\n\n#theunhyped #Megapixels #PhoneCamera #TechMyths #Smartphone",
+  "youtube_title": "More Megapixels Does Not Mean Better Photos",
+  "youtube_description": "A 200 megapixel phone camera like the Galaxy S23 Ultra saves a 12 megapixel photo by default. It merges up to 16 tiny pixels into one bigger one, called pixel binning, because bigger pixels catch more light. Two phones with the same 108MP count can take very different photos, because sensor size matters more.\n\nSources:\n• TechRadar, \"Megapixels don't matter! Here's what's really important on your phone's camera\" (Aug 24, 2023)\n• Android Authority, \"What is pixel binning? Everything to know about this photographic technique\" (Feb 28, 2023)\n• How-To Geek, \"What Is Pixel Binning in Cameras?\" (Jan 12, 2022)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#Megapixels #PhoneCamera #Shorts",
+  "youtube_tags": [
+   "megapixels",
+   "pixel binning",
+   "phone camera",
+   "Galaxy S23 Ultra",
+   "camera sensor",
+   "tech myths",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "200",
+   "expect": "200",
+   "note": "Galaxy S23 Ultra 200MP main camera (TechRadar)"
+  },
+  {
+   "expr": "23",
+   "expect": "23",
+   "note": "Galaxy S23 Ultra"
+  },
+  {
+   "expr": "12",
+   "expect": "12",
+   "note": "S23 Ultra bins 200MP to a 12MP final image by default (TechRadar)"
+  },
+  {
+   "expr": "16",
+   "expect": "16",
+   "note": "binning combines up to 16 pixels (TechRadar; Android Authority sixteen-in-one)"
+  },
+  {
+   "expr": "round(200/16, 1)",
+   "expect": "12.5",
+   "note": "200MP sixteen-in-one = 12.5MP, about 12MP (Android Authority)"
+  },
+  {
+   "expr": "108",
+   "expect": "108",
+   "note": "Galaxy S22 Ultra and OnePlus Nord N30 both 108MP, photos 'not even close' (TechRadar)"
+  }
+ ]
+}
