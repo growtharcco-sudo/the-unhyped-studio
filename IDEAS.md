@@ -43,3 +43,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-25 022_apollo_computer: The Apollo 11 computer had about 4 KB of RAM (Quick Fact)
 - 2026-11-25 023_quantum_encryption_claim: "Quantum computers will break all encryption" (Huge Claim, Checked)
 - 2026-11-27 024_megapixels_myth: "More megapixels means better photos" (Myth vs Reality)
+- 2026-11-27 026_first_text_message: The first text message said "Merry Christmas" (Quick Fact)

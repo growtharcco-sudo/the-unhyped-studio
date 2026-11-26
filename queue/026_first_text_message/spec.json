@@ -1,0 +1,214 @@
+{
+ "id": "026_first_text_message",
+ "series": "Quick Fact",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "The first text message ever sent was just two words: Merry Christmas.",
+   "pause": 0.3
+  },
+  {
+   "say": "It was sent on December third, nineteen ninety two.",
+   "cap": "It was sent on December 3, 1992.",
+   "pause": 0.25
+  },
+  {
+   "say": "Vodafone engineer Neil Pap worth typed it on a computer, not a phone.",
+   "cap": "Vodafone engineer Neil Papworth typed it on a computer, not a phone.",
+   "pause": 0.5
+  },
+  {
+   "say": "It arrived on an Orbit tell phone that weighed about two kilos.",
+   "cap": "It arrived on an Orbitel phone that weighed about 2 kg.",
+   "pause": 0.25
+  },
+  {
+   "say": "In twenty twenty one, Vodafone auctioned that text as an N F T.",
+   "cap": "In 2021, Vodafone auctioned that text as an NFT.",
+   "pause": 0.25
+  },
+  {
+   "say": "It sold for a hundred and seven thousand euros, about a hundred and twenty one thousand dollars, for the U N refugee agency.",
+   "cap": "It sold for €107,000, about $121,000, for the UN refugee agency.",
+   "pause": 0.4
+  },
+  {
+   "say": "My take: every text you send today traces back to those two words.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "The first text:\nMerry Christmas",
+   "hl": "Merry Christmas",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "SMS",
+    "hl": "SMS"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "December 3,\n1992",
+   "hl": "1992",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "1992",
+    "hl": "1992"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "Typed on\na computer",
+   "hl": "computer",
+   "sub": "Neil Papworth, Vodafone engineer",
+   "pose": "facepalm",
+   "bit": "Not a phone?"
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "The phone:\nabout 2 kg",
+   "hl": "2 kg",
+   "sub": "An Orbitel, about 4 lb (Reuters)",
+   "pose": "shrug",
+   "prop": {
+    "kind": "big",
+    "text": "2 kg",
+    "hl": "2 kg"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "Sold as\nan NFT",
+   "hl": "NFT",
+   "pose": "sign",
+   "sign": "SOLD"
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "€107,000\nfor two words",
+   "hl": "€107,000",
+   "sub": "About $121,000, given to UNHCR",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "€107K",
+    "hl": "€107K"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "It started\nwith two words",
+   "hl": "two words",
+   "pose": "idle",
+   "bit": "Merry!"
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "The first text:\nMerry Christmas",
+  "hl": "Merry Christmas",
+  "pose": "point",
+  "bit": "1992!"
+ },
+ "sources": [
+  {
+   "claim": "First SMS 'Merry Christmas' sent by Vodafone engineer Neil Papworth from his computer on Dec 3, 1992, to a manager; received on a 2-kg (4 lb) Orbitel phone; sold as NFT for 107,000 euros ($121,000) in Paris; $1 = 0.8872 euros",
+   "url": "https://www.euronews.com/next/2021/12/21/france-auction-text-message",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "Reuters, PARIS Dec 21: first SMS sold for 107,000 euros at Aguttes auction; proceeds go to the UN Refugee Agency UNHCR; Orbitel telephone weighing 2 kg",
+   "url": "https://www.lse.co.uk/news/merry-christmas-first-sms-sells-for-over-100000-euros-in-paris-auction-vkhrgy1glxuf2jk.html",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "Vodafone auctions the world's first text message as an NFT for 107,000 euros (91,000 pounds)",
+   "url": "https://www.cityam.com/vodafone-auctions-the-worlds-first-text-message-as-an-nft-for-91k/",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "Winning bid of 107,000 euros donated to UNHCR; message received by Vodafone employee Richard Jarvis",
+   "url": "https://fundraising.co.uk/2021/12/22/nft-auction-of-first-sms-message-raises-e107k-for-unhcr/",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "breaking": false,
+  "post_at": "2026-11-28T08:00:00+05:30",
+  "instagram_caption": "The first text message ever sent was two words: Merry Christmas.\n\nVodafone engineer Neil Papworth sent it on December 3, 1992, and he typed it on a computer, not a phone. It arrived on an Orbitel phone that weighed about 2 kg (Reuters, Euronews).\n\nIn December 2021, Vodafone auctioned that same message as an NFT in Paris. It sold for €107,000, about $121,000, and the money went to UNHCR, the UN refugee agency (Reuters).\n\nThe lesson: some of the biggest habits in tech started as a tiny test.\n\nSource: Reuters, Euronews, City AM, Dec 21, 2021.\n\nWhat was the first text you remember sending?\n\n#theunhyped #SMS #TechHistory #Vodafone #QuickFact",
+  "youtube_title": "The First Text Message Ever Sent Was Just Two Words",
+  "youtube_description": "The first text message, \"Merry Christmas\", was sent on December 3, 1992 by Vodafone engineer Neil Papworth, typed on a computer and received on an Orbitel phone that weighed about 2 kg. In 2021 Vodafone auctioned it as an NFT in Paris for €107,000, about $121,000, for the UN refugee agency.\n\nSources:\n• Reuters, \"'Merry Christmas' - First SMS sells for over 100,000 euros in Paris auction\" (Dec 21, 2021)\n• Euronews, \"'Merry Christmas' - First SMS sells for over 100,000 euros in Paris auction\" (Dec 21, 2021)\n• City AM, \"Vodafone auctions the world's first text message as an NFT for £91k\" (Dec 21, 2021)\n• UK Fundraising, \"NFT auction of first SMS message raises €107k for UNHCR\" (Dec 22, 2021)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#SMS #TechHistory #Shorts",
+  "youtube_tags": [
+   "first text message",
+   "SMS",
+   "Merry Christmas",
+   "Neil Papworth",
+   "Vodafone",
+   "NFT",
+   "tech history",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "1992",
+   "expect": "1992",
+   "note": "sent 3 December 1992 (Euronews, Reuters, SCMP)"
+  },
+  {
+   "expr": "3",
+   "expect": "3",
+   "note": "December 3"
+  },
+  {
+   "expr": "2",
+   "expect": "2",
+   "note": "Orbitel phone weighed 2 kg / 4 lb (Reuters, Euronews)"
+  },
+  {
+   "expr": "round(2*2.20462)",
+   "expect": "4",
+   "note": "2 kg in pounds"
+  },
+  {
+   "expr": "2021",
+   "expect": "2021",
+   "note": "NFT auction at Aguttes, Paris, 21 December 2021"
+  },
+  {
+   "expr": "107_000",
+   "expect": "107000",
+   "note": "sold for 107,000 euros (Reuters, Euronews, City AM, UK Fundraising)"
+  },
+  {
+   "expr": "round(107_000/0.8872, -3)",
+   "expect": "121000.0",
+   "note": "Euronews: $1 = 0.8872 euros, about $121,000 as reported"
+  }
+ ]
+}
