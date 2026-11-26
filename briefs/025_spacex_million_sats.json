@@ -1,0 +1,110 @@
+{
+ "id": "025_spacex_million_sats",
+ "series": "What It Means",
+ "style": "keynote",
+ "beats": [
+  {
+   "say": "The US just approved one million SpaceX satellites, to run A I data centers in space.",
+   "cap": "The US just approved 1 million SpaceX satellites, to run AI data centers in space.",
+   "pause": 0.3,
+   "show": {"kind": "hook", "pill": "FCC APPROVAL", "lines": ["1 million", "satellites"], "hl": "1 million", "size": 160}
+  },
+  {
+   "say": "Four things to know. Number four is the catch.",
+   "cap": "4 things to know. Number 4 is the catch.",
+   "pause": 0.3,
+   "show": {"kind": "countdown", "n": 4, "sub": "#4 is the catch"}
+  },
+  {
+   "say": "One. The scale.",
+   "show": {"kind": "step", "n": 1, "label": "The scale"}
+  },
+  {
+   "say": "About seventeen thousand satellites operate today, Reuters reports.",
+   "cap": "About 17,000 satellites operate today, Reuters reports.",
+   "pause": 0.25,
+   "show": {"kind": "number", "to": 17000, "prefix": "", "suffix": "", "label": "satellites today", "sub": "all operators (Reuters)", "sub_at": 0.5}
+  },
+  {
+   "say": "This one approval is about fifty nine times that.",
+   "cap": "This one approval is about 59 times that.",
+   "pause": 0.5,
+   "show": {"kind": "statement", "text": "About 59x\ntoday's total", "hl": "59x", "sub": "1,000,000 vs about 17,000"}
+  },
+  {
+   "say": "Two. Why space.",
+   "show": {"kind": "step", "n": 2, "label": "Why space"}
+  },
+  {
+   "say": "SpaceX told regulators the satellites get near constant solar power, to feed the demand for A I computing.",
+   "cap": "SpaceX told regulators the satellites get near-constant solar power, to feed the demand for AI computing.",
+   "pause": 0.3,
+   "show": {"kind": "statement", "text": "Near-constant\nsunlight", "hl": "sunlight", "sub": "SpaceX's case to the FCC"}
+  },
+  {
+   "say": "Three. The timeline.",
+   "show": {"kind": "step", "n": 3, "label": "The timeline"}
+  },
+  {
+   "say": "SpaceX says the first compute satellites could launch as early as twenty twenty eight.",
+   "cap": "SpaceX says the first compute satellites could launch as early as 2028.",
+   "pause": 0.25,
+   "show": {"kind": "statement", "text": "2028", "hl": "2028", "sub": "earliest, per SpaceX's IPO filing (CBS)", "size": 220}
+  },
+  {
+   "say": "The F C C wants half of them in orbit by twenty thirty eight.",
+   "cap": "The FCC wants half of them in orbit by 2038.",
+   "pause": 0.3,
+   "show": {"kind": "statement", "text": "Half by\n2038", "hl": "2038", "sub": "FCC milestone"}
+  },
+  {
+   "say": "Four. The catch.",
+   "pause": 0.3,
+   "show": {"kind": "step", "n": 4, "label": "The catch"}
+  },
+  {
+   "say": "Space doesn't cool computers easily. Heat has nowhere to go but to radiate away.",
+   "pause": 0.3,
+   "show": {"kind": "statement", "text": "Cooling\nis hard", "hl": "hard", "sub": "critics, via AP and Engadget"}
+  },
+  {
+   "say": "Amazon's satellite unit said a full rollout could take centuries.",
+   "pause": 0.5,
+   "show": {"kind": "statement", "text": "\"Could take\ncenturies\"", "hl": "centuries\"", "sub": "Amazon Leo, per Reuters"}
+  },
+  {
+   "say": "My take: approving a million satellites is easy. Launching them is not.",
+   "pause": 0.3,
+   "show": {"kind": "statement", "text": "Approved is\nnot launched", "hl": "not launched", "sub": "my take"}
+  },
+  {
+   "say": "Follow for more. Sources are in the description.",
+   "show": {"kind": "ending", "text": "@theunhyped.ai", "sub": "Tech news. No hype."}
+  }
+ ],
+ "cover": {"pill": "FCC APPROVAL", "lines": ["1 million", "satellites"], "hl": "1 million", "sub": "AI data centers in space", "size": 160},
+ "math": [
+  {"expr": "1_000_000", "expect": "1000000", "note": "FCC approved 1,000,000 orbital compute modules (CBS News, Al Jazeera/Reuters, Engadget)"},
+  {"expr": "17_000", "expect": "17000", "note": "about 17,000 satellites currently operate (Al Jazeera/Reuters; The Independent)"},
+  {"expr": "round(1_000_000/17_000)", "expect": "59", "note": "approval vs satellites operating today"},
+  {"expr": "2028", "expect": "2028", "note": "SpaceX IPO filing: deploy orbital AI compute satellites as early as 2028 (CBS News)"},
+  {"expr": "2038", "expect": "2038", "note": "FCC milestone: half the constellation by November 2038 (Interesting Engineering; The Independent)"},
+  {"expr": "4", "expect": "4", "note": "four points in the countdown"}
+ ],
+ "sources": [
+  {"claim": "FCC approved SpaceX's request for 1 million satellites (orbital compute modules) to create data centers in space (Carr on X); SpaceX expects to begin deploying orbital AI compute satellites as early as 2028 (IPO filing)", "url": "https://www.cbsnews.com/news/spacex-fcc-approval-data-centers-space/", "fetched": "2026-11-27"},
+  {"claim": "US grants approval for 1,000,000 orbital compute modules, system called Starmind; about 17,000 satellites currently; Starlink just over 11,000; Amazon's Leo and others said full deployment unlikely and could take centuries", "url": "https://www.aljazeera.com/news/2026/11/25/us-grants-spacex-approval-for-1-million-space-data-centres", "fetched": "2026-11-27"},
+  {"claim": "SpaceX filing: orbital data centers most efficient way to meet demand for AI computing; astrophysicist Adam Becker (AP): 'it's not going to happen', basic physical limits on radiating heat; collision and debris concerns", "url": "https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/", "fetched": "2026-11-27"},
+  {"claim": "FCC milestones: half the approved constellation by November 2038; disposal requirements still to be addressed", "url": "https://interestingengineering.com/space/spacex-million-satellites-data-centers-fcc", "fetched": "2026-11-27"},
+  {"claim": "SpaceX told the FCC of near-constant solar power; must reach 50% by November 2038; roughly 17,000 satellites currently operate; Starlink just over 11,000", "url": "https://uk.finance.yahoo.com/news/spacex-gets-approval-deploy-1-181431490.html", "fetched": "2026-11-27"}
+ ],
+ "post": {
+  "slot": "news",
+  "breaking": false,
+  "post_at": "2026-11-27T18:30:00+05:30",
+  "instagram_caption": "The US just approved 1 million SpaceX satellites to run AI data centers in space.\n\nThe FCC signed off on SpaceX's request for 1,000,000 \"orbital compute modules\", a system called Starmind, FCC Chairman Brendan Carr announced (CBS News, Reuters). About 17,000 satellites operate today, so this one approval is roughly 59 times that. SpaceX says the satellites would get near-constant solar power to meet demand for AI computing.\n\nSpaceX's IPO filing says the first compute satellites could launch as early as 2028, and the FCC wants half the constellation in orbit by 2038. Critics quoted by AP say cooling computers in space is hard, and Amazon's satellite unit has said a full rollout could take centuries.\n\nWhy it matters: AI's hunger for power is now pushing data centers off the planet, at least on paper.\n\nSources: CBS News, Reuters via Al Jazeera, Engadget, Nov 25, 2026.\n\nWould you trust AI that runs in orbit, or is this a step too far?\n\n#theunhyped #SpaceX #DataCenters #AI #TechNews",
+  "youtube_title": "The US Approved 1 Million SpaceX Satellites for AI: 4 Things to Know",
+  "youtube_description": "The FCC has approved SpaceX's request for 1 million satellites, called orbital compute modules, to run AI data centers in space. About 17,000 satellites operate today. SpaceX says the first compute satellites could launch as early as 2028, and the FCC wants half in orbit by 2038. Critics say cooling in space is hard and a full rollout could take centuries. Here's what's known so far.\n\nSources:\n• CBS News, \"SpaceX gets FCC approval for 1 million satellites to build data centers in space, Brendan Carr says\" (Nov 25, 2026)\n• Al Jazeera / Reuters, \"US grants SpaceX approval for 1 million space data centres\" (Nov 25, 2026)\n• Engadget, \"SpaceX gets FCC approval to deploy 1 million satellites for its AI orbital data center\" (Nov 26, 2026)\n• Interesting Engineering, \"SpaceX wins FCC approval for one million satellites to build data centers in space\" (Nov 25, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#SpaceX #AI #Shorts",
+  "youtube_tags": ["SpaceX", "FCC", "Starmind", "orbital data centers", "AI data centers", "satellites", "tech news", "the unhyped"]
+ }
+}
