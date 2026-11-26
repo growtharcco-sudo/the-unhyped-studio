@@ -13,7 +13,6 @@ the October 2026 $2 trillion Nasdaq wipeout.
 | Huge Claim, Checked | "A bigger model is always smarter" | scaling papers, recent small-model results |
 | How It Actually Works | What an AI agent actually is (and isn't) | vendor docs, a real agent product |
 | Road to Superintelligence | When AI improves itself: what's real today | lab publications, Flint follow-ups |
-| How It Actually Works | Why almost every advanced chip comes from one company in Taiwan | TSMC annual report, market share data |
 | How It Actually Works | How end-to-end encryption works, in one picture | Signal protocol docs, WhatsApp white paper |
 | How It Actually Works | What a "parameter" is in a 1-trillion-parameter model | model cards, papers |
 | Road to Superintelligence | What the big AI labs say their goal is, in their own words | OpenAI Charter, DeepMind, Anthropic sites |
@@ -44,3 +43,4 @@ the October 2026 $2 trillion Nasdaq wipeout.
 - 2026-11-25 023_quantum_encryption_claim: "Quantum computers will break all encryption" (Huge Claim, Checked)
 - 2026-11-27 024_megapixels_myth: "More megapixels means better photos" (Myth vs Reality)
 - 2026-11-27 026_first_text_message: The first text message said "Merry Christmas" (Quick Fact)
+- 2026-11-27 027_tsmc_explained: Why so many top chips come from one company in Taiwan (How It Actually Works)

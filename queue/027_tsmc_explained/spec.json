@@ -1,0 +1,258 @@
+{
+ "id": "027_tsmc_explained",
+ "series": "How It Actually Works",
+ "voice": "am_liam",
+ "speed": 1.05,
+ "engine": 5,
+ "phrases": [
+  {
+   "say": "Apple, Nvidia and A M D design some of the world's most famous chips. Another company builds them.",
+   "cap": "Apple, Nvidia and AMD design some of the world's most famous chips. Another company builds them.",
+   "pause": 0.3
+  },
+  {
+   "say": "That company is T S M C, in Taiwan. Britannica lists those three as its top clients.",
+   "cap": "That company is TSMC, in Taiwan. Britannica lists those three as its top clients.",
+   "pause": 0.5
+  },
+  {
+   "say": "It was founded in nineteen eighty seven by Morris Chang, with one idea.",
+   "cap": "It was founded in 1987 by Morris Chang, with one idea.",
+   "pause": 0.25
+  },
+  {
+   "say": "Make chips only for customers, never its own. That's called a pure play foundry.",
+   "cap": "Make chips only for customers, never its own. That's called a pure-play foundry.",
+   "pause": 0.3
+  },
+  {
+   "say": "In twenty twenty five, it made twelve thousand six hundred and eighty two different products, for five hundred and thirty four customers.",
+   "cap": "In 2025, it made 12,682 different products, for 534 customers.",
+   "pause": 0.25
+  },
+  {
+   "say": "Trend Force says it took seventy two point five percent of all foundry revenue from April to June.",
+   "cap": "TrendForce says it took 72.5% of all foundry revenue from April to June.",
+   "pause": 0.25
+  },
+  {
+   "say": "Samsung had five point nine percent. T S M C's share is more than twelve times bigger.",
+   "cap": "Samsung had 5.9%. TSMC's share is more than 12 times bigger.",
+   "pause": 0.5
+  },
+  {
+   "say": "And eleven of the sixteen chip factories it lists are in Taiwan.",
+   "cap": "And 11 of the 16 chip factories it lists are in Taiwan.",
+   "pause": 0.25
+  },
+  {
+   "say": "My take: much of the A I boom runs through one company, on one island.",
+   "pause": 0.3
+  },
+  {
+   "say": "Follow for more. Sources are in the description."
+  }
+ ],
+ "beats": [
+  {
+   "k": "scene",
+   "at": -1,
+   "head": "They design it.\nSomeone else builds it",
+   "hl": "Someone else",
+   "pose": "shrug",
+   "prop": {
+    "kind": "big",
+    "text": "?",
+    "size": 260
+   }
+  },
+  {
+   "k": "scene",
+   "at": 1,
+   "head": "Meet TSMC",
+   "hl": "TSMC",
+   "sub": "Top clients: Apple, Nvidia, AMD (Britannica)",
+   "pose": "point",
+   "bit": "Who?"
+  },
+  {
+   "k": "scene",
+   "at": 2,
+   "head": "Founded\nin 1987",
+   "hl": "1987",
+   "sub": "By Morris Chang",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "1987",
+    "hl": "1987"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 3,
+   "head": "You design.\nWe build.",
+   "hl": "We build.",
+   "pose": "sign",
+   "sign": "WE BUILD IT"
+  },
+  {
+   "k": "scene",
+   "at": 4,
+   "head": "534 customers",
+   "hl": "534",
+   "sub": "12,682 different products in 2025 (TSMC)",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "12,682",
+    "hl": "12,682"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 5,
+   "head": "72.5% of\nfoundry revenue",
+   "hl": "72.5%",
+   "sub": "April to June 2026 (TrendForce)",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "72.5%",
+    "hl": "72.5%"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 6,
+   "head": "Samsung:\n5.9%",
+   "hl": "5.9%",
+   "sub": "Same quarter (TrendForce)",
+   "pose": "facepalm",
+   "bit": "12x?!"
+  },
+  {
+   "k": "scene",
+   "at": 7,
+   "head": "11 of 16 fabs\nin Taiwan",
+   "hl": "Taiwan",
+   "sub": "Others: US, Japan, China (TSMC)",
+   "pose": "point",
+   "prop": {
+    "kind": "big",
+    "text": "11/16",
+    "hl": "11"
+   }
+  },
+  {
+   "k": "scene",
+   "at": 8,
+   "head": "One company,\none island",
+   "hl": "one island",
+   "pose": "idle",
+   "bit": "Noted."
+  },
+  {
+   "k": "scene",
+   "at": 9,
+   "head": "@theunhyped.ai",
+   "hl": "",
+   "sub": "Tech, without the hype.",
+   "pose": "wave",
+   "bit": "Bye!"
+  }
+ ],
+ "cover": {
+  "head": "They design it.\nSomeone else builds it",
+  "hl": "Someone else",
+  "pose": "shrug",
+  "bit": "Who?"
+ },
+ "sources": [
+  {
+   "claim": "TSMC established in 1987 by Dr. Morris Chang; world's first dedicated semiconductor foundry; pioneered the pure-play foundry business model focused on manufacturing its customers' products; in 2025 made 12,682 products using 305 technologies for 534 customers; six 12-inch, four 8-inch and one 6-inch fab in Taiwan, plus fabs in Nanjing, Arizona, Japan (JASM), Washington and China",
+   "url": "https://www.tsmc.com/english/aboutTSMC/index.htm",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "TSMC founded 1987 by Morris Chang, launched the pure-play foundry model; top three clients are Apple, NVIDIA and AMD",
+   "url": "https://britannica.com/topic/Taiwan-Semiconductor-Manufacturing-Co",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "2Q26: TSMC revenue nearly $40.2B, 72.5% market share; Samsung share declined to 5.9%; demand from AI server GPUs and new iPhones",
+   "url": "https://www.trendforce.com/presscenter/news/20260909-13225.html",
+   "fetched": "2026-11-27"
+  },
+  {
+   "claim": "TSMC 72.5% in Q2, up from 72.3%; Samsung 5.9% (TrendForce data)",
+   "url": "https://www.thestreet.com/investing/tsmc-foundry-market-share-widens",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "breaking": false,
+  "post_at": "2026-11-28T23:30:00+05:30",
+  "instagram_caption": "Apple, Nvidia and AMD design some of the world's most famous chips. Another company builds them.\n\nThat company is TSMC in Taiwan, founded in 1987 by Morris Chang. It pioneered the pure-play foundry: it only manufactures chips its customers design, never its own. In 2025 it made 12,682 different products for 534 customers, and Britannica lists Apple, Nvidia and AMD as its top three clients.\n\nTrendForce says TSMC took 72.5% of global foundry revenue from April to June 2026. Samsung had 5.9%. TSMC's share is more than 12 times bigger, and 11 of the 16 chip factories it lists are in Taiwan.\n\nThe lesson: the companies whose names are on the chips are often not the ones making them.\n\nSource: TSMC; TrendForce, Sep 9, 2026; Britannica.\n\nDid you know your phone's chip was probably built by a company you never hear about?\n\n#theunhyped #TSMC #Semiconductors #Chips #HowItWorks",
+  "youtube_title": "Why So Many of the World's Top Chips Come From One Company",
+  "youtube_description": "Apple, Nvidia and AMD design famous chips, but TSMC in Taiwan builds them. Founded in 1987 by Morris Chang, TSMC pioneered the pure-play foundry model, making only chips its customers design. In 2025 it made 12,682 products for 534 customers, and TrendForce says it took 72.5% of global foundry revenue in the second quarter of 2026, versus 5.9% for Samsung.\n\nSources:\n• TSMC, \"About TSMC\"\n• TrendForce, \"Global Foundry Revenue Approaches US$53.49 Billion in 2Q26\" (Sep 9, 2026)\n• Britannica, \"Taiwan Semiconductor Manufacturing Co. (TSMC)\"\n• TheStreet, \"TSMC's rivals are losing ground, and the gap is growing\" (Sep 11, 2026)\n\nThe Unhyped: AI, tech and superintelligence, explained without the hype.\nInstagram: @theunhyped.ai\n\n#TSMC #Semiconductors #Shorts",
+  "youtube_tags": [
+   "TSMC",
+   "semiconductors",
+   "chip foundry",
+   "Nvidia",
+   "Apple",
+   "Taiwan",
+   "how it works",
+   "the unhyped"
+  ]
+ },
+ "math": [
+  {
+   "expr": "1987",
+   "expect": "1987",
+   "note": "TSMC established in 1987 by Dr. Morris Chang (TSMC; Britannica)"
+  },
+  {
+   "expr": "2025",
+   "expect": "2025",
+   "note": "TSMC's 2025 figures (TSMC About page)"
+  },
+  {
+   "expr": "12_682",
+   "expect": "12682",
+   "note": "12,682 different products in 2025 (TSMC)"
+  },
+  {
+   "expr": "534",
+   "expect": "534",
+   "note": "534 different customers in 2025 (TSMC)"
+  },
+  {
+   "expr": "72.5",
+   "expect": "72.5",
+   "note": "TSMC 72.5% foundry market share, 2Q26 (TrendForce, Sep 9, 2026)"
+  },
+  {
+   "expr": "5.9",
+   "expect": "5.9",
+   "note": "Samsung 5.9% share, 2Q26 (TrendForce)"
+  },
+  {
+   "expr": "round(72.5/5.9, 1)",
+   "expect": "12.3",
+   "note": "TSMC share vs Samsung share, more than 12x"
+  },
+  {
+   "expr": "6+4+1",
+   "expect": "11",
+   "note": "fabs in Taiwan: six 12-inch, four 8-inch, one 6-inch (TSMC)"
+  },
+  {
+   "expr": "6+4+1+2+1+2",
+   "expect": "16",
+   "note": "plus Nanjing and Arizona 12-inch, JASM Japan, Washington and China 8-inch (TSMC)"
+  }
+ ]
+}
